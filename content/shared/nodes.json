@@ -1,0 +1,866 @@
+[
+  {
+    "id": "space_bioreactor",
+    "label": {
+      "zh": "太空生物反应器",
+      "en": "Space bioreactor"
+    },
+    "kind": "process",
+    "theme": "bioreactor",
+    "layer": "project",
+    "future": true,
+    "description": "太空生物反应器为微生物培养和生物转化提供工艺环境。多支队伍分别贡献传质、培养控制、生物膜和防护模块。",
+    "source_ids": [],
+    "description_en": "Space bioreactors provide a process environment for cultivation and bioconversion. Teams contribute mass-transfer, culture-control, biofilm and protection modules.",
+    "narrative": {
+      "zh": "太空生物反应器为微生物培养和生物转化提供工艺环境。多支队伍分别贡献传质、培养控制、生物膜和防护模块。",
+      "en": "Space bioreactors provide a process environment for cultivation and bioconversion. Teams contribute mass-transfer, culture-control, biofilm and protection modules."
+    }
+  },
+  {
+    "id": "space_agriculture",
+    "label": {
+      "zh": "太空农业",
+      "en": "Space agriculture"
+    },
+    "kind": "process",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "太空农业连接种植资源、植物生长与食物生产，也为基质改良和抗逆工程提供应用场景。",
+    "source_ids": [],
+    "description_en": "Space agriculture connects cultivation resources, plant growth and food production with growing-medium and stress-tolerance engineering.",
+    "narrative": {
+      "zh": "太空农业连接种植资源、植物生长与食物生产，也为基质改良和抗逆工程提供应用场景。",
+      "en": "Space agriculture connects cultivation resources, plant growth and food production with growing-medium and stress-tolerance engineering."
+    }
+  },
+  {
+    "id": "growing_medium",
+    "label": {
+      "zh": "农业基质与土壤处理",
+      "en": "Growing media / soil treatment"
+    },
+    "kind": "process",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "农业基质承载植物根系与微生物。污染物处理、固氮和植物促生作用在这一工艺处汇合。",
+    "source_ids": [],
+    "description_en": "Growing media support plant roots and microorganisms. Contaminant treatment, nitrogen fixation and plant-growth promotion meet at this process.",
+    "narrative": {
+      "zh": "农业基质承载植物根系与微生物。污染物处理、固氮和植物促生作用在这一工艺处汇合。",
+      "en": "Growing media support plant roots and microorganisms. Contaminant treatment, nitrogen fixation and plant-growth promotion meet at this process."
+    }
+  },
+  {
+    "id": "crop_resilience",
+    "label": {
+      "zh": "作物抗逆工艺",
+      "en": "Crop resilience engineering"
+    },
+    "kind": "process",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "作物抗逆工程连接植物性状与种植环境中的压力响应。",
+    "source_ids": [],
+    "description_en": "Crop resilience engineering connects plant traits with responses to stresses in cultivation environments.",
+    "narrative": {
+      "zh": "作物抗逆工程连接植物性状与种植环境中的压力响应。",
+      "en": "Crop resilience engineering connects plant traits with responses to stresses in cultivation environments."
+    }
+  },
+  {
+    "id": "f_waste",
+    "label": {
+      "zh": "可生物处理的有机废物",
+      "en": "Bioprocessable organic waste"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "可生物处理的有机废物连接相关资源与Shewanella / 磷回收等下游环节。",
+    "source_ids": [],
+    "description_en": "Bioprocessable organic waste connects related resources with Shewanella phosphorus recovery.",
+    "narrative": {
+      "zh": "可生物处理的有机废物连接相关资源与Shewanella / 磷回收等下游环节。",
+      "en": "Bioprocessable organic waste connects related resources with Shewanella phosphorus recovery."
+    }
+  },
+  {
+    "id": "f_sugars",
+    "label": {
+      "zh": "发酵碳源",
+      "en": "Fermentation carbon source"
+    },
+    "kind": "material",
+    "theme": "bioreactor",
+    "layer": "project",
+    "future": true,
+    "description": "发酵碳源连接相关资源与工程大肠杆菌合成黑色素、AstroVita 微生物工厂、SPACE TAICHI 工程酵母等下游环节。",
+    "source_ids": [],
+    "description_en": "Fermentation carbon source connects related resources with E. coli melanin synthesis, AstroVita microbial production, SPACE TAICHI yeast synthesis.",
+    "narrative": {
+      "zh": "发酵碳源连接相关资源与工程大肠杆菌合成黑色素、AstroVita 微生物工厂、SPACE TAICHI 工程酵母等下游环节。",
+      "en": "Fermentation carbon source connects related resources with E. coli melanin synthesis, AstroVita microbial production, SPACE TAICHI yeast synthesis."
+    }
+  },
+  {
+    "id": "f_salts",
+    "label": {
+      "zh": "培养营养盐",
+      "en": "Culture nutrients"
+    },
+    "kind": "material",
+    "theme": "water",
+    "layer": "project",
+    "future": true,
+    "description": "培养营养盐连接Shewanella / 磷回收的输入与AstroVita 微生物工厂、工程大肠杆菌表达等下游环节。",
+    "source_ids": [],
+    "description_en": "Culture nutrients connects Shewanella phosphorus recovery with AstroVita microbial production, E. coli protein expression.",
+    "narrative": {
+      "zh": "培养营养盐连接Shewanella / 磷回收的输入与AstroVita 微生物工厂、工程大肠杆菌表达等下游环节。",
+      "en": "Culture nutrients connects Shewanella phosphorus recovery with AstroVita microbial production, E. coli protein expression."
+    }
+  },
+  {
+    "id": "f_power",
+    "label": {
+      "zh": "生物产电",
+      "en": "Bioelectricity"
+    },
+    "kind": "energy",
+    "theme": "energy",
+    "layer": "project",
+    "future": true,
+    "description": "生物产电连接Shewanella / 磷回收的输入。",
+    "source_ids": [],
+    "description_en": "Bioelectricity connects Shewanella phosphorus recovery.",
+    "narrative": {
+      "zh": "生物产电连接Shewanella / 磷回收的输入。",
+      "en": "Bioelectricity connects Shewanella phosphorus recovery."
+    }
+  },
+  {
+    "id": "f_air",
+    "label": {
+      "zh": "项目产用氧气 O₂",
+      "en": "Project oxygen O2"
+    },
+    "kind": "material",
+    "theme": "air",
+    "layer": "project",
+    "future": true,
+    "description": "项目产用氧气 O₂连接蓝细菌光合产氧的输入与C. necator / 气体发酵等下游环节。",
+    "source_ids": [],
+    "description_en": "Project oxygen O2 connects Photosynthetic oxygen production with C. necator gas fermentation.",
+    "narrative": {
+      "zh": "项目产用氧气 O₂连接蓝细菌光合产氧的输入与C. necator / 气体发酵等下游环节。",
+      "en": "Project oxygen O2 connects Photosynthetic oxygen production with C. necator gas fermentation."
+    }
+  },
+  {
+    "id": "f_regolith",
+    "label": {
+      "zh": "月壤原料",
+      "en": "Lunar regolith"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "月壤原料连接相关资源与P. fluorescens / 促生工程菌等下游环节。",
+    "source_ids": [],
+    "description_en": "Lunar regolith connects related resources with P. fluorescens root stimulation.",
+    "narrative": {
+      "zh": "月壤原料连接相关资源与P. fluorescens / 促生工程菌等下游环节。",
+      "en": "Lunar regolith connects related resources with P. fluorescens root stimulation."
+    }
+  },
+  {
+    "id": "f_marsminerals",
+    "label": {
+      "zh": "火星矿物与表土",
+      "en": "Martian minerals / regolith"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "火星矿物与表土连接相关资源与硅酸盐溶解菌、Azotobacter / 固氮／土壤改良、CAHS / WDHN2 / avLEA1 / 作物抗逆工程等下游环节。",
+    "source_ids": [],
+    "description_en": "Martian minerals / regolith connects related resources with Silicate-solubilizing bacteria, Azotobacter / nitrogen fixation, CAHS / WDHN2 / avLEA1 engineering.",
+    "narrative": {
+      "zh": "火星矿物与表土连接相关资源与硅酸盐溶解菌、Azotobacter / 固氮／土壤改良、CAHS / WDHN2 / avLEA1 / 作物抗逆工程等下游环节。",
+      "en": "Martian minerals / regolith connects related resources with Silicate-solubilizing bacteria, Azotobacter / nitrogen fixation, CAHS / WDHN2 / avLEA1 engineering."
+    }
+  },
+  {
+    "id": "f_marsn2",
+    "label": {
+      "zh": "氮气 N₂",
+      "en": "Nitrogen N2"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "氮气 N₂连接相关资源与Azotobacter / 固氮／土壤改良等下游环节。",
+    "source_ids": [],
+    "description_en": "Nitrogen N2 connects related resources with Azotobacter / nitrogen fixation.",
+    "narrative": {
+      "zh": "氮气 N₂连接相关资源与Azotobacter / 固氮／土壤改良等下游环节。",
+      "en": "Nitrogen N2 connects related resources with Azotobacter / nitrogen fixation."
+    }
+  },
+  {
+    "id": "f_nutrients",
+    "label": {
+      "zh": "生物肥料",
+      "en": "Proposed biofertilizer"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "生物肥料连接乙酸的输入。",
+    "source_ids": [],
+    "description_en": "Proposed biofertilizer connects Acetate.",
+    "narrative": {
+      "zh": "生物肥料连接乙酸的输入。",
+      "en": "Proposed biofertilizer connects Acetate."
+    }
+  },
+  {
+    "id": "f_waterplant",
+    "label": {
+      "zh": "项目水净化与监测",
+      "en": "Project water purification"
+    },
+    "kind": "process",
+    "theme": "water",
+    "layer": "project",
+    "future": true,
+    "description": "项目水净化与监测连接枯草芽孢杆菌处理高氯酸盐的输入与可用水等下游环节。",
+    "source_ids": [],
+    "description_en": "Project water purification connects B. subtilis perchlorate treatment with Usable water.",
+    "narrative": {
+      "zh": "项目水净化与监测连接枯草芽孢杆菌处理高氯酸盐的输入与可用水等下游环节。",
+      "en": "Project water purification connects B. subtilis perchlorate treatment with Usable water."
+    }
+  },
+  {
+    "id": "f_foodsafe",
+    "label": {
+      "zh": "食品后处理",
+      "en": "Food post-processing"
+    },
+    "kind": "process",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "食品后处理连接小龙虾食品加工、β-胡萝卜素／维生素 C、E、人 α-乳白蛋白的输入与食品等下游环节。",
+    "source_ids": [],
+    "description_en": "Food post-processing connects Crayfish food processing, Beta-carotene / vitamins C, E, Human alpha-lactalbumin with Food.",
+    "narrative": {
+      "zh": "食品后处理连接小龙虾食品加工、β-胡萝卜素／维生素 C、E、人 α-乳白蛋白的输入与食品等下游环节。",
+      "en": "Food post-processing connects Crayfish food processing, Beta-carotene / vitamins C, E, Human alpha-lactalbumin with Food."
+    }
+  },
+  {
+    "id": "f_plantfeed",
+    "label": {
+      "zh": "水生植物饲料",
+      "en": "Aquatic plant feed"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "水生植物饲料连接相关资源与水生植物与小龙虾共培养等下游环节。",
+    "source_ids": [],
+    "description_en": "Aquatic plant feed connects related resources with Aquatic plant–crayfish co-culture.",
+    "narrative": {
+      "zh": "水生植物饲料连接相关资源与水生植物与小龙虾共培养等下游环节。",
+      "en": "Aquatic plant feed connects related resources with Aquatic plant–crayfish co-culture."
+    }
+  },
+  {
+    "id": "f_cellulose",
+    "label": {
+      "zh": "纤维素 · 示范底物",
+      "en": "Cellulose · demonstration"
+    },
+    "kind": "material",
+    "theme": "bioreactor",
+    "layer": "project",
+    "future": true,
+    "description": "纤维素 · 示范底物连接相关资源与表面酶降解等下游环节。",
+    "source_ids": [],
+    "description_en": "Cellulose · demonstration connects related resources with Enzymatic degradation.",
+    "narrative": {
+      "zh": "纤维素 · 示范底物连接相关资源与表面酶降解等下游环节。",
+      "en": "Cellulose · demonstration connects related resources with Enzymatic degradation."
+    }
+  },
+  {
+    "id": "f_pha",
+    "label": {
+      "zh": "PHBV 生物塑料",
+      "en": "PHBV bioplastic"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "PHBV 生物塑料连接大肠杆菌合成 PHBV的输入。",
+    "source_ids": [],
+    "description_en": "PHBV bioplastic connects E. coli PHBV synthesis.",
+    "narrative": {
+      "zh": "PHBV 生物塑料连接大肠杆菌合成 PHBV的输入。",
+      "en": "PHBV bioplastic connects E. coli PHBV synthesis."
+    }
+  },
+  {
+    "id": "ig_nutrition",
+    "label": {
+      "zh": "营养产品类别",
+      "en": "Nutritional product category"
+    },
+    "kind": "category",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "营养产品包括维生素、营养蛋白与富蛋白生物量等不同产物。",
+    "source_ids": [],
+    "description_en": "Nutritional products include distinct outputs such as vitamins, nutritional proteins and protein-rich biomass.",
+    "narrative": {
+      "zh": "营养产品包括维生素、营养蛋白与富蛋白生物量等不同产物。",
+      "en": "Nutritional products include distinct outputs such as vitamins, nutritional proteins and protein-rich biomass."
+    }
+  },
+  {
+    "id": "ig_health",
+    "label": {
+      "zh": "健康分子类别",
+      "en": "Health molecule category"
+    },
+    "kind": "category",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "健康分子涵盖褪黑素、藏红花酸、HMB 和血清素等项目产物。",
+    "source_ids": [],
+    "description_en": "Health molecules encompass project outputs including melatonin, crocetin, HMB and serotonin.",
+    "narrative": {
+      "zh": "健康分子涵盖褪黑素、藏红花酸、HMB 和血清素等项目产物。",
+      "en": "Health molecules encompass project outputs including melatonin, crocetin, HMB and serotonin."
+    }
+  },
+  {
+    "id": "ig_protection",
+    "label": {
+      "zh": "防护材料类别",
+      "en": "Protective material category"
+    },
+    "kind": "category",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "防护材料包括黑色素及其复合材料。",
+    "source_ids": [],
+    "description_en": "Protective materials include melanin and melanin-based composites.",
+    "narrative": {
+      "zh": "防护材料包括黑色素及其复合材料。",
+      "en": "Protective materials include melanin and melanin-based composites."
+    }
+  },
+  {
+    "id": "ig_repair",
+    "label": {
+      "zh": "黏附水凝胶",
+      "en": "Adhesive hydrogel"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "黏附水凝胶由项目生产的结构蛋白等组分构成，连接材料制造与修复用途。",
+    "source_ids": [],
+    "description_en": "Adhesive hydrogels combine project-produced structural proteins and other components, connecting manufacturing with repair applications.",
+    "narrative": {
+      "zh": "黏附水凝胶由项目生产的结构蛋白等组分构成，连接材料制造与修复用途。",
+      "en": "Adhesive hydrogels combine project-produced structural proteins and other components, connecting manufacturing with repair applications."
+    }
+  },
+  {
+    "id": "ig_biomass",
+    "label": {
+      "zh": "菌体／代谢中间物 · 示范",
+      "en": "Biomass / intermediates · demo"
+    },
+    "kind": "material",
+    "theme": "bioreactor",
+    "layer": "project",
+    "future": true,
+    "description": "菌体与代谢中间物是示范路线中生物转化产生的物质。",
+    "source_ids": [],
+    "description_en": "Cells and metabolic intermediates are materials produced by bioconversion in the demonstration route.",
+    "narrative": {
+      "zh": "菌体与代谢中间物是示范路线中生物转化产生的物质。",
+      "en": "Cells and metabolic intermediates are materials produced by bioconversion in the demonstration route."
+    }
+  },
+  {
+    "id": "ig_regomedia",
+    "label": {
+      "zh": "改良农业基质",
+      "en": "Improved growing medium"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "改良农业基质连接Synechococcus / 代谢交换／有机碳的输入与太空农业等下游环节。",
+    "source_ids": [],
+    "description_en": "Improved growing medium connects Synechococcus metabolic exchange with Space agriculture.",
+    "narrative": {
+      "zh": "改良农业基质连接Synechococcus / 代谢交换／有机碳的输入与太空农业等下游环节。",
+      "en": "Improved growing medium connects Synechococcus metabolic exchange with Space agriculture."
+    }
+  },
+  {
+    "id": "ig_silica",
+    "label": {
+      "zh": "生物硅材料",
+      "en": "Biogenic silica"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "生物硅材料连接硅藻固硅的输入。",
+    "source_ids": [],
+    "description_en": "Biogenic silica connects Diatom silica fixation.",
+    "narrative": {
+      "zh": "生物硅材料连接硅藻固硅的输入。",
+      "en": "Biogenic silica connects Diatom silica fixation."
+    }
+  },
+  {
+    "id": "ig_bricks",
+    "label": {
+      "zh": "CaCO₃ 生物建材",
+      "en": "CaCO3 building material"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "CaCO₃ 生物建材连接碳酸氢盐与微生物矿化的输入。",
+    "source_ids": [],
+    "description_en": "CaCO3 building material connects Bicarbonate / MICP.",
+    "narrative": {
+      "zh": "CaCO₃ 生物建材连接碳酸氢盐与微生物矿化的输入。",
+      "en": "CaCO3 building material connects Bicarbonate / MICP."
+    }
+  },
+  {
+    "id": "ig_chitin",
+    "label": {
+      "zh": "甲壳／几丁质废物",
+      "en": "Shell / chitin waste"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "甲壳／几丁质废物连接小龙虾食品加工的输入与甲壳纯化、再利用与降解等下游环节。",
+    "source_ids": [],
+    "description_en": "Shell / chitin waste connects Crayfish food processing with Shell purification / reuse / degradation.",
+    "narrative": {
+      "zh": "甲壳／几丁质废物连接小龙虾食品加工的输入与甲壳纯化、再利用与降解等下游环节。",
+      "en": "Shell / chitin waste connects Crayfish food processing with Shell purification / reuse / degradation."
+    }
+  },
+  {
+    "id": "ig_shellproducts",
+    "label": {
+      "zh": "甲壳再生制品",
+      "en": "Shell-derived products"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "甲壳再生制品连接甲壳纯化、再利用与降解的输入。",
+    "source_ids": [],
+    "description_en": "Shell-derived products connects Shell purification / reuse / degradation.",
+    "narrative": {
+      "zh": "甲壳再生制品连接甲壳纯化、再利用与降解的输入。",
+      "en": "Shell-derived products connects Shell purification / reuse / degradation."
+    }
+  },
+  {
+    "id": "ig_biostimulant",
+    "label": {
+      "zh": "微生物促生制剂",
+      "en": "Microbial biostimulant"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "微生物促生制剂连接相关资源与农业基质与土壤处理等下游环节。",
+    "source_ids": [],
+    "description_en": "Microbial biostimulant connects related resources with Growing media / soil treatment.",
+    "narrative": {
+      "zh": "微生物促生制剂连接相关资源与农业基质与土壤处理等下游环节。",
+      "en": "Microbial biostimulant connects related resources with Growing media / soil treatment."
+    }
+  },
+  {
+    "id": "ig_organic",
+    "label": {
+      "zh": "有机碳／生物量类别",
+      "en": "Organic carbon / biomass category"
+    },
+    "kind": "category",
+    "theme": "bioreactor",
+    "layer": "project",
+    "future": true,
+    "description": "有机碳／生物量类别连接硅藻固硅、V. natriegens / 异养转化、Synechococcus / 代谢交换／有机碳的输入。",
+    "source_ids": [],
+    "description_en": "Organic carbon / biomass category connects Diatom silica fixation, V. natriegens conversion, Synechococcus metabolic exchange.",
+    "narrative": {
+      "zh": "有机碳／生物量类别连接硅藻固硅、V. natriegens / 异养转化、Synechococcus / 代谢交换／有机碳的输入。",
+      "en": "Organic carbon / biomass category connects Diatom silica fixation, V. natriegens conversion, Synechococcus metabolic exchange."
+    }
+  },
+  {
+    "id": "ig_perchwater",
+    "label": {
+      "zh": "含高氯酸盐火星水冰",
+      "en": "Perchlorate-bearing Mars water"
+    },
+    "kind": "material",
+    "theme": "water",
+    "layer": "project",
+    "future": true,
+    "description": "含高氯酸盐火星水冰连接相关资源与枯草芽孢杆菌处理高氯酸盐等下游环节。",
+    "source_ids": [],
+    "description_en": "Perchlorate-bearing Mars water connects related resources with B. subtilis perchlorate treatment.",
+    "narrative": {
+      "zh": "含高氯酸盐火星水冰连接相关资源与枯草芽孢杆菌处理高氯酸盐等下游环节。",
+      "en": "Perchlorate-bearing Mars water connects related resources with B. subtilis perchlorate treatment."
+    }
+  },
+  {
+    "id": "ig_toxicregolith",
+    "label": {
+      "zh": "含高氯酸盐火星表土",
+      "en": "Perchlorate-bearing Mars regolith"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "含高氯酸盐火星表土连接相关资源与工程大肠杆菌还原高氯酸盐等下游环节。",
+    "source_ids": [],
+    "description_en": "Perchlorate-bearing Mars regolith connects related resources with E. coli perchlorate reduction.",
+    "narrative": {
+      "zh": "含高氯酸盐火星表土连接相关资源与工程大肠杆菌还原高氯酸盐等下游环节。",
+      "en": "Perchlorate-bearing Mars regolith connects related resources with E. coli perchlorate reduction."
+    }
+  },
+  {
+    "id": "ig_diet",
+    "label": {
+      "zh": "膳食／肠道代谢底物",
+      "en": "Dietary / gut substrates"
+    },
+    "kind": "material",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "膳食／肠道代谢底物连接相关资源与Red-light-regulated EcN / 肠道原位合成、Engineered EcN / HMB / serotonin synthesis等下游环节。",
+    "source_ids": [],
+    "description_en": "Dietary / gut substrates connects related resources with Red-light-regulated EcN, Proposed EcN HMB / serotonin synthesis.",
+    "narrative": {
+      "zh": "膳食／肠道代谢底物连接相关资源与Red-light-regulated EcN / 肠道原位合成、Engineered EcN / HMB / serotonin synthesis等下游环节。",
+      "en": "Dietary / gut substrates connects related resources with Red-light-regulated EcN, Proposed EcN HMB / serotonin synthesis."
+    }
+  },
+  {
+    "id": "ig_biomarker",
+    "label": {
+      "zh": "骨钙素标志物",
+      "en": "Osteocalcin marker"
+    },
+    "kind": "state",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "骨钙素标志物连接相关资源。",
+    "source_ids": [],
+    "description_en": "Osteocalcin marker connects related resources.",
+    "narrative": {
+      "zh": "骨钙素标志物连接相关资源。",
+      "en": "Osteocalcin marker connects related resources."
+    }
+  },
+  {
+    "id": "ig_uvdamage",
+    "label": {
+      "zh": "UV 引起的 DNA 损伤",
+      "en": "UV-induced DNA damage"
+    },
+    "kind": "state",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "UV 引起的 DNA 损伤连接相关资源。",
+    "source_ids": [],
+    "description_en": "UV-induced DNA damage connects related resources.",
+    "narrative": {
+      "zh": "UV 引起的 DNA 损伤连接相关资源。",
+      "en": "UV-induced DNA damage connects related resources."
+    }
+  },
+  {
+    "id": "ig_repaired",
+    "label": {
+      "zh": "DNA 修复后状态",
+      "en": "Repaired DNA state"
+    },
+    "kind": "state",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "DNA 修复后状态连接相关资源。",
+    "source_ids": [],
+    "description_en": "Repaired DNA state connects related resources.",
+    "narrative": {
+      "zh": "DNA 修复后状态连接相关资源。",
+      "en": "Repaired DNA state connects related resources."
+    }
+  },
+  {
+    "id": "ig_healthinfo",
+    "label": {
+      "zh": "骨健康信息",
+      "en": "Bone-health information"
+    },
+    "kind": "information",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "骨健康信息连接相关资源。",
+    "source_ids": [],
+    "description_en": "Bone-health information connects related resources.",
+    "narrative": {
+      "zh": "骨健康信息连接相关资源。",
+      "en": "Bone-health information connects related resources."
+    }
+  },
+  {
+    "id": "ig_resilient",
+    "label": {
+      "zh": "作物耐逆状态",
+      "en": "Crop stress tolerance"
+    },
+    "kind": "state",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "作物耐逆状态连接相关资源。",
+    "source_ids": [],
+    "description_en": "Crop stress tolerance connects related resources.",
+    "narrative": {
+      "zh": "作物耐逆状态连接相关资源。",
+      "en": "Crop stress tolerance connects related resources."
+    }
+  },
+  {
+    "id": "ig_candidateplastic",
+    "label": {
+      "zh": "生物塑料 · 候选下游",
+      "en": "Bioplastic · candidate downstream"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "生物塑料是 Friskoli 所列的候选下游方向，连接底物转化与聚合物制造的构想。",
+    "source_ids": [],
+    "description_en": "Bioplastic is a candidate downstream direction listed for Friskoli, linking substrate conversion with polymer manufacturing concepts.",
+    "narrative": {
+      "zh": "生物塑料是 Friskoli 所列的候选下游方向，连接底物转化与聚合物制造的构想。",
+      "en": "Bioplastic is a candidate downstream direction listed for Friskoli, linking substrate conversion with polymer manufacturing concepts."
+    }
+  },
+  {
+    "id": "prod_melanin",
+    "label": {
+      "zh": "黑色素",
+      "en": "Melanin"
+    },
+    "kind": "material",
+    "theme": "materials",
+    "layer": "project",
+    "future": true,
+    "description": "黑色素连接工程大肠杆菌合成黑色素、黑色素防护材料制造的输入。",
+    "source_ids": [],
+    "description_en": "Melanin connects E. coli melanin synthesis, Melanin shielding production.",
+    "narrative": {
+      "zh": "黑色素连接工程大肠杆菌合成黑色素、黑色素防护材料制造的输入。",
+      "en": "Melanin connects E. coli melanin synthesis, Melanin shielding production."
+    }
+  },
+  {
+    "id": "prod_melatonin",
+    "label": {
+      "zh": "褪黑素",
+      "en": "Melatonin"
+    },
+    "kind": "material",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "褪黑素连接SPACE TAICHI 工程酵母、Red-light-regulated EcN / 肠道原位合成的输入。",
+    "source_ids": [],
+    "description_en": "Melatonin connects SPACE TAICHI yeast synthesis, Red-light-regulated EcN.",
+    "narrative": {
+      "zh": "褪黑素连接SPACE TAICHI 工程酵母、Red-light-regulated EcN / 肠道原位合成的输入。",
+      "en": "Melatonin connects SPACE TAICHI yeast synthesis, Red-light-regulated EcN."
+    }
+  },
+  {
+    "id": "prod_crocetin",
+    "label": {
+      "zh": "藏红花酸",
+      "en": "Crocetin"
+    },
+    "kind": "material",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "藏红花酸连接SPACE TAICHI 工程酵母的输入。",
+    "source_ids": [],
+    "description_en": "Crocetin connects SPACE TAICHI yeast synthesis.",
+    "narrative": {
+      "zh": "藏红花酸连接SPACE TAICHI 工程酵母的输入。",
+      "en": "Crocetin connects SPACE TAICHI yeast synthesis."
+    }
+  },
+  {
+    "id": "prod_hmb",
+    "label": {
+      "zh": "HMB",
+      "en": "HMB"
+    },
+    "kind": "material",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "HMB连接Engineered EcN / HMB / serotonin synthesis的输入。",
+    "source_ids": [],
+    "description_en": "HMB connects Proposed EcN HMB / serotonin synthesis.",
+    "narrative": {
+      "zh": "HMB连接Engineered EcN / HMB / serotonin synthesis的输入。",
+      "en": "HMB connects Proposed EcN HMB / serotonin synthesis."
+    }
+  },
+  {
+    "id": "prod_serotonin",
+    "label": {
+      "zh": "血清素",
+      "en": "Serotonin"
+    },
+    "kind": "material",
+    "theme": "human",
+    "layer": "project",
+    "future": true,
+    "description": "血清素连接Engineered EcN / HMB / serotonin synthesis的输入。",
+    "source_ids": [],
+    "description_en": "Serotonin connects Proposed EcN HMB / serotonin synthesis.",
+    "narrative": {
+      "zh": "血清素连接Engineered EcN / HMB / serotonin synthesis的输入。",
+      "en": "Serotonin connects Proposed EcN HMB / serotonin synthesis."
+    }
+  },
+  {
+    "id": "prod_vitamins",
+    "label": {
+      "zh": "β-胡萝卜素／维生素 C、E",
+      "en": "Beta-carotene / vitamins C, E"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "β-胡萝卜素／维生素 C、E连接AstroVita 微生物工厂的输入与食品后处理等下游环节。",
+    "source_ids": [],
+    "description_en": "Beta-carotene / vitamins C, E connects AstroVita microbial production with Food post-processing.",
+    "narrative": {
+      "zh": "β-胡萝卜素／维生素 C、E连接AstroVita 微生物工厂的输入与食品后处理等下游环节。",
+      "en": "Beta-carotene / vitamins C, E connects AstroVita microbial production with Food post-processing."
+    }
+  },
+  {
+    "id": "prod_flavours",
+    "label": {
+      "zh": "番茄红素／柠檬烯／橙花醇",
+      "en": "Lycopene / limonene / nerol"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "番茄红素／柠檬烯／橙花醇连接酵母生物制造的输入。",
+    "source_ids": [],
+    "description_en": "Lycopene / limonene / nerol connects Yeast biosynthesis.",
+    "narrative": {
+      "zh": "番茄红素／柠檬烯／橙花醇连接酵母生物制造的输入。",
+      "en": "Lycopene / limonene / nerol connects Yeast biosynthesis."
+    }
+  },
+  {
+    "id": "prod_lactalbumin",
+    "label": {
+      "zh": "人 α-乳白蛋白",
+      "en": "Human alpha-lactalbumin"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "人 α-乳白蛋白连接C. necator / 气体发酵的输入与食品后处理等下游环节。",
+    "source_ids": [],
+    "description_en": "Human alpha-lactalbumin connects C. necator gas fermentation with Food post-processing.",
+    "narrative": {
+      "zh": "人 α-乳白蛋白连接C. necator / 气体发酵的输入与食品后处理等下游环节。",
+      "en": "Human alpha-lactalbumin connects C. necator gas fermentation with Food post-processing."
+    }
+  },
+  {
+    "id": "prod_scp",
+    "label": {
+      "zh": "富蛋白酵母生物量",
+      "en": "Protein-rich yeast biomass"
+    },
+    "kind": "material",
+    "theme": "agriculture",
+    "layer": "project",
+    "future": true,
+    "description": "富蛋白酵母生物量连接工程酵母生产蛋白的输入与食品后处理等下游环节。",
+    "source_ids": [],
+    "description_en": "Protein-rich yeast biomass connects Yeast protein / amino acid synthesis with Food post-processing.",
+    "narrative": {
+      "zh": "富蛋白酵母生物量连接工程酵母生产蛋白的输入与食品后处理等下游环节。",
+      "en": "Protein-rich yeast biomass connects Yeast protein / amino acid synthesis with Food post-processing."
+    }
+  }
+]

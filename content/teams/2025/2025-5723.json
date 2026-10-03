@@ -1,0 +1,202 @@
+{
+  "roster": {
+    "id": "2025-5723",
+    "official_id": 5723,
+    "name": "WUXI-DSAS",
+    "year": 2025,
+    "country": "CHN",
+    "city": "Wuxi",
+    "region": "asia",
+    "organizer_type": "secondary-education",
+    "url": "https://teams.igem.org/5723",
+    "wiki": "https://2025.igem.wiki/wuxi-dsas",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5723",
+    "year": 2025,
+    "name": "WUXI-DSAS",
+    "url": "https://2025.igem.wiki/wuxi-dsas",
+    "location": "China (Wuxi)",
+    "organizer_type": "High School",
+    "description": "WUXI-DSAS 将 CAHS、WDHN2 和 avLEA1 等抗逆相关蛋白用于作物工程，连接植物对干旱与温度变化的响应和太空农业中的作物生长。",
+    "role": {
+      "zh": "作物抗逆工程",
+      "en": "Crop stress-tolerance engineering"
+    },
+    "chains": [
+      {
+        "id": "2025-5723:route:0",
+        "theme": "agriculture",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5723:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2025-5723:route:0:edge:0",
+          "2025-5723:route:0:edge:1"
+        ],
+        "dependencies": [
+          "space_agriculture"
+        ],
+        "label": {
+          "zh": "CAHS / WDHN2 / avLEA1 / 作物抗逆工程",
+          "en": "CAHS / WDHN2 / avLEA1 engineering"
+        }
+      }
+    ],
+    "primary_theme": "agriculture",
+    "themes": [
+      "agriculture"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5723"
+    ],
+    "description_en": "WUXI-DSAS applies stress-related proteins including CAHS, WDHN2 and avLEA1 to crop engineering, connecting plant responses to drought and temperature changes with cultivation in space agriculture.",
+    "narrative": {
+      "zh": "WUXI-DSAS 将 CAHS、WDHN2 和 avLEA1 等抗逆相关蛋白用于作物工程，连接植物对干旱与温度变化的响应和太空农业中的作物生长。",
+      "en": "WUXI-DSAS applies stress-related proteins including CAHS, WDHN2 and avLEA1 to crop engineering, connecting plant responses to drought and temperature changes with cultivation in space agriculture."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5723:route:0:step:0",
+      "label": {
+        "zh": "CAHS / WDHN2 / avLEA1 / 作物抗逆工程",
+        "en": "CAHS / WDHN2 / avLEA1 engineering"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5723",
+      "route": "2025-5723:route:0",
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "demonstration": false,
+      "description": "WUXI-DSAS 将 CAHS、WDHN2 和 avLEA1 等抗逆相关蛋白用于作物工程，连接植物对干旱与温度变化的响应和太空农业中的作物生长。",
+      "description_en": "WUXI-DSAS applies stress-related proteins including CAHS, WDHN2 and avLEA1 to crop engineering, connecting plant responses to drought and temperature changes with cultivation in space agriculture.",
+      "narrative": {
+        "zh": "WUXI-DSAS 将 CAHS、WDHN2 和 avLEA1 等抗逆相关蛋白用于作物工程，连接植物对干旱与温度变化的响应和太空农业中的作物生长。",
+        "en": "WUXI-DSAS applies stress-related proteins including CAHS, WDHN2 and avLEA1 to crop engineering, connecting plant responses to drought and temperature changes with cultivation in space agriculture."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5723:route:0:edge:0",
+      "source": "f_marsminerals",
+      "target": "2025-5723:route:0:step:0",
+      "label": {
+        "zh": "当地农业资源",
+        "en": "Martian minerals / regolith → CAHS / WDHN2 / avLEA1 engineering"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5723",
+      "route": "2025-5723:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5723:route:0:edge:1",
+      "source": "2025-5723:route:0:step:0",
+      "target": "ig_resilient",
+      "label": {
+        "zh": "耐受性／农业支持",
+        "en": "CAHS / WDHN2 / avLEA1 engineering → Crop stress tolerance"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2025-5723",
+      "route": "2025-5723:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5723:interface:ig_resilient",
+      "source": "ig_resilient",
+      "target": "space_agriculture",
+      "label": {
+        "zh": "耐逆作物应用",
+        "en": "Crop stress tolerance → Space agriculture"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2025-5723",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5723:route:0:depends",
+      "owner": "2025-5723",
+      "route": "2025-5723:route:0",
+      "source": "2025-5723:route:0:step:0",
+      "target": "space_agriculture",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5723"
+      ]
+    },
+    {
+      "id": "2025-5723:route:0:agri-system",
+      "owner": "2025-5723",
+      "route": "2025-5723:route:0",
+      "source": "growing_medium",
+      "target": "space_agriculture",
+      "category": "dependency",
+      "label": {
+        "zh": "种植条件",
+        "en": "Cultivation conditions"
+      },
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "demonstration": false
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2025-5723:effect:stress_tolerance",
+      "owner": "2025-5723",
+      "source": "2025-5723:route:0:step:0",
+      "target": "crop_resilience",
+      "kind": "stress_tolerance",
+      "category": "enhancement",
+      "label": {
+        "zh": "抗逆",
+        "en": "Tolerance"
+      },
+      "scope": "抗逆蛋白参与作物对干燥、热和低温环境的耐受。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2025-5723"
+      ],
+      "scope_en": "Stress-response proteins support crop tolerance to drying, heat and cold."
+    }
+  ]
+}

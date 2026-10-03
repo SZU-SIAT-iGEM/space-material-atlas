@@ -1,0 +1,208 @@
+{
+  "filename": "HiZJU-China 物质流介绍HP.docx",
+  "sha256": "375a72b0944a08b9d21642bf596aa9c62b0cc7f2ed550eb737363c06610fc255",
+  "paragraphs": [
+    {
+      "part": "word/document.xml",
+      "index": 0,
+      "text": "Background"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 1,
+      "text": "With the continuous advancement of deep-space exploration technologies, human exploration of Mars is gradually shifting from short-term, site-specific missions toward large-scale, long-duration surface exploration and resource utilization. In this process, highly mobile aerial platforms could traverse complex terrains and rapidly investigate areas that are difficult for conventional rovers to reach. Therefore, they are expected to become important components of future Mars missions."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 2,
+      "text": "In 2021, NASA’s Mars Helicopter Ingenuity successfully achieved the first powered flight on another planet, demonstrating the feasibility of aerial exploration in the thin Martian atmosphere. However, Ingenuity relies on solar panels and lithium batteries for power supply, and its flight duration and operational range are significantly limited by battery capacity and system-level energy density. For future aerial platforms designed for long-distance exploration, material transportation, and base support, conventional battery-based power systems may not provide sufficient energy."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 3,
+      "text": "Transporting fuel directly from Earth is also not an ideal solution. Due to the long distance and extended transportation cycles of Mars missions, every additional resource launched from Earth increases both mission costs and system burden. Therefore, In-Situ Resource Utilization (ISRU), which enables the production of energy and materials using local Martian resources, is considered a key strategy for improving the autonomy and sustainability of long-term Mars missions."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 4,
+      "text": "Although the Martian atmosphere is extremely thin, approximately 95% of it consists of carbon dioxide, making it one of the most abundant and accessible carbon resources on the Martian surface. In future crewed missions, astronauts’ life-support systems will also continuously generate carbon dioxide that requires recycling and processing. NASA’s Mars Oxygen In-Situ Resource Utilization Experiment (MOXIE) has demonstrated that Martian atmospheric carbon dioxide can be collected, compressed, and converted through in-situ processes. This indicates that carbon dioxide is not merely an environmental component, but also a valuable feedstock for future Martian resource utilization systems."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 5,
+      "text": "Meanwhile, solar energy represents one of the most practical renewable energy sources available on the Martian surface. Although Mars receives weaker solar radiation than Earth and experiences challenges such as day-night cycles and dust storms, light energy can still be utilized through catalytic conversion, energy storage, and artificial light supplementation."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 6,
+      "text": "Based on these resource conditions, we proposed the following question:"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 7,
+      "text": "Can we utilize Martian atmospheric CO₂ and solar energy to produce high-energy liquid fuels for future aerial platforms?"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 9,
+      "text": "From CO₂ to Aviation Fuel"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 10,
+      "text": "Carbon dioxide is a highly oxidized and chemically stable molecule, making it unsuitable for direct use as an aviation fuel. To utilize its carbon element, energy input is first required to reduce CO₂ into compounds with higher chemical energy."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 11,
+      "text": "Among various CO₂ conversion products, methanol has advantages including convenient liquid storage and a relatively established synthesis pathway. By using photocatalytic technology to reduce carbon dioxide into methanol, solar energy can be converted and stored in chemical bonds. At the same time, methanol provides a simple carbon source that can be transported and utilized in downstream biomanufacturing processes. Therefore, methanol serves as a key intermediate connecting upstream photocatalytic conversion and downstream biosynthesis."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 12,
+      "text": "However, methanol itself is not an ideal aviation fuel for Mars exploration. Its volumetric energy density is approximately 17.9 MJ/L, which is significantly lower than that of conventional jet fuels. Meanwhile, methanol has a relatively low flash point and certain corrosive properties, which may pose challenges for safe storage, fuel system integration, and engine material compatibility. Directly using methanol would require larger fuel storage volumes and would not fully address the energy demands of long-range aerial missions."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 13,
+      "text": "Therefore, we shifted our focus toward a higher-energy-density cyclic sesquiterpene hydrocarbon, epi-Isozizaene (EPI)."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 14,
+      "text": "EPI contains multiple cyclic structures, resulting in high molecular density and volumetric energy density (approximately 42.6 MJ/L). Its high calorific value also provides potential advantages in energy output compared with conventional aviation fuels. In addition, EPI exhibits a relatively high flash point and good molecular stability, which may facilitate fuel storage and application in aviation systems. Unlike petroleum-derived jet fuels, EPI can be synthesized by engineered microorganisms using renewable carbon sources."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 15,
+      "text": "Based on this concept, we designed a two-stage carbon conversion strategy:"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 16,
+      "text": "First, we use photocatalysis to convert atmospheric CO₂ on Mars into methanol. The methanol is then further converted into EPI by engineered microorganisms."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 17,
+      "text": "Within this pathway, methanol functions as a carbon-transfer intermediate and energy buffer, while EPI serves as the final high-energy liquid fuel. By integrating chemical catalysis with biological manufacturing, abundant but difficult-to-utilize inorganic carbon resources on Mars can be gradually converted into fuel molecules suitable for storage and application."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 19,
+      "text": "Challenges"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 20,
+      "text": "Although the CO₂–methanol–EPI conversion route provides a possible strategy for Martian in-situ fuel production, several interconnected challenges remain before such a system can be established."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 21,
+      "text": "The first challenge lies in the conversion of carbon dioxide itself. CO₂ is a highly oxidized and chemically stable molecule, and its reduction requires multiple proton and electron transfer steps. Conventional thermal catalytic approaches usually rely on high temperature, high pressure, and additional hydrogen sources, which increase the material and equipment requirements of an in-situ Martian system. Photocatalysis provides a potential alternative by directly utilizing solar energy to drive CO₂ conversion. However, existing photocatalytic materials still face limitations such as restricted light absorption ranges, rapid recombination of photogenerated electrons and holes, and insufficient selectivity toward target products."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 22,
+      "text": "Following methanol production, the efficient conversion of methanol into EPI presents another challenge. Although methylotrophic microorganisms can naturally utilize methanol, their native metabolism mainly supports cell growth rather than the synthesis of external fuel molecules. Carbon derived from methanol may enter biomass formation, respiratory metabolism, and other competing pathways, resulting in limited carbon flux toward EPI biosynthesis. Therefore, intracellular metabolic flux needs to be redistributed, and precursor supply for EPI synthesis needs to be enhanced."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 23,
+      "text": "Meanwhile, EPI biosynthesis places additional demands on intracellular cofactors and energy supply. The mevalonate (MVA) pathway requires continuous consumption of NADPH and ATP for precursor synthesis and downstream reactions. However, methanol metabolism in Pichia pastoris mainly generates reducing equivalents in the form of NADH. The mismatch between reducing power generation and biosynthetic requirements, together with insufficient ATP supply, may restrict further accumulation of EPI."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 24,
+      "text": "Beyond metabolic pathway optimization, balancing cell growth and fuel production is also essential. During the growth phase, cells need to allocate carbon sources and energy toward biomass accumulation, while the production phase requires more resources to be directed toward EPI synthesis. Constitutive expression systems cannot dynamically adjust cellular states according to different fermentation stages, whereas chemical induction strategies would increase the demand for external supplies and operational complexity in Mars missions. Therefore, a non-contact and reversible method for regulating cellular metabolism is required."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 25,
+      "text": "To achieve this balance, we introduced an optogenetic system to enable flexible switching between the cell growth phase and the fuel production phase. However, its application in bioreactor systems remains limited by light transmission efficiency. Under high-density cultivation conditions, cells and culture media can absorb and scatter incident light, resulting in uneven light distribution within the reactor. If the local light intensity falls below the activation threshold of the genetic circuit, a light-controlled system that performs well at laboratory scale may not function effectively after scale-up."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 26,
+      "text": "Finally, the stability and biosafety of engineered microorganisms must also be considered in the Martian environment. Low temperature, intense ultraviolet radiation, cosmic radiation, and high-energy particles may cause DNA damage, protein inactivation, and reactive oxygen species accumulation. At the same time, engineered microorganisms need to be restricted within closed production systems to prevent accidental release and potential contamination of the Martian environment."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 27,
+      "text": "Together, these challenges indicate that Martian in-situ fuel production requires coordinated solutions across multiple levels, including photocatalytic conversion, microbial metabolism, dynamic regulation, reactor-scale application, and biosafety control."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 29,
+      "text": "Our Solution: UniCO-Fuel"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 30,
+      "text": "To address the challenges described above, HiZJU-China designed UniCO-Fuel, a coupled photocatalytic–biosynthetic fuel production system based on Martian carbon dioxide and solar energy."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 31,
+      "text": "UniCO-Fuel first collects, compresses, and enriches CO₂ from the Martian atmosphere. The concentrated CO₂ is converted into methanol in a photocatalytic reactor under light irradiation. The catalyst system is based on graphitic carbon nitride (g-C₃N₄), a carbon- and nitrogen-based semiconductor photocatalyst with good chemical stability and tunable electronic properties. We plan to improve its visible-light utilization, promote the separation and migration of photogenerated carriers, and enhance the efficiency and selectivity of CO₂-to-methanol conversion through strategies such as elemental doping and heterostructure construction."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 32,
+      "text": "The generated methanol is subsequently transferred into a bioreactor, where it serves as both the carbon source and energy source for engineered Pichia pastoris. In addition to its methylotrophic nature, P. pastoris possesses a well-established genetic engineering system and supports high-density cultivation, making it a suitable chassis for connecting methanol utilization with sesquiterpene fuel biosynthesis."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 33,
+      "text": "Inside the engineered cells, methanol-derived carbon enters central carbon metabolism through assimilation pathways and is further directed into the mevalonate (MVA) pathway. We enhanced precursor supply by optimizing key enzymatic steps, while introducing a heterologous epi-Isozizaene synthase (EIZS) to establish a biosynthetic route from methanol to EPI."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 34,
+      "text": "To address the increased demand for reducing power and energy during EPI production, we further designed a cofactor regulation module. It integrates strategies such as oxidative pentose phosphate pathway enhancement, NADH-to-NADPH conversion, and adenine nucleotide recycling regulation, aiming to increase the intracellular availability of NADPH and ATP for EPI biosynthesis."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 35,
+      "text": "During fermentation, cells need to balance biomass accumulation and EPI synthesis. To dynamically control this transition, we combined blue-light-responsive elements with a CRISPR interference (CRISPRi) system to construct a light-controlled metabolic regulation module. CRISPRi uses catalytically inactive dCas9 as the core component and can reversibly repress target gene transcription under the guidance of sgRNA. By controlling the expression, assembly, or activity of dCas9-RD1 through light signals, we designed three candidate strategies to regulate key metabolic processes."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 36,
+      "text": "Some strategies are designed to suppress methanol dissimilation, respiratory metabolism, and competing pathways under blue light, thereby reducing carbon loss and precursor consumption. Another strategy temporarily suppresses the final step of EPI synthesis under dark conditions, while blue-light activation restores this step to initiate fuel production. The light-responsive nature of this system also provides the possibility of synchronizing cellular metabolism with the Martian day-night cycle."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 37,
+      "text": "To evaluate the applicability of the optogenetic system in high-density fermentation, we established a light attenuation model that integrates incident light intensity, propagation distance, biomass concentration, and the attenuation coefficient of the culture system. The model predicts local light intensity and average effective light intensity inside the reactor. These predictions can be compared with experimentally measured blue-light response thresholds, providing guidance for reactor dimensions, light source arrangement, cell density, and induction strategies."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 38,
+      "text": "For biosafety considerations, we designed a multi-layer protection system consisting of intracellular protection, genetic containment, and reactor-level barriers. Engineered strains are designed to synthesize and accumulate melanin to reduce damage caused by radiation and reactive oxygen species. Nutritional auxotrophy and low-temperature-responsive suicide switches are further incorporated to restrict survival outside the reactor environment. The outer reactor structure integrates dust protection, ultraviolet filtering, light transmission, and thermal insulation modules to maintain an internal environment suitable for P. pastoris growth and optogenetic regulation."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 39,
+      "text": "At the production stage, we utilize the hydrophobic properties of EPI to establish a two-phase fermentation and in situ extraction system. EPI produced by engineered cells is partitioned into the upper organic phase, followed by separation and purification to obtain the target fuel. The extraction phase can then be recycled back into the bioreactor to reduce material consumption."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 40,
+      "text": "Ultimately, UniCO-Fuel integrates carbon dioxide enrichment, photocatalytic methanol production, methanol bioconversion, dynamic metabolic regulation, in situ extraction, biosafety design, and reactor engineering into a complete production process:"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 41,
+      "text": "Martian atmospheric CO₂ → Photocatalytic methanol synthesis → Methanol utilization by Pichia pastoris → EPI synthesis through the MVA pathway → Extraction and purification → High-energy liquid fuel"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 42,
+      "text": "Through UniCO-Fuel, we aim to extend the application of Martian in-situ resource utilization from oxygen production toward carbon resource conversion and high-energy fuel manufacturing. We envision that carbon dioxide in the Martian atmosphere could become not only a gas requiring management, but also a valuable feedstock for sustainable energy systems in future deep-space exploration missions."
+    }
+  ],
+  "links": [],
+  "nontext_parts": []
+}

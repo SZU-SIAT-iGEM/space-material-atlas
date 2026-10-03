@@ -1,0 +1,12 @@
+# Add these commands AFTER your existing Wiki build, before publishing its public/ artifact.
+# Copy the complete atlas source into space-atlas/ in the existing Wiki repository.
+# Keep the Wiki's existing image/job/rules configuration; Node >=22 and Python >=3.11 are required.
+# Before the Wiki build, upload assets/steward.svg using iGEM uploads and set ATLAS_BRAND_URL.
+# This hidden job is a command fragment, not a replacement Pages job.
+.atlas-build:
+  script:
+    - test -n "$ATLAS_BRAND_URL"
+    - python3 space-atlas/manage.py validate
+    - python3 space-atlas/manage.py build
+    - mkdir -p public/space-atlas
+    - cp -a space-atlas/public/. public/space-atlas/

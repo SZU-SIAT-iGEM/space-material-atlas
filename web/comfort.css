@@ -1,0 +1,43 @@
+/* Small reading refinements; preserve the Wiki palette and diagram geometry. */
+.embedded.graph-active,.embedded .graph-canvas {overscroll-behavior:auto}
+.detail-panel {padding-top:0;scroll-padding-top:64px}
+.detail-tools {position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:52px;margin:0 -4px 16px;padding:4px 0;background:var(--paper);border-bottom:1px solid var(--line)}
+.detail-tools>span {color:var(--muted);font-size:12px;font-weight:600}
+.detail-panel .detail-tools .close {position:static;float:none;width:44px;height:44px;margin:0;flex-shrink:0;background:#deeee4}
+.detail-panel h2,.detail-panel .welcome-kicker {padding-right:0}
+.detail-panel h2 {font-size:23px;line-height:1.45;overflow-wrap:normal;word-break:normal}
+.detail-panel p {font-size:16px;line-height:1.8}
+.detail-panel p.tiny {font-size:12px;line-height:1.75}
+.detail-panel h3 {font-size:13px;line-height:1.5;margin-top:24px}
+.detail-panel .source-link {font-size:14px;line-height:1.7;margin:15px 0}
+.detail-panel .source-link small {font-size:12px;line-height:1.6;margin-top:5px}
+.detail-panel .source-link a {text-decoration-thickness:1px;text-underline-offset:3px}
+.flow-list li {font-size:14px;line-height:1.7;padding:12px 0}
+.flow-list .control {font-size:12px;min-height:36px;max-width:100%;white-space:normal;text-align:left;line-height:1.5;margin:0 0 6px}
+.flow-list li>span {display:block;color:var(--muted)}
+.welcome-actions button {font-size:13px;min-height:44px}
+.line-key,.corner-key {font-size:13px;line-height:1.6}
+.search-results button {font-size:14px;line-height:1.55;padding:12px 16px}
+.search-results small {font-size:12px;line-height:1.5;margin-top:4px}
+.search-results button:focus-visible {outline:2px solid var(--accent);outline-offset:-3px;background:#e4f4eb}
+.graph-canvas.focus .node {opacity:.72}
+.graph-canvas.focus .edge {opacity:.32}
+.graph-canvas.focus .node.related,.graph-canvas.focus .edge.related {opacity:1}
+.graph-canvas .node,.graph-canvas .edge {transition:opacity .16s}
+.page p {font-size:16px;line-height:1.85}
+.team-card p,.reference p,.about-aside p {font-size:15px;line-height:1.85}
+.page p.tiny {font-size:12px}
+@media(min-width:1001px) {
+  .graph-toolbar .control {font-size:13px;min-height:36px}
+  .graph-toolbar {padding-block:10px 8px}
+  .canvas-tools {padding-top:7px}
+}
+@media(max-width:800px), (max-width:1000px) and (max-height:600px) and (orientation:landscape) {
+  .detail-tools {min-height:48px;margin-bottom:12px;padding:2px 0}
+  .detail-panel h2 {font-size:21px;line-height:1.4}
+  .detail-panel p {font-size:15px;line-height:1.8}
+  .flow-list .control {min-height:44px;font-size:13px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .graph-canvas .node,.graph-canvas .edge {transition:none}
+}

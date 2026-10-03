@@ -1,0 +1,170 @@
+{
+  "filename": "简介+技术路线.docx",
+  "sha256": "afe043f7402fb5f5844f12ba469fbcc8b1773bdc1c305c97aeaf09b11a49d2da",
+  "paragraphs": [
+    {
+      "part": "word/document.xml",
+      "index": 0,
+      "text": "简介"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 1,
+      "text": "中文：Air2Protein 是一个模块化电—生物催化平台，旨在将火星大气资源转化为微生物蛋白和功能性营养前体。鉴于火星大气中富含 CO₂，并含有可利用的 N₂，我们首先通过电催化将 CO₂ 转化为浓缩的甲酸／甲酸盐原料，同时以氨作为可控氮源输入，并将 N₂→NH₃ 转化作为长期氮源供给模块进行评估。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 2,
+      "text": "随后，这些底物被整合至携带还原甘氨酸途径的工程化大肠杆菌底盘中，使来源于甲酸的一碳单元进入中心代谢，并支持单细胞蛋白的积累。通过进一步将碳流导向氨基酸生物合成，并引入用于生产 L-肌肽的 β-丙氨酸支路，Air2Protein 展示了一条可编程的路径：由大气气体出发，同时获得基础生物质和功能性营养成分。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 3,
+      "text": "该系统面向火星设计，也可服务于地球应用，为极端、资源受限环境中的可规模化闭环食物生产提出了一种新策略。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 4,
+      "text": "英文：Air2Protein is a modular electro-biocatalytic platform that converts Martian atmospheric resources into microbial protein and functional nutrition precursors. Since the Martian atmosphere is rich in CO₂ and contains exploitable N₂, we first transform CO₂ into a concentrated formate/formic acid feedstock through electrocatalysis, while establishing ammonia as a controlled nitrogen input and evaluating N₂-to-NH₃ conversion as a long-term nitrogen-supply module. These inputs are then integrated with an engineered E. coli chassis carrying the reductive glycine pathway, enabling formate-derived one-carbon units to enter central metabolism and support single-cell protein accumulation. By further redirecting carbon flux toward amino acid biosynthesis and installing a β-alanine branch for L-carnosine production, Air2Protein demonstrates a programmable route from atmospheric gases to both basic biomass and functional nutritional ingredients. Designed for Mars but relevant to Earth, this system proposes a scalable, closed-loop strategy for food production in extreme, resource-limited environments."
+    },
+    {
+      "part": "word/document.xml",
+      "index": 6,
+      "text": "技术路线"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 8,
+      "text": "技术路线总览"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 9,
+      "text": " "
+    },
+    {
+      "part": "word/document.xml",
+      "index": 10,
+      "text": "技术模块"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 11,
+      "text": "核心内容"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 12,
+      "text": "关键设计／元件"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 13,
+      "text": "图谱中的输出表达"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 14,
+      "text": "1. 火星资源端"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 15,
+      "text": "利用火星稀薄大气中的 CO₂ 与可利用 N₂，解决极端环境下食物原料不足的问题。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 16,
+      "text": "CO₂-rich Martian atmosphere；trace exploitable N₂"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 17,
+      "text": "火星、红色大气层、CO₂ 和 N₂ 分子"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 18,
+      "text": "2. 电催化转化端"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 19,
+      "text": "将气态无机资源转化为细胞可利用的底物。CO₂ 经电催化转化为甲酸／甲酸盐；氮气经电催化转化为氨"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 20,
+      "text": "CO₂ → formate/formic acid； N₂ → NH₃ "
+    },
+    {
+      "part": "word/document.xml",
+      "index": 21,
+      "text": "电解池、CO₂ → formate 液滴、NH₃ 输入箭头"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 22,
+      "text": "3. 生物同化核心"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 23,
+      "text": "工程化大肠杆菌通过还原甘氨酸途径，将甲酸来源的一碳单元导入中心代谢。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 24,
+      "text": "E. coli chassis；rGly pathway；ftfL、fchA、mtdA；GCS（GcvTHP）；H-protein engineering"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 25,
+      "text": "细胞工厂、formate → one-carbon metabolism → glycine/serine"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 26,
+      "text": "4. 碳流优化与可编程分流"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 27,
+      "text": "优化中心碳代谢并将碳流导向不同营养输出，使细胞工厂具备可编程生产能力。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 28,
+      "text": "pflB KO 减少碳流损失；gcvR KO 解除 GCS 抑制；sdaA 支持丝氨酸—丙酮酸转化；SmPePD 支路"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 29,
+      "text": "代谢网络分叉、优化箭头、Protein route 与 Functional nutrition route"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 30,
+      "text": "5. 营养输出与应用"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 31,
+      "text": "同时实现基础营养与功能营养生产，服务火星原位食物制造，也具备地球极端环境应用潜力。"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 32,
+      "text": "单细胞蛋白；氨基酸积累；β-丙氨酸 + 组氨酸 → L-肌肽"
+    },
+    {
+      "part": "word/document.xml",
+      "index": 33,
+      "text": "蛋白颗粒、氨基酸、L-carnosine、宇航员食品或闭环基地"
+    }
+  ],
+  "links": [],
+  "nontext_parts": [
+    "word/media/image1.png"
+  ]
+}

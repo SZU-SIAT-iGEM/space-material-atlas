@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6403",
+    "official_id": 6403,
+    "name": "UFlorida",
+    "year": 2026,
+    "country": "USA",
+    "city": "Gainesville",
+    "region": "north-america",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6403",
+    "wiki": null,
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

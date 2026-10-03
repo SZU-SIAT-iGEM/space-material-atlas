@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="steward-title steward-desc">
+  <title id="steward-title" data-i18n="assets.steward.title"></title>
+  <desc id="steward-desc" data-i18n="assets.steward.desc"></desc>
+  <defs>
+    <linearGradient id="steward-spectrum" x1="101" y1="113" x2="415" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00CB84"/><stop offset=".46" stop-color="#00ABB6"/><stop offset="1" stop-color="#0755D9"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#steward-spectrum)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M333 88C265 56 178 70 123 127C73 180 62 255 85 314" stroke-width="37"/>
+    <path d="M113 368C165 429 248 450 323 419C393 390 435 318 428 248" stroke-width="37"/>
+    <path d="M74 276L85 314L122 301" stroke-width="19"/>
+    <path d="M143 328C165 294 192 269 228 244" stroke-width="21"/>
+    <path d="M146 374C185 337 213 324 251 321" stroke-width="14"/>
+    <path d="M192 389C216 368 241 360 270 359" stroke-width="12"/>
+  </g>
+  <path d="M202 284C179 225 216 164 331 153C347 246 300 301 202 284Z" fill="url(#steward-spectrum)"/>
+  <path d="M224 261L295 192" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="410" cy="161" r="29" fill="#FFAA00"/>
+</svg>

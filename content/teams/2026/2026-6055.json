@@ -1,0 +1,358 @@
+{
+  "roster": {
+    "id": "2026-6055",
+    "official_id": 6055,
+    "name": "BUCT",
+    "year": 2026,
+    "country": "CHN",
+    "city": "Beijing",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6055",
+    "wiki": "https://2026.igem.wiki/buct",
+    "integrated": true
+  },
+  "team": {
+    "id": "2026-6055",
+    "year": 2026,
+    "name": "BUCT",
+    "url": "https://2026.igem.wiki/buct",
+    "role": {
+      "zh": "Air2Protein · 电—生物催化营养合成",
+      "en": "Air2Protein · Electro-biocatalytic nutrition"
+    },
+    "description": "Air2Protein 是 BUCT 提出的模块化电—生物催化平台，面向火星大气资源利用与营养生产。平台通过电催化将 CO₂ 转化为甲酸／甲酸盐，以氨作为受控氮源，并评估 N₂ 制氨作为长期氮源供给模块。工程大肠杆菌通过还原甘氨酸途径将甲酸来源的一碳单元导入中心代谢，支持单细胞蛋白和氨基酸积累；β-丙氨酸支路用于 L-肌肽生产。系统面向火星原位食物制造，也考虑地球极端、资源受限环境中的应用。",
+    "description_en": "Air2Protein is BUCT's modular electro-biocatalytic platform for Martian atmospheric resource utilization and nutrition production. Electrocatalysis converts CO₂ into formate/formic acid, with ammonia supplied as a controlled nitrogen input and N₂-to-NH₃ conversion evaluated as a long-term nitrogen-supply module. Engineered E. coli uses the reductive glycine pathway to channel formate-derived one-carbon units into central metabolism, supporting single-cell protein and amino acid accumulation; a β-alanine branch supports L-carnosine production. The system targets in-situ food production on Mars and applications in extreme, resource-limited environments on Earth.",
+    "narrative": {
+      "zh": "Air2Protein 是 BUCT 提出的模块化电—生物催化平台，面向火星大气资源利用与营养生产。平台通过电催化将 CO₂ 转化为甲酸／甲酸盐，以氨作为受控氮源，并评估 N₂ 制氨作为长期氮源供给模块。工程大肠杆菌通过还原甘氨酸途径将甲酸来源的一碳单元导入中心代谢，支持单细胞蛋白和氨基酸积累；β-丙氨酸支路用于 L-肌肽生产。系统面向火星原位食物制造，也考虑地球极端、资源受限环境中的应用。",
+      "en": "Air2Protein is BUCT's modular electro-biocatalytic platform for Martian atmospheric resource utilization and nutrition production. Electrocatalysis converts CO₂ into formate/formic acid, with ammonia supplied as a controlled nitrogen input and N₂-to-NH₃ conversion evaluated as a long-term nitrogen-supply module. Engineered E. coli uses the reductive glycine pathway to channel formate-derived one-carbon units into central metabolism, supporting single-cell protein and amino acid accumulation; a β-alanine branch supports L-carnosine production. The system targets in-situ food production on Mars and applications in extreme, resource-limited environments on Earth."
+    },
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2026-6055:technical-document"
+    ],
+    "chains": [
+      {
+        "id": "2026-6055:route:nutrition",
+        "theme": "bioreactor",
+        "label": {
+          "zh": "Air2Protein · CO₂ → 微生物营养",
+          "en": "Air2Protein · CO₂ → microbial nutrition"
+        },
+        "demonstration": false,
+        "step_ids": [
+          "2026-6055:electrocatalysis",
+          "2026-6055:formate",
+          "2026-6055:nitrogen-input",
+          "2026-6055:ecoli",
+          "2026-6055:protein",
+          "2026-6055:carnosine"
+        ],
+        "edge_ids": [
+          "2026-6055:edge:co2",
+          "2026-6055:edge:electricity",
+          "2026-6055:edge:formate",
+          "2026-6055:edge:carbon",
+          "2026-6055:edge:nitrogen",
+          "2026-6055:edge:protein",
+          "2026-6055:edge:carnosine"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ]
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "2026-6055:electrocatalysis",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "process",
+      "label": {
+        "zh": "CO₂ 电催化转化",
+        "en": "CO₂ electrocatalysis"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "通过电催化将火星大气 CO₂ 转化为浓缩的甲酸／甲酸盐原料，为下游工程细胞提供可利用的碳源。",
+      "description_en": "Electrocatalysis converts Martian atmospheric CO₂ into concentrated formate/formic acid feedstock for downstream engineered cells.",
+      "narrative": {
+        "zh": "通过电催化将火星大气 CO₂ 转化为浓缩的甲酸／甲酸盐原料，为下游工程细胞提供可利用的碳源。",
+        "en": "Electrocatalysis converts Martian atmospheric CO₂ into concentrated formate/formic acid feedstock for downstream engineered cells."
+      }
+    },
+    {
+      "id": "2026-6055:formate",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "material",
+      "label": {
+        "zh": "甲酸／甲酸盐",
+        "en": "Formic acid / formate"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "连接电催化与生物同化的一碳原料，经还原甘氨酸途径进入工程大肠杆菌的中心代谢。",
+      "description_en": "A one-carbon feedstock connecting electrocatalysis with biological assimilation through the reductive glycine pathway in engineered E. coli.",
+      "narrative": {
+        "zh": "连接电催化与生物同化的一碳原料，经还原甘氨酸途径进入工程大肠杆菌的中心代谢。",
+        "en": "A one-carbon feedstock connecting electrocatalysis with biological assimilation through the reductive glycine pathway in engineered E. coli."
+      }
+    },
+    {
+      "id": "2026-6055:nitrogen-input",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "material",
+      "label": {
+        "zh": "氨 · 受控氮源",
+        "en": "Ammonia · nitrogen input"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "氨作为工程细胞的受控氮源输入。平台同时评估利用火星大气 N₂ 制取 NH₃ 的长期氮源供给模块。",
+      "description_en": "Ammonia is supplied as a controlled nitrogen input for the engineered cells. The platform also evaluates conversion of Martian atmospheric N₂ to NH₃ as a long-term nitrogen-supply module.",
+      "narrative": {
+        "zh": "氨作为工程细胞的受控氮源输入。平台同时评估利用火星大气 N₂ 制取 NH₃ 的长期氮源供给模块。",
+        "en": "Ammonia is supplied as a controlled nitrogen input for the engineered cells. The platform also evaluates conversion of Martian atmospheric N₂ to NH₃ as a long-term nitrogen-supply module."
+      }
+    },
+    {
+      "id": "2026-6055:ecoli",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "process",
+      "label": {
+        "zh": "工程大肠杆菌营养合成",
+        "en": "E. coli nutrient synthesis"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "工程大肠杆菌携带还原甘氨酸途径，将甲酸来源的一碳单元导入中心代谢。设计包含 ftfL、fchA、mtdA、GCS（GcvTHP）与 H-protein 工程；通过 pflB 敲除减少碳流损失、gcvR 敲除解除 GCS 抑制，并以 sdaA 支持丝氨酸至丙酮酸转化。碳流分配用于单细胞蛋白与氨基酸积累，以及含 SmPePD 的功能营养支路。",
+      "description_en": "Engineered E. coli carries the reductive glycine pathway to channel formate-derived one-carbon units into central metabolism. The design includes ftfL, fchA, mtdA, GCS (GcvTHP) and H-protein engineering. A pflB knockout reduces carbon loss, a gcvR knockout relieves GCS repression, and sdaA supports serine-to-pyruvate conversion. Carbon allocation supports single-cell protein and amino acid accumulation, alongside a functional-nutrition branch involving SmPePD.",
+      "narrative": {
+        "zh": "工程大肠杆菌携带还原甘氨酸途径，将甲酸来源的一碳单元导入中心代谢。设计包含 ftfL、fchA、mtdA、GCS（GcvTHP）与 H-protein 工程；通过 pflB 敲除减少碳流损失、gcvR 敲除解除 GCS 抑制，并以 sdaA 支持丝氨酸至丙酮酸转化。碳流分配用于单细胞蛋白与氨基酸积累，以及含 SmPePD 的功能营养支路。",
+        "en": "Engineered E. coli carries the reductive glycine pathway to channel formate-derived one-carbon units into central metabolism. The design includes ftfL, fchA, mtdA, GCS (GcvTHP) and H-protein engineering. A pflB knockout reduces carbon loss, a gcvR knockout relieves GCS repression, and sdaA supports serine-to-pyruvate conversion. Carbon allocation supports single-cell protein and amino acid accumulation, alongside a functional-nutrition branch involving SmPePD."
+      }
+    },
+    {
+      "id": "2026-6055:protein",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "material",
+      "label": {
+        "zh": "单细胞蛋白／氨基酸",
+        "en": "Protein / amino acids"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "工程大肠杆菌同化一碳底物后积累单细胞蛋白和氨基酸，构成 Air2Protein 的基础营养输出，面向火星原位食物制造。",
+      "description_en": "Single-cell protein and amino acids accumulate as engineered E. coli assimilates one-carbon feedstock, forming Air2Protein's basic nutritional output for in-situ food production on Mars.",
+      "narrative": {
+        "zh": "工程大肠杆菌同化一碳底物后积累单细胞蛋白和氨基酸，构成 Air2Protein 的基础营养输出，面向火星原位食物制造。",
+        "en": "Single-cell protein and amino acids accumulate as engineered E. coli assimilates one-carbon feedstock, forming Air2Protein's basic nutritional output for in-situ food production on Mars."
+      }
+    },
+    {
+      "id": "2026-6055:carnosine",
+      "owner": "2026-6055",
+      "route": "2026-6055:route:nutrition",
+      "theme": "bioreactor",
+      "kind": "material",
+      "label": {
+        "zh": "L-肌肽",
+        "en": "L-carnosine"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "description": "功能营养支路由 β-丙氨酸与组氨酸通向 L-肌肽生产，与基础蛋白生产形成并行的营养输出。",
+      "description_en": "The functional-nutrition branch directs β-alanine and histidine toward L-carnosine production, providing a nutritional output alongside basic protein production.",
+      "narrative": {
+        "zh": "功能营养支路由 β-丙氨酸与组氨酸通向 L-肌肽生产，与基础蛋白生产形成并行的营养输出。",
+        "en": "The functional-nutrition branch directs β-alanine and histidine toward L-carnosine production, providing a nutritional output alongside basic protein production."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2026-6055:edge:co2",
+      "owner": "2026-6055",
+      "source": "marsco2",
+      "target": "2026-6055:electrocatalysis",
+      "category": "material",
+      "label": {
+        "zh": "火星大气 CO₂",
+        "en": "Martian atmospheric CO₂"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:electricity",
+      "owner": "2026-6055",
+      "source": "power",
+      "target": "2026-6055:electrocatalysis",
+      "category": "energy",
+      "label": {
+        "zh": "电催化供电",
+        "en": "Electricity for electrocatalysis"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:formate",
+      "owner": "2026-6055",
+      "source": "2026-6055:electrocatalysis",
+      "target": "2026-6055:formate",
+      "category": "material",
+      "label": {
+        "zh": "甲酸／甲酸盐原料",
+        "en": "Formate/formic acid feedstock"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:carbon",
+      "owner": "2026-6055",
+      "source": "2026-6055:formate",
+      "target": "2026-6055:ecoli",
+      "category": "material",
+      "label": {
+        "zh": "一碳底物同化",
+        "en": "One-carbon assimilation"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:nitrogen",
+      "owner": "2026-6055",
+      "source": "2026-6055:nitrogen-input",
+      "target": "2026-6055:ecoli",
+      "category": "material",
+      "label": {
+        "zh": "受控氮源输入",
+        "en": "Controlled nitrogen input"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:protein",
+      "owner": "2026-6055",
+      "source": "2026-6055:ecoli",
+      "target": "2026-6055:protein",
+      "category": "material",
+      "label": {
+        "zh": "蛋白与氨基酸积累",
+        "en": "Protein and amino acid accumulation"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6055:edge:carnosine",
+      "owner": "2026-6055",
+      "source": "2026-6055:ecoli",
+      "target": "2026-6055:carnosine",
+      "category": "material",
+      "label": {
+        "zh": "β-丙氨酸功能营养支路",
+        "en": "β-alanine functional-nutrition branch"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "layer": "project",
+      "theme": "bioreactor",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2026-6055:edge:reactor",
+      "owner": "2026-6055",
+      "source": "2026-6055:ecoli",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "label": {
+        "zh": "细胞培养工艺",
+        "en": "Cell cultivation process"
+      },
+      "source_ids": [
+        "team:2026-6055:technical-document"
+      ],
+      "route": "2026-6055:route:nutrition",
+      "basis": "process_inference"
+    }
+  ],
+  "enhancements": []
+}

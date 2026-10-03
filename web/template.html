@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="A qualitative atlas of space material flows and iGEM projects."><title>Space Material Atlas</title><style>__STYLE__</style></head>
+<body class="graph-active">
+<header class="site-header">
+  <a class="brand" href="#graph" data-page="graph"><img class="brand-mark" src="__BRAND_ICON__" alt="" width="38" height="38"><span><b data-i18n="atlasTitle">太空物质循环图谱</b><small>SPACE MATERIAL ATLAS <i></i></small></span></a>
+  <button id="nav-toggle" aria-controls="main-nav" aria-expanded="false">菜单</button>
+  <nav id="main-nav" class="nav" aria-label="主导航"><button data-page="graph" class="active" data-i18n="graph">图谱</button><button data-page="teams" data-i18n="teams">队伍</button><button data-page="contribute" class="editor-action" data-i18n="contribute">填写路线</button><button data-page="references" data-i18n="references">引用与来源</button><button data-page="about">About</button><button data-page="embed" data-i18n="embed">嵌入</button><select id="lang" class="lang" aria-label="语言"><option value="zh">中文</option><option value="en" selected>EN</option></select></nav>
+</header>
+<section id="graph-page">
+  <div class="graph-toolbar">
+    <div class="toolbar-group view-tools"><select id="view" class="control" aria-label="图谱主题"></select><button id="baseline" class="control" data-i18n="baseline">基础图</button><button id="all" class="control" data-i18n="all">全部队伍</button><details class="team-picker"><summary class="control" data-i18n="teamSwitch">队伍开关</summary><div class="team-menu"><input id="team-filter" type="search" class="control" placeholder="搜索队伍或年份"><div class="actions"><button id="none" class="control tiny" data-i18n="none">关闭全部</button></div><div id="team-checks"></div></div></details></div>
+    <div class="toolbar-group search-tools"><input id="node-search" type="search" class="control search-input" placeholder="查找物质、工艺或队伍" aria-label="查找节点"><button id="guide-start" class="control guide-launch"><span aria-hidden="true">?</span><span data-i18n="guide">使用指引</span></button><button id="toggle-detail" class="control" data-i18n="detail" aria-controls="detail" aria-expanded="true">介绍</button><button id="more-tools" class="control" aria-controls="canvas-tools" aria-expanded="false">更多</button></div>
+    <div id="canvas-tools" class="toolbar-group canvas-tools"><button id="fit" class="control" data-i18n="fit">全景</button><button id="clear-focus" class="control" data-i18n="clear">取消聚焦</button><label class="tiny ground-control"><input id="ground" type="checkbox"><span data-i18n="ground">地面系统</span></label><button id="route-play" class="control" disabled><span aria-hidden="true">▷</span> <span data-i18n="playRoute">连线动画</span></button><button id="motion-toggle" class="control" aria-pressed="false"></button><div class="export-tools"><button id="svg-export" class="control">SVG</button><button id="json-export" class="control">JSON</button></div><span id="status" class="counter" aria-live="polite"></span></div>
+  </div>
+  <div id="node-results" class="search-results" hidden></div>
+  <div class="graph-shell" id="graph-shell"><div class="canvas-stage"><main id="canvas" class="graph-canvas" aria-label="物质循环图谱" tabindex="0"></main><div class="viewport-controls" role="group" aria-label="缩放与浏览"><button id="zoom-out" aria-label="缩小图谱">−</button><output id="zoom-level" aria-label="当前缩放比例">100%</output><button id="zoom-in" aria-label="放大图谱">+</button><button id="reset-view" aria-label="显示全图">全景</button></div><div id="flow-note" class="flow-note" hidden role="status"></div></div><aside id="detail" class="detail-panel"></aside></div>
+  <footer class="graph-caption"><span id="graph-hint">滚轮缩放 · 拖动平移 · 点击节点或连线查看介绍与来源</span><span><span id="draft-count"></span> <a href="#about" data-page="about">About</a> · <a href="mailto:szusiatchina@163.com" data-i18n="contact">联系修改</a></span></footer>
+</section>
+<main id="content-page" class="page" hidden></main>
+<dialog id="atlas-guide" class="guide-overlay" aria-labelledby="guide-title" aria-describedby="guide-description">
+  <div id="guide-spotlight" class="guide-spotlight" aria-hidden="true"></div>
+  <section class="guide-card"><div class="guide-topline"><span id="guide-kind"></span><button id="guide-close" aria-label="关闭指引">×</button></div><div class="guide-heading"><span id="guide-number" aria-hidden="true"></span><h2 id="guide-title" tabindex="-1"></h2></div><p id="guide-description"></p><p id="guide-tip" class="guide-tip"></p><div id="guide-progress" class="guide-progress" aria-label="指引进度"></div><div class="guide-actions"><button id="guide-skip" class="guide-text-button"></button><span class="guide-actions-right"><button id="guide-prev" class="control"></button><button id="guide-next" class="control primary"></button></span></div></section>
+</dialog>
+<div id="toast" class="toast" hidden role="status"></div><input type="file" id="bundle-import" accept=".json,application/json" hidden>
+<script id="atlas-data" type="application/json">__ATLAS_DATA__</script>
+<script>__VIZ__</script><script>__CORE__</script><script>__LAYOUT__</script><script>__RUNTIME__</script><script>__DOWNLOAD_UTILS__</script><script>__APP__</script><script>__TEAM_REPORT__</script><script>__EXPERIENCE__</script><script>__VIEWPORT_CORE__</script><script>__VIEWPORT__</script>
+</body></html>

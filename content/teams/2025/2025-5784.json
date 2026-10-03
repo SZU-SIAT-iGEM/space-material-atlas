@@ -1,0 +1,231 @@
+{
+  "roster": {
+    "id": "2025-5784",
+    "official_id": 5784,
+    "name": "UBC-Vancouver",
+    "year": 2025,
+    "country": "CAN",
+    "city": "Vancouver",
+    "region": "north-america",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5784",
+    "wiki": "https://2025.igem.wiki/ubc-vancouver",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5784",
+    "year": 2025,
+    "name": "UBC-Vancouver",
+    "url": "https://2025.igem.wiki/ubc-vancouver",
+    "location": "Canada (Vancouver)",
+    "organizer_type": "Collegiate",
+    "description": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+    "role": {
+      "zh": "生物矿化与培养优化",
+      "en": "Biomineralization & culture optimization"
+    },
+    "chains": [
+      {
+        "id": "2025-5784:route:0",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5784:route:0:step:0",
+          "2025-5784:route:0:step:1"
+        ],
+        "edge_ids": [
+          "2025-5784:route:0:edge:0",
+          "2025-5784:route:0:edge:1",
+          "2025-5784:route:0:edge:2",
+          "2025-5784:route:0:edge:3"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Surface-displayed CA → Bicarbonate",
+          "en": "Surface-displayed carbonic anhydrase → Bicarbonate / MICP"
+        }
+      }
+    ],
+    "primary_theme": "materials",
+    "themes": [
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5784"
+    ],
+    "description_en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process.",
+    "narrative": {
+      "zh": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+      "en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5784:route:0:step:0",
+      "label": {
+        "zh": "表面展示碳酸酐酶",
+        "en": "Surface-displayed carbonic anhydrase"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false,
+      "description": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+      "description_en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process.",
+      "narrative": {
+        "zh": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+        "en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process."
+      }
+    },
+    {
+      "id": "2025-5784:route:0:step:1",
+      "label": {
+        "zh": "碳酸氢盐与微生物矿化",
+        "en": "Bicarbonate / MICP"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false,
+      "description": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+      "description_en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process.",
+      "narrative": {
+        "zh": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+        "en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5784:route:0:edge:0",
+      "source": "marsco2",
+      "target": "2025-5784:route:0:step:0",
+      "label": {
+        "zh": "火星 CO₂",
+        "en": "Martian atmospheric CO2 → Surface-displayed carbonic anhydrase"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5784:route:0:edge:1",
+      "source": "f_marsminerals",
+      "target": "2025-5784:route:0:step:0",
+      "label": {
+        "zh": "regolith / Ca²⁺",
+        "en": "Martian minerals / regolith → Surface-displayed carbonic anhydrase"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5784:route:0:edge:2",
+      "source": "2025-5784:route:0:step:0",
+      "target": "2025-5784:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Surface-displayed carbonic anhydrase → Bicarbonate / MICP"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5784:route:0:edge:3",
+      "source": "2025-5784:route:0:step:1",
+      "target": "ig_bricks",
+      "label": {
+        "zh": "CaCO₃ → bricks",
+        "en": "Bicarbonate / MICP → CaCO3 building material"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5784:route:0:depends",
+      "owner": "2025-5784",
+      "route": "2025-5784:route:0",
+      "source": "2025-5784:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5784"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2025-5784:effect:culture_control",
+      "owner": "2025-5784",
+      "source": "2025-5784:route:0:step:0",
+      "target": "space_bioreactor",
+      "kind": "culture_control",
+      "category": "enhancement",
+      "label": {
+        "zh": "培养优化",
+        "en": "Culture"
+      },
+      "scope": "供光、供气和搅拌设计支持微生物培养。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2025-5784"
+      ],
+      "scope_en": "Light, gas supply and agitation design support microbial cultivation."
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "roster": {
+    "id": "2026-6273",
+    "official_id": 6273,
+    "name": "HiZJU-China",
+    "year": 2026,
+    "country": "CHN",
+    "city": "Hangzhou",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6273",
+    "wiki": "https://2026.igem.wiki/hizju-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2026-6273",
+    "year": 2026,
+    "name": "HiZJU-China",
+    "url": "https://2026.igem.wiki/hizju-china",
+    "role": {
+      "zh": "UniCO-Fuel · CO₂ 制 EPI 燃料",
+      "en": "UniCO-Fuel · CO₂ to EPI fuel"
+    },
+    "description": "UniCO-Fuel 提出将火星大气 CO₂ 经光催化转化为甲醇，再由工程毕赤酵母通过 MVA 通路与 EIZS 合成 epi-Isozizaene（EPI），经两相萃取与纯化获得候选高能液体燃料。方案结合辅因子调节、蓝光 CRISPRi 动态代谢调控、光衰减模型及多层生物安全防护。",
+    "description_en": "UniCO-Fuel proposes photocatalytic conversion of Martian atmospheric CO₂ to methanol, followed by engineered Pichia pastoris using the MVA pathway and EIZS to produce epi-Isozizaene (EPI). Two-phase extraction and purification yield a candidate high-energy liquid fuel. The design includes cofactor regulation, blue-light CRISPRi metabolic control, a light attenuation model and layered biosafety measures.",
+    "narrative": {
+      "zh": "UniCO-Fuel 提出将火星大气 CO₂ 经光催化转化为甲醇，再由工程毕赤酵母通过 MVA 通路与 EIZS 合成 epi-Isozizaene（EPI），经两相萃取与纯化获得候选高能液体燃料。方案结合辅因子调节、蓝光 CRISPRi 动态代谢调控、光衰减模型及多层生物安全防护。",
+      "en": "UniCO-Fuel proposes photocatalytic conversion of Martian atmospheric CO₂ to methanol, followed by engineered Pichia pastoris using the MVA pathway and EIZS to produce epi-Isozizaene (EPI). Two-phase extraction and purification yield a candidate high-energy liquid fuel. The design includes cofactor regulation, blue-light CRISPRi metabolic control, a light attenuation model and layered biosafety measures."
+    },
+    "primary_theme": "energy",
+    "themes": [
+      "energy"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2026-6273:hp-document"
+    ],
+    "chains": [
+      {
+        "id": "2026-6273:route:fuel",
+        "theme": "energy",
+        "label": {
+          "zh": "UniCO-Fuel · CO₂ → 甲醇 → EPI",
+          "en": "UniCO-Fuel · CO₂ → methanol → EPI"
+        },
+        "demonstration": false,
+        "step_ids": [
+          "2026-6273:photocatalysis",
+          "2026-6273:methanol",
+          "2026-6273:biosynthesis",
+          "2026-6273:epi"
+        ],
+        "edge_ids": [
+          "2026-6273:edge:co2",
+          "2026-6273:edge:sun",
+          "2026-6273:edge:methanol",
+          "2026-6273:edge:carbon",
+          "2026-6273:edge:fuel"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ]
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "2026-6273:biosynthesis",
+      "owner": "2026-6273",
+      "route": "2026-6273:route:fuel",
+      "theme": "energy",
+      "kind": "process",
+      "label": {
+        "zh": "毕赤酵母制 EPI",
+        "en": "P. pastoris → EPI"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "description": "工程毕赤酵母利用甲醇，经中心代谢、MVA 通路与异源 EIZS 合成 EPI；设计通过关键酶、NADPH 和 ATP 调节改善前体及能量供给。蓝光 CRISPRi 提供三种候选策略，抑制竞争代谢或控制 EPI 末步，以协调生长和生产；光衰减模型指导高密度培养中的光照与诱导。防护设计包含细胞内黑色素、营养缺陷、低温响应自杀开关及反应器防尘、紫外过滤、透光和保温。EPI 进入两相发酵的上层有机相，经分离纯化获得产品，萃取相回用。",
+      "description_en": "Engineered Pichia pastoris converts methanol through central metabolism, the MVA pathway and heterologous EIZS to EPI. Key-enzyme, NADPH and ATP regulation are designed to improve precursor and energy supply. Three candidate blue-light CRISPRi strategies suppress competing metabolism or control the final EPI step to coordinate growth and production; a light attenuation model guides lighting and induction in dense cultures. Protection includes intracellular melanin, auxotrophy, low-temperature-responsive suicide switches, and reactor dust barriers, UV filtering, light transmission and insulation. EPI partitions into the upper organic phase during two-phase fermentation, followed by separation and purification; the extraction phase is recycled.",
+      "narrative": {
+        "zh": "工程毕赤酵母利用甲醇，经中心代谢、MVA 通路与异源 EIZS 合成 EPI；设计通过关键酶、NADPH 和 ATP 调节改善前体及能量供给。蓝光 CRISPRi 提供三种候选策略，抑制竞争代谢或控制 EPI 末步，以协调生长和生产；光衰减模型指导高密度培养中的光照与诱导。防护设计包含细胞内黑色素、营养缺陷、低温响应自杀开关及反应器防尘、紫外过滤、透光和保温。EPI 进入两相发酵的上层有机相，经分离纯化获得产品，萃取相回用。",
+        "en": "Engineered Pichia pastoris converts methanol through central metabolism, the MVA pathway and heterologous EIZS to EPI. Key-enzyme, NADPH and ATP regulation are designed to improve precursor and energy supply. Three candidate blue-light CRISPRi strategies suppress competing metabolism or control the final EPI step to coordinate growth and production; a light attenuation model guides lighting and induction in dense cultures. Protection includes intracellular melanin, auxotrophy, low-temperature-responsive suicide switches, and reactor dust barriers, UV filtering, light transmission and insulation. EPI partitions into the upper organic phase during two-phase fermentation, followed by separation and purification; the extraction phase is recycled."
+      }
+    },
+    {
+      "id": "2026-6273:epi",
+      "owner": "2026-6273",
+      "route": "2026-6273:route:fuel",
+      "theme": "energy",
+      "kind": "material",
+      "label": {
+        "zh": "EPI 候选航空燃料",
+        "en": "EPI candidate fuel"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "description": "epi-Isozizaene（EPI）是该方案的目标液体燃料，设想用于未来火星飞行平台。",
+      "description_en": "epi-Isozizaene (EPI) is the target liquid fuel proposed for future Martian aerial platforms.",
+      "narrative": {
+        "zh": "epi-Isozizaene（EPI）是该方案的目标液体燃料，设想用于未来火星飞行平台。",
+        "en": "epi-Isozizaene (EPI) is the target liquid fuel proposed for future Martian aerial platforms."
+      }
+    },
+    {
+      "id": "2026-6273:methanol",
+      "owner": "2026-6273",
+      "route": "2026-6273:route:fuel",
+      "theme": "energy",
+      "kind": "material",
+      "label": {
+        "zh": "甲醇",
+        "en": "Methanol"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "description": "连接上游 CO₂ 光催化与下游生物制造的液体碳源和能量中间体。",
+      "description_en": "A liquid carbon and energy intermediate linking CO₂ photocatalysis to downstream biomanufacturing.",
+      "narrative": {
+        "zh": "连接上游 CO₂ 光催化与下游生物制造的液体碳源和能量中间体。",
+        "en": "A liquid carbon and energy intermediate linking CO₂ photocatalysis to downstream biomanufacturing."
+      }
+    },
+    {
+      "id": "2026-6273:photocatalysis",
+      "owner": "2026-6273",
+      "route": "2026-6273:route:fuel",
+      "theme": "energy",
+      "kind": "process",
+      "label": {
+        "zh": "光催化制甲醇",
+        "en": "Photocatalytic methanol"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "description": "收集、压缩并富集火星大气 CO₂，以 g-C₃N₄ 基光催化体系制甲醇。拟通过元素掺杂与异质结构改善可见光利用、载流子分离和选择性。",
+      "description_en": "Martian atmospheric CO₂ is collected, compressed and enriched for methanol production using a proposed g-C₃N₄ photocatalyst. Doping and heterostructures aim to improve visible-light utilization, carrier separation and selectivity.",
+      "narrative": {
+        "zh": "收集、压缩并富集火星大气 CO₂，以 g-C₃N₄ 基光催化体系制甲醇。拟通过元素掺杂与异质结构改善可见光利用、载流子分离和选择性。",
+        "en": "Martian atmospheric CO₂ is collected, compressed and enriched for methanol production using a proposed g-C₃N₄ photocatalyst. Doping and heterostructures aim to improve visible-light utilization, carrier separation and selectivity."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2026-6273:edge:carbon",
+      "owner": "2026-6273",
+      "source": "2026-6273:methanol",
+      "target": "2026-6273:biosynthesis",
+      "category": "material",
+      "label": {
+        "zh": "碳源与能量源",
+        "en": "Carbon and energy feed"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "layer": "project",
+      "theme": "energy",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6273:edge:co2",
+      "owner": "2026-6273",
+      "source": "marsco2",
+      "target": "2026-6273:photocatalysis",
+      "category": "material",
+      "label": {
+        "zh": "大气 CO₂",
+        "en": "Atmospheric CO₂"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "layer": "project",
+      "theme": "energy",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6273:edge:fuel",
+      "owner": "2026-6273",
+      "source": "2026-6273:biosynthesis",
+      "target": "2026-6273:epi",
+      "category": "material",
+      "label": {
+        "zh": "纯化 EPI",
+        "en": "Purified EPI"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "layer": "project",
+      "theme": "energy",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6273:edge:methanol",
+      "owner": "2026-6273",
+      "source": "2026-6273:photocatalysis",
+      "target": "2026-6273:methanol",
+      "category": "material",
+      "label": {
+        "zh": "生成甲醇",
+        "en": "Methanol production"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "layer": "project",
+      "theme": "energy",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6273:edge:sun",
+      "owner": "2026-6273",
+      "source": "sun",
+      "target": "2026-6273:photocatalysis",
+      "category": "energy",
+      "label": {
+        "zh": "太阳光能",
+        "en": "Solar energy"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "layer": "project",
+      "theme": "energy",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2026-6273:depends:reactor",
+      "owner": "2026-6273",
+      "source": "2026-6273:biosynthesis",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "label": {
+        "zh": "生物反应器培养",
+        "en": "Bioreactor cultivation"
+      },
+      "source_ids": [
+        "team:2026-6273:hp-document"
+      ],
+      "route": "2026-6273:route:fuel",
+      "basis": "team_supplied"
+    }
+  ],
+  "enhancements": []
+}

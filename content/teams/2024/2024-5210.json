@@ -1,0 +1,372 @@
+{
+  "roster": {
+    "id": "2024-5210",
+    "official_id": 5210,
+    "name": "NMU-China",
+    "year": 2024,
+    "country": "CHN",
+    "city": "Shanghai",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5210",
+    "wiki": "https://2024.igem.wiki/nmu-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5210",
+    "year": 2024,
+    "name": "NMU-China",
+    "url": "https://2024.igem.wiki/nmu-china",
+    "location": "China (Shanghai)",
+    "organizer_type": "Collegiate",
+    "description": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+    "role": {
+      "zh": "蓝细菌—弧菌共培养",
+      "en": "Cyanobacteria–Vibrio co-culture"
+    },
+    "chains": [
+      {
+        "id": "2024-5210:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5210:route:0:step:0",
+          "2024-5210:route:0:step:1",
+          "2024-5210:route:0:step:2"
+        ],
+        "edge_ids": [
+          "2024-5210:route:0:edge:0",
+          "2024-5210:route:0:edge:1",
+          "2024-5210:route:0:edge:2",
+          "2024-5210:route:0:edge:3",
+          "2024-5210:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Cyanobacteria → V. natriegens",
+          "en": "Cyanobacterial photosynthesis → V. natriegens conversion"
+        }
+      },
+      {
+        "id": "2024-5210:route:1",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5210:route:1:step:0"
+        ],
+        "edge_ids": [
+          "2024-5210:route:1:edge:0",
+          "2024-5210:route:1:edge:1",
+          "2024-5210:route:1:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Cyanobacteria / 光合产氧",
+          "en": "Photosynthetic oxygen production"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5210"
+    ],
+    "description_en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners.",
+    "narrative": {
+      "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5210:route:0:step:0",
+      "label": {
+        "zh": "蓝细菌光合作用",
+        "en": "Cyanobacterial photosynthesis"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false,
+      "description": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "description_en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners.",
+      "narrative": {
+        "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+        "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+      }
+    },
+    {
+      "id": "2024-5210:route:0:step:1",
+      "label": {
+        "zh": "蔗糖与藻菌碳交换",
+        "en": "Sucrose exchange"
+      },
+      "kind": "material",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false,
+      "description": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "description_en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners.",
+      "narrative": {
+        "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+        "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+      }
+    },
+    {
+      "id": "2024-5210:route:0:step:2",
+      "label": {
+        "zh": "V. natriegens / 异养转化",
+        "en": "V. natriegens conversion"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false,
+      "description": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "description_en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners.",
+      "narrative": {
+        "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+        "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+      }
+    },
+    {
+      "id": "2024-5210:route:1:step:0",
+      "label": {
+        "zh": "蓝细菌光合产氧",
+        "en": "Photosynthetic oxygen production"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5210",
+      "route": "2024-5210:route:1",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false,
+      "description": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "description_en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners.",
+      "narrative": {
+        "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+        "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5210:route:0:edge:0",
+      "source": "co2",
+      "target": "2024-5210:route:0:step:0",
+      "label": {
+        "zh": "无机碳",
+        "en": "Exhaled CO2 → Cyanobacterial photosynthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:0:edge:1",
+      "source": "light",
+      "target": "2024-5210:route:0:step:0",
+      "label": {
+        "zh": "光能",
+        "en": "Controlled lighting → Cyanobacterial photosynthesis"
+      },
+      "category": "energy",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:0:edge:2",
+      "source": "2024-5210:route:0:step:0",
+      "target": "2024-5210:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Cyanobacterial photosynthesis → Sucrose exchange"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:0:edge:3",
+      "source": "2024-5210:route:0:step:1",
+      "target": "2024-5210:route:0:step:2",
+      "label": {
+        "zh": "关键转化",
+        "en": "Sucrose exchange → V. natriegens conversion"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:0:edge:4",
+      "source": "2024-5210:route:0:step:2",
+      "target": "ig_organic",
+      "label": {
+        "zh": "营养／生物量",
+        "en": "V. natriegens conversion → Organic carbon / biomass category"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:1:edge:0",
+      "source": "co2",
+      "target": "2024-5210:route:1:step:0",
+      "label": {
+        "zh": "无机碳",
+        "en": "Exhaled CO2 → Photosynthetic oxygen production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:1:edge:1",
+      "source": "light",
+      "target": "2024-5210:route:1:step:0",
+      "label": {
+        "zh": "光能",
+        "en": "Controlled lighting → Photosynthetic oxygen production"
+      },
+      "category": "energy",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5210:route:1:edge:2",
+      "source": "2024-5210:route:1:step:0",
+      "target": "f_air",
+      "label": {
+        "zh": "O₂",
+        "en": "Photosynthetic oxygen production → Project oxygen O2"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5210"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5210:route:0:depends",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:0",
+      "source": "2024-5210:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5210"
+      ]
+    },
+    {
+      "id": "2024-5210:route:1:depends",
+      "owner": "2024-5210",
+      "route": "2024-5210:route:1",
+      "source": "2024-5210:route:1:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5210"
+      ]
+    }
+  ],
+  "enhancements": []
+}

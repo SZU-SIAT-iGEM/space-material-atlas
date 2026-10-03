@@ -1,0 +1,419 @@
+{
+  "roster": {
+    "id": "2026-6100",
+    "official_id": 6100,
+    "name": "SZU-SIAT China",
+    "year": 2026,
+    "country": "CHN",
+    "city": "Shen Zhen",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6100",
+    "wiki": "https://2026.igem.wiki/szu-siat-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2026-6100",
+    "year": 2026,
+    "name": "SZU-SIAT-China",
+    "url": "https://2026.igem.wiki/szu-siat-china",
+    "location": "China (Shenzhen)",
+    "organizer_type": "Higher Education",
+    "description": "Friskoli 将细胞表面酶展示与趋化富集结合，增强菌体与固体底物的局部接触和传质，为太空生物反应器提供模块化工艺改良。纤维素用于展示这一路线，平台的作用范围由局部接触机制决定。",
+    "role": {
+      "zh": "Friskoli · 局部传质与菌体接触增强",
+      "en": "Friskoli · Local mass transfer & cell contact"
+    },
+    "chains": [
+      {
+        "id": "2026-6100:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "friskoli",
+          "2026-6100:route:0:step:0",
+          "2026-6100:route:0:step:1",
+          "2026-6100:route:0:step:2",
+          "2026-6100:route:0:step:3"
+        ],
+        "edge_ids": [
+          "2026-6100:route:0:edge:0",
+          "2026-6100:route:0:edge:1",
+          "2026-6100:route:0:edge:2",
+          "2026-6100:route:0:edge:3",
+          "2026-6100:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Friskoli · 局部传质增强",
+          "en": "Friskoli · local mass transfer"
+        }
+      },
+      {
+        "id": "2026-6100:route:1",
+        "theme": "bioreactor",
+        "demonstration": true,
+        "step_ids": [
+          "2026-6100:route:1:step:0"
+        ],
+        "edge_ids": [
+          "2026-6100:route:1:edge:0",
+          "2026-6100:route:1:edge:1"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "生物塑料 · 候选下游",
+          "en": "Bioplastic · candidate"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2026-6100"
+    ],
+    "description_en": "Friskoli combines cell-surface enzyme display and chemotactic enrichment to improve local cell–solid-substrate contact and mass transfer as a modular contribution to space bioreactors. Cellulose illustrates the route; the platform is centered on the contact mechanism.",
+    "narrative": {
+      "zh": "Friskoli 将细胞表面酶展示与趋化富集结合，增强菌体与固体底物的局部接触和传质，为太空生物反应器提供模块化工艺改良。纤维素用于展示这一路线，平台的作用范围由局部接触机制决定。",
+      "en": "Friskoli combines cell-surface enzyme display and chemotactic enrichment to improve local cell–solid-substrate contact and mass transfer as a modular contribution to space bioreactors. Cellulose illustrates the route; the platform is centered on the contact mechanism."
+    }
+  },
+  "nodes": [
+    {
+      "id": "friskoli",
+      "label": {
+        "zh": "Friskoli · 局部传质增强",
+        "en": "Friskoli · local mass transfer"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "description": "以菌体表面展示的酶在固体底物接触处开展催化，结合对可溶性降解产物的趋化响应，使细胞向底物附近富集。该模块将局部降解、定向运动和细胞接触相衔接，用于改善反应区域的物质传递。",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "owner": "2026-6100",
+      "description_en": "Enzymes displayed on the cell surface catalyze reactions at the solid-substrate interface, while chemotactic responses to soluble degradation products draw cells toward the substrate. The module couples local degradation, directed movement and cell contact to improve mass transfer within the reaction region.",
+      "narrative": {
+        "zh": "以菌体表面展示的酶在固体底物接触处开展催化，结合对可溶性降解产物的趋化响应，使细胞向底物附近富集。该模块将局部降解、定向运动和细胞接触相衔接，用于改善反应区域的物质传递。",
+        "en": "Enzymes displayed on the cell surface catalyze reactions at the solid-substrate interface, while chemotactic responses to soluble degradation products draw cells toward the substrate. The module couples local degradation, directed movement and cell contact to improve mass transfer within the reaction region."
+      },
+      "route": "2026-6100:route:0"
+    },
+    {
+      "id": "2026-6100:route:0:step:0",
+      "label": {
+        "zh": "表面酶降解",
+        "en": "Enzymatic degradation"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true,
+      "description": "在纤维素示范路线中，展示于菌体表面的酶在菌体与固体底物接触处参与降解，将纤维素转化为可溶性产物，连接表面催化与后续生物利用。",
+      "description_en": "In the cellulose demonstration route, enzymes displayed on the cell surface act at the cell–solid-substrate interface, breaking cellulose down into soluble products for subsequent biological utilization.",
+      "narrative": {
+        "zh": "在纤维素示范路线中，展示于菌体表面的酶在菌体与固体底物接触处参与降解，将纤维素转化为可溶性产物，连接表面催化与后续生物利用。",
+        "en": "In the cellulose demonstration route, enzymes displayed on the cell surface act at the cell–solid-substrate interface, breaking cellulose down into soluble products for subsequent biological utilization."
+      }
+    },
+    {
+      "id": "2026-6100:route:0:step:1",
+      "label": {
+        "zh": "可溶产物与趋化梯度",
+        "en": "Soluble products / gradient"
+      },
+      "kind": "material",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true,
+      "description": "纤维素降解产生的可溶性产物从底物附近向周围扩散，形成局部浓度梯度。这些产物连接底物降解与菌体利用，浓度梯度为后续趋化富集提供方向信息。",
+      "description_en": "Soluble products released during cellulose degradation diffuse away from the substrate, forming a local concentration gradient. These products connect substrate breakdown with cellular utilization, while the gradient provides directional information for chemotactic enrichment.",
+      "narrative": {
+        "zh": "纤维素降解产生的可溶性产物从底物附近向周围扩散，形成局部浓度梯度。这些产物连接底物降解与菌体利用，浓度梯度为后续趋化富集提供方向信息。",
+        "en": "Soluble products released during cellulose degradation diffuse away from the substrate, forming a local concentration gradient. These products connect substrate breakdown with cellular utilization, while the gradient provides directional information for chemotactic enrichment."
+      }
+    },
+    {
+      "id": "2026-6100:route:0:step:2",
+      "label": {
+        "zh": "趋化富集",
+        "en": "Chemotactic enrichment"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true,
+      "description": "菌体响应可溶性产物形成的趋化梯度，向底物附近富集，使携带表面酶的细胞更集中地分布在反应区域，增加菌体与固体底物接触的机会。",
+      "description_en": "Cells respond to the chemotactic gradient generated by soluble products and accumulate near the substrate. This concentrates enzyme-displaying cells in the reaction region and increases opportunities for cell–solid-substrate contact.",
+      "narrative": {
+        "zh": "菌体响应可溶性产物形成的趋化梯度，向底物附近富集，使携带表面酶的细胞更集中地分布在反应区域，增加菌体与固体底物接触的机会。",
+        "en": "Cells respond to the chemotactic gradient generated by soluble products and accumulate near the substrate. This concentrates enzyme-displaying cells in the reaction region and increases opportunities for cell–solid-substrate contact."
+      }
+    },
+    {
+      "id": "2026-6100:route:0:step:3",
+      "label": {
+        "zh": "局部生物转化增强",
+        "en": "Enhanced bioconversion"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true,
+      "description": "表面酶降解与趋化富集在底物附近衔接，旨在通过更充分的局部接触和传质促进生物转化。示范路线将这一过程接入菌体／代谢中间物输出，并与太空生物反应器工艺相连。",
+      "description_en": "Surface-enzyme degradation and chemotactic enrichment act together near the substrate, aiming to support bioconversion through improved local contact and mass transfer. The demonstration route connects this process to biomass / metabolic intermediates and to space-bioreactor operations.",
+      "narrative": {
+        "zh": "表面酶降解与趋化富集在底物附近衔接，旨在通过更充分的局部接触和传质促进生物转化。示范路线将这一过程接入菌体／代谢中间物输出，并与太空生物反应器工艺相连。",
+        "en": "Surface-enzyme degradation and chemotactic enrichment act together near the substrate, aiming to support bioconversion through improved local contact and mass transfer. The demonstration route connects this process to biomass / metabolic intermediates and to space-bioreactor operations."
+      }
+    },
+    {
+      "id": "2026-6100:route:1:step:0",
+      "label": {
+        "zh": "生物塑料制造 · 候选",
+        "en": "Candidate bioplastic production"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2026-6100",
+      "route": "2026-6100:route:1",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true,
+      "description": "生物塑料制造作为纤维素转化示范的候选下游，连接前段产生的菌体／代谢中间物与生物塑料产物，用于展示 Friskoli 局部传质平台与后续材料生产衔接的应用方向。",
+      "description_en": "Bioplastic production is a candidate downstream application of the cellulose-conversion demonstration. It links upstream biomass / metabolic intermediates to bioplastic products, illustrating how the Friskoli local-mass-transfer platform could connect with subsequent material production.",
+      "narrative": {
+        "zh": "生物塑料制造作为纤维素转化示范的候选下游，连接前段产生的菌体／代谢中间物与生物塑料产物，用于展示 Friskoli 局部传质平台与后续材料生产衔接的应用方向。",
+        "en": "Bioplastic production is a candidate downstream application of the cellulose-conversion demonstration. It links upstream biomass / metabolic intermediates to bioplastic products, illustrating how the Friskoli local-mass-transfer platform could connect with subsequent material production."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2026-6100:route:0:edge:0",
+      "source": "f_cellulose",
+      "target": "2026-6100:route:0:step:0",
+      "label": {
+        "zh": "Cellulosic waste",
+        "en": "Cellulose · demonstration → Enzymatic degradation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:0:edge:1",
+      "source": "2026-6100:route:0:step:0",
+      "target": "2026-6100:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Enzymatic degradation → Soluble products / gradient"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:0:edge:2",
+      "source": "2026-6100:route:0:step:1",
+      "target": "2026-6100:route:0:step:2",
+      "label": {
+        "zh": "关键转化",
+        "en": "Soluble products / gradient → Chemotactic enrichment"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:0:edge:3",
+      "source": "2026-6100:route:0:step:2",
+      "target": "2026-6100:route:0:step:3",
+      "label": {
+        "zh": "关键转化",
+        "en": "Chemotactic enrichment → Enhanced bioconversion"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:0:edge:4",
+      "source": "2026-6100:route:0:step:3",
+      "target": "ig_biomass",
+      "label": {
+        "zh": "biomass / intermediates",
+        "en": "Enhanced bioconversion → Biomass / intermediates · demo"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:1:edge:0",
+      "source": "ig_biomass",
+      "target": "2026-6100:route:1:step:0",
+      "label": {
+        "zh": "菌体／代谢中间物",
+        "en": "Biomass / intermediates · demo → Candidate bioplastic production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    },
+    {
+      "id": "2026-6100:route:1:edge:1",
+      "source": "2026-6100:route:1:step:0",
+      "target": "ig_candidateplastic",
+      "label": {
+        "zh": "候选生物塑料",
+        "en": "Candidate bioplastic production → Bioplastic · candidate downstream"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "demonstration": true
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2026-6100:route:0:depends",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:0",
+      "source": "2026-6100:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": true,
+      "source_ids": [
+        "team:2026-6100"
+      ]
+    },
+    {
+      "id": "2026-6100:route:1:depends",
+      "owner": "2026-6100",
+      "route": "2026-6100:route:1",
+      "source": "2026-6100:route:1:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": true,
+      "source_ids": [
+        "team:2026-6100"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2026-6100:effect:mass_transfer",
+      "owner": "2026-6100",
+      "source": "friskoli",
+      "target": "space_bioreactor",
+      "kind": "mass_transfer",
+      "category": "enhancement",
+      "label": {
+        "zh": "局部传质",
+        "en": "Local transfer"
+      },
+      "scope": "Friskoli 通过菌体与固体底物的局部接触改善传质；纤维素用于展示这一平台的作用。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2026-6100"
+      ],
+      "scope_en": "Friskoli supports mass transfer through local cell–solid-substrate contact; cellulose illustrates the platform."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": {
+    "zh": "太空物质循环图谱",
+    "en": "Space Material Atlas"
+  },
+  "version": "6.0",
+  "contact": {
+    "label": {
+      "zh": "联系图谱维护者",
+      "en": "Contact atlas maintainers"
+    },
+    "url": "mailto:szusiatchina@163.com",
+    "email": "szusiatchina@163.com"
+  },
+  "canonical_url": "",
+  "about": {
+    "zh": "本图谱整理太空物质循环相关技术与 iGEM 团队项目，以定性方式呈现资源、工艺和项目之间可能形成的联系。为iGEM太空赛道做一个承上启下的整理工作。具体项目路线按其目标实现后的情景展开，线条不表示流量或量化性能。图谱依据公开项目资料与团队提供的信息进行整理和校对，并经过审核，未对各项目开展深入研究，内容可能存在理解和表述的错漏。欢迎相关团队与读者联系维护者，补充资料或提出更正。",
+    "en": "This atlas brings together space material-cycle technologies and iGEM projects to describe possible connections among resources, processes and teams. It serves as a preliminary and integrative overview for the iGEM Space village. Specific project pathways are developed based on the scenarios following the achievement of their objectives, and the lines do not represent flow or quantitative performance. The map is compiled and verified based on publicly available project information and details provided by teams, and has undergone review; it does not involve in-depth research on each project, so there may be errors or inaccuracies in understanding and expression. Relevant teams and readers are welcome to contact the maintainers to provide additional information or suggest corrections."
+  }
+}

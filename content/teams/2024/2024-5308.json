@@ -1,0 +1,529 @@
+{
+  "roster": {
+    "id": "2024-5308",
+    "official_id": 5308,
+    "name": "SZ-SHD",
+    "year": 2024,
+    "country": "CHN",
+    "city": "Shanghai",
+    "region": "asia",
+    "organizer_type": "commercial",
+    "url": "https://teams.igem.org/5308",
+    "wiki": "https://2024.igem.wiki/sz-shd",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5308",
+    "year": 2024,
+    "name": "SZ-SHD",
+    "url": "https://2024.igem.wiki/sz-shd",
+    "location": "China (Shanghai)",
+    "organizer_type": "Commercial",
+    "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+    "role": {
+      "zh": "藻酵母制造与基质改良",
+      "en": "Algae–yeast production & soil improvement"
+    },
+    "chains": [
+      {
+        "id": "2024-5308:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5308:route:0:step:0",
+          "2024-5308:route:0:step:1",
+          "2024-5308:route:0:step:2"
+        ],
+        "edge_ids": [
+          "2024-5308:route:0:edge:0",
+          "2024-5308:route:0:edge:1",
+          "2024-5308:route:0:edge:2",
+          "2024-5308:route:0:edge:3",
+          "2024-5308:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Cyanobacteria → Yeast",
+          "en": "Cyanobacterial carbon fixation → Yeast biosynthesis"
+        }
+      },
+      {
+        "id": "2024-5308:route:1",
+        "theme": "agriculture",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5308:route:1:step:0"
+        ],
+        "edge_ids": [
+          "2024-5308:route:1:edge:0",
+          "2024-5308:route:1:edge:1",
+          "2024-5308:route:1:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Azotobacter / 固氮／土壤改良",
+          "en": "Azotobacter / nitrogen fixation"
+        }
+      },
+      {
+        "id": "2024-5308:route:2",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5308:route:2:step:0"
+        ],
+        "edge_ids": [
+          "2024-5308:route:2:edge:0",
+          "2024-5308:route:2:edge:1",
+          "2024-5308:route:2:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Cyanobacteria / 光合产氧",
+          "en": "Photosynthetic oxygen production"
+        }
+      }
+    ],
+    "primary_theme": "agriculture",
+    "themes": [
+      "agriculture",
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5308"
+    ],
+    "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+    "narrative": {
+      "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5308:route:0:step:0",
+      "label": {
+        "zh": "蓝细菌光合固定",
+        "en": "Cyanobacterial carbon fixation"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false,
+      "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+      "narrative": {
+        "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+        "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+      }
+    },
+    {
+      "id": "2024-5308:route:0:step:1",
+      "label": {
+        "zh": "蔗糖",
+        "en": "Sucrose"
+      },
+      "kind": "material",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false,
+      "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+      "narrative": {
+        "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+        "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+      }
+    },
+    {
+      "id": "2024-5308:route:0:step:2",
+      "label": {
+        "zh": "酵母生物制造",
+        "en": "Yeast biosynthesis"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false,
+      "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+      "narrative": {
+        "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+        "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+      }
+    },
+    {
+      "id": "2024-5308:route:1:step:0",
+      "label": {
+        "zh": "Azotobacter / 固氮／土壤改良",
+        "en": "Azotobacter / nitrogen fixation"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5308",
+      "route": "2024-5308:route:1",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false,
+      "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+      "narrative": {
+        "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+        "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+      }
+    },
+    {
+      "id": "2024-5308:route:2:step:0",
+      "label": {
+        "zh": "蓝细菌光合产氧",
+        "en": "Photosynthetic oxygen production"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5308",
+      "route": "2024-5308:route:2",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false,
+      "description": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "description_en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation.",
+      "narrative": {
+        "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+        "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5308:route:0:edge:0",
+      "source": "marsco2",
+      "target": "2024-5308:route:0:step:0",
+      "label": {
+        "zh": "火星 CO₂",
+        "en": "Martian atmospheric CO2 → Cyanobacterial carbon fixation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:0:edge:1",
+      "source": "light",
+      "target": "2024-5308:route:0:step:0",
+      "label": {
+        "zh": "光能",
+        "en": "Controlled lighting → Cyanobacterial carbon fixation"
+      },
+      "category": "energy",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:0:edge:2",
+      "source": "2024-5308:route:0:step:0",
+      "target": "2024-5308:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Cyanobacterial carbon fixation → Sucrose"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:0:edge:3",
+      "source": "2024-5308:route:0:step:1",
+      "target": "2024-5308:route:0:step:2",
+      "label": {
+        "zh": "关键转化",
+        "en": "Sucrose → Yeast biosynthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:0:edge:4",
+      "source": "2024-5308:route:0:step:2",
+      "target": "prod_flavours",
+      "label": {
+        "zh": "lycopene / limonene / nerol",
+        "en": "Yeast biosynthesis → Lycopene / limonene / nerol"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:1:edge:0",
+      "source": "f_marsminerals",
+      "target": "2024-5308:route:1:step:0",
+      "label": {
+        "zh": "火星表土",
+        "en": "Martian minerals / regolith → Azotobacter / nitrogen fixation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:1",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:1:edge:1",
+      "source": "f_marsn2",
+      "target": "2024-5308:route:1:step:0",
+      "label": {
+        "zh": "N₂",
+        "en": "Nitrogen N2 → Azotobacter / nitrogen fixation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:1",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:1:edge:2",
+      "source": "2024-5308:route:1:step:0",
+      "target": "ig_regomedia",
+      "label": {
+        "zh": "农业基质",
+        "en": "Azotobacter / nitrogen fixation → Improved growing medium"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:1",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:2:edge:0",
+      "source": "marsco2",
+      "target": "2024-5308:route:2:step:0",
+      "label": {
+        "zh": "火星 CO₂",
+        "en": "Martian atmospheric CO2 → Photosynthetic oxygen production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:2",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:2:edge:1",
+      "source": "light",
+      "target": "2024-5308:route:2:step:0",
+      "label": {
+        "zh": "光能",
+        "en": "Controlled lighting → Photosynthetic oxygen production"
+      },
+      "category": "energy",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:2",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:route:2:edge:2",
+      "source": "2024-5308:route:2:step:0",
+      "target": "f_air",
+      "label": {
+        "zh": "O₂",
+        "en": "Photosynthetic oxygen production → Project oxygen O2"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:2",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5308:interface:ig_regomedia",
+      "source": "ig_regomedia",
+      "target": "space_agriculture",
+      "label": {
+        "zh": "改良基质用于种植",
+        "en": "Improved growing medium → Space agriculture"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5308",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5308:route:0:depends",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:0",
+      "source": "2024-5308:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5308"
+      ]
+    },
+    {
+      "id": "2024-5308:route:1:depends",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:1",
+      "source": "2024-5308:route:1:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5308"
+      ]
+    },
+    {
+      "id": "2024-5308:route:2:depends",
+      "owner": "2024-5308",
+      "route": "2024-5308:route:2",
+      "source": "2024-5308:route:2:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5308"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2024-5308:effect:nitrogen_fixation",
+      "owner": "2024-5308",
+      "source": "2024-5308:route:1:step:0",
+      "target": "growing_medium",
+      "kind": "nitrogen_fixation",
+      "category": "enhancement",
+      "label": {
+        "zh": "固氮",
+        "en": "N fixation"
+      },
+      "scope": "固氮菌与耐逆菌参与表土改良。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2024-5308"
+      ],
+      "scope_en": "Nitrogen-fixing and stress-resistant bacteria contribute to regolith improvement."
+    }
+  ]
+}

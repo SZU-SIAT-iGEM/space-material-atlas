@@ -1,0 +1,185 @@
+{
+  "roster": {
+    "id": "2025-5983",
+    "official_id": 5983,
+    "name": "Jiashu-China",
+    "year": 2025,
+    "country": "CHN",
+    "city": "Wuhan",
+    "region": "asia",
+    "organizer_type": "commercial",
+    "url": "https://teams.igem.org/5983",
+    "wiki": "https://2025.igem.wiki/jiashu-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5983",
+    "year": 2025,
+    "name": "Jiashu-China",
+    "url": "https://2025.igem.wiki/jiashu-china",
+    "location": "China (Wuhan)",
+    "organizer_type": "Commercial",
+    "description": "Mustronaut 围绕益生菌底盘构建 HMB 与血清素合成模块，将膳食和肠道代谢底物连接到肌肉健康、情绪与睡眠相关分子的局部生产。",
+    "role": {
+      "zh": "HMB 与血清素合成",
+      "en": "HMB & serotonin synthesis"
+    },
+    "chains": [
+      {
+        "id": "2025-5983:route:0",
+        "theme": "human",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5983:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2025-5983:route:0:edge:0",
+          "2025-5983:route:0:edge:1",
+          "2025-5983:route:0:edge:2"
+        ],
+        "dependencies": [],
+        "label": {
+          "zh": "Engineered EcN / HMB / serotonin synthesis",
+          "en": "Proposed EcN HMB / serotonin synthesis"
+        }
+      }
+    ],
+    "primary_theme": "human",
+    "themes": [
+      "human"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5983"
+    ],
+    "description_en": "Mustronaut builds HMB and serotonin synthesis modules around a probiotic chassis, connecting dietary and gut metabolites with local production of molecules associated with muscle health, mood and sleep.",
+    "narrative": {
+      "zh": "Mustronaut 围绕益生菌底盘构建 HMB 与血清素合成模块，将膳食和肠道代谢底物连接到肌肉健康、情绪与睡眠相关分子的局部生产。",
+      "en": "Mustronaut builds HMB and serotonin synthesis modules around a probiotic chassis, connecting dietary and gut metabolites with local production of molecules associated with muscle health, mood and sleep."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5983:route:0:step:0",
+      "label": {
+        "zh": "Engineered EcN / HMB / serotonin synthesis",
+        "en": "Proposed EcN HMB / serotonin synthesis"
+      },
+      "kind": "process",
+      "theme": "human",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5983",
+      "route": "2025-5983:route:0",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false,
+      "description": "Mustronaut 围绕益生菌底盘构建 HMB 与血清素合成模块，将膳食和肠道代谢底物连接到肌肉健康、情绪与睡眠相关分子的局部生产。",
+      "description_en": "Mustronaut builds HMB and serotonin synthesis modules around a probiotic chassis, connecting dietary and gut metabolites with local production of molecules associated with muscle health, mood and sleep.",
+      "narrative": {
+        "zh": "Mustronaut 围绕益生菌底盘构建 HMB 与血清素合成模块，将膳食和肠道代谢底物连接到肌肉健康、情绪与睡眠相关分子的局部生产。",
+        "en": "Mustronaut builds HMB and serotonin synthesis modules around a probiotic chassis, connecting dietary and gut metabolites with local production of molecules associated with muscle health, mood and sleep."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5983:route:0:edge:0",
+      "source": "ig_diet",
+      "target": "2025-5983:route:0:step:0",
+      "label": {
+        "zh": "肠道／膳食代谢底物",
+        "en": "Dietary / gut substrates → Proposed EcN HMB / serotonin synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5983",
+      "route": "2025-5983:route:0",
+      "theme": "human",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5983:route:0:edge:1",
+      "source": "2025-5983:route:0:step:0",
+      "target": "prod_hmb",
+      "label": {
+        "zh": "HMB + serotonin",
+        "en": "Proposed EcN HMB / serotonin synthesis → HMB"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5983",
+      "route": "2025-5983:route:0",
+      "theme": "human",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5983:route:0:edge:2",
+      "source": "2025-5983:route:0:step:0",
+      "target": "prod_serotonin",
+      "label": {
+        "zh": "HMB + serotonin",
+        "en": "Proposed EcN HMB / serotonin synthesis → Serotonin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5983",
+      "route": "2025-5983:route:0",
+      "theme": "human",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5983:context:prod_hmb:crew",
+      "source": "prod_hmb",
+      "target": "crew",
+      "label": {
+        "zh": "预期生理作用 · 目标成功情景",
+        "en": "HMB → Crew"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2025-5983",
+      "theme": "human",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5983:context:prod_serotonin:crew",
+      "source": "prod_serotonin",
+      "target": "crew",
+      "label": {
+        "zh": "预期生理作用 · 目标成功情景",
+        "en": "Serotonin → Crew"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2025-5983",
+      "theme": "human",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5983"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [],
+  "enhancements": []
+}

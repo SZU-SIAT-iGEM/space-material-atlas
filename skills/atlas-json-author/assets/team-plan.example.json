@@ -1,0 +1,10 @@
+{
+  "team": {"id":"2026-example","name":"教学示例（非参赛项目）","theme":"water","summary":{"zh":"营养盐回收示例","en":"Nutrient recovery example"},"description":{"zh":"教学结构展示废物到营养盐的连接与共享工艺改良，不代表真实项目。","en":"An instructional route and process-improvement example, not an actual project."},"url":""},
+  "sources":[{"id":"team:2026-example","title":"教学结构，无真实项目来源","url":"","kind":"team_supplied"}],
+  "routes":[{"id":"route:0","label":{"zh":"回收示例","en":"Recovery example"}}],
+  "connections":[
+    {"source":"f_waste","target":"recovery","route":"route:0","type":"material","label":{"zh":"含营养元素废物","en":"Nutrient-bearing waste"}},
+    {"source":"recovery","target":"f_salts","route":"route:0","type":"material","label":{"zh":"回收营养盐","en":"Recovered nutrients"}},
+    {"source":"recovery","target":"space_bioreactor","type":"enhancement","label":{"zh":"培养条件改良示例","en":"Culture improvement example"},"scope":{"zh":"这里填写本队资料中描述的改良机制。","en":"Describe the mechanism documented by the team."}}
+  ]
+}

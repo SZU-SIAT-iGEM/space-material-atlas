@@ -1,0 +1,107 @@
+{
+  "team": {
+    "id": "2026-6273",
+    "name": "HiZJU-China",
+    "theme": "energy",
+    "summary": {
+      "zh": "UniCO-Fuel · CO₂ 制 EPI 燃料",
+      "en": "UniCO-Fuel · CO₂ to EPI fuel"
+    },
+    "description": {
+      "zh": "UniCO-Fuel 提出将火星大气 CO₂ 经光催化转化为甲醇，再由工程毕赤酵母通过 MVA 通路与 EIZS 合成 epi-Isozizaene（EPI），经两相萃取与纯化获得候选高能液体燃料。方案结合辅因子调节、蓝光 CRISPRi 动态代谢调控、光衰减模型及多层生物安全防护。",
+      "en": "UniCO-Fuel proposes photocatalytic conversion of Martian atmospheric CO₂ to methanol, followed by engineered Pichia pastoris using the MVA pathway and EIZS to produce epi-Isozizaene (EPI). Two-phase extraction and purification yield a candidate high-energy liquid fuel. The design includes cofactor regulation, blue-light CRISPRi metabolic control, a light attenuation model and layered biosafety measures."
+    },
+    "url": "https://2026.igem.wiki/hizju-china"
+  },
+  "sources": [
+    {
+      "id": "team:2026-6273:hp-document",
+      "title": "HiZJU-China · UniCO-Fuel · Team-supplied material-flow description",
+      "url": "",
+      "kind": "team_supplied",
+      "publisher": "HiZJU-China",
+      "description": {
+        "zh": "依据团队提供的《HiZJU-China 物质流介绍HP.docx》整理。",
+        "en": "Compiled from the team-supplied HiZJU-China material-flow document."
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "route:fuel",
+      "theme": "energy",
+      "label": {
+        "zh": "UniCO-Fuel · CO₂ → 甲醇 → EPI",
+        "en": "UniCO-Fuel · CO₂ → methanol → EPI"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "edge:co2",
+      "source": "marsco2",
+      "target": "photocatalysis",
+      "type": "material",
+      "route": "route:fuel",
+      "label": {
+        "zh": "大气 CO₂",
+        "en": "Atmospheric CO₂"
+      }
+    },
+    {
+      "id": "edge:sun",
+      "source": "sun",
+      "target": "photocatalysis",
+      "type": "energy",
+      "route": "route:fuel",
+      "label": {
+        "zh": "太阳光能",
+        "en": "Solar energy"
+      }
+    },
+    {
+      "id": "edge:methanol",
+      "source": "photocatalysis",
+      "target": "methanol",
+      "type": "material",
+      "route": "route:fuel",
+      "label": {
+        "zh": "生成甲醇",
+        "en": "Methanol production"
+      }
+    },
+    {
+      "id": "edge:carbon",
+      "source": "methanol",
+      "target": "biosynthesis",
+      "type": "material",
+      "route": "route:fuel",
+      "label": {
+        "zh": "碳源与能量源",
+        "en": "Carbon and energy feed"
+      }
+    },
+    {
+      "id": "edge:fuel",
+      "source": "biosynthesis",
+      "target": "epi",
+      "type": "material",
+      "route": "route:fuel",
+      "label": {
+        "zh": "纯化 EPI",
+        "en": "Purified EPI"
+      }
+    },
+    {
+      "id": "depends:reactor",
+      "source": "biosynthesis",
+      "target": "space_bioreactor",
+      "type": "dependency",
+      "route": "route:fuel",
+      "label": {
+        "zh": "生物反应器培养",
+        "en": "Bioreactor cultivation"
+      }
+    }
+  ]
+}

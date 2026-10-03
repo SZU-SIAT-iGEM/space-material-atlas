@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6115",
+    "official_id": 6115,
+    "name": "BNDS-China",
+    "year": 2026,
+    "country": "CHN",
+    "city": "Beijing",
+    "region": "asia",
+    "organizer_type": "secondary-education",
+    "url": "https://teams.igem.org/6115",
+    "wiki": null,
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

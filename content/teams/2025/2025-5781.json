@@ -1,0 +1,245 @@
+{
+  "roster": {
+    "id": "2025-5781",
+    "official_id": 5781,
+    "name": "SCUT-China",
+    "year": 2025,
+    "country": "CHN",
+    "city": "Guangzhou",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5781",
+    "wiki": "https://2025.igem.wiki/scut-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5781",
+    "year": 2025,
+    "name": "SCUT-China",
+    "url": "https://2025.igem.wiki/scut-china",
+    "location": "China (Guangzhou)",
+    "organizer_type": "Collegiate",
+    "description": "SCUT-China 以氢氧化细菌 Cupriavidus necator 为底盘，将二氧化碳、尿源氮及电解水产生的气体连接到人 α-乳白蛋白生产，形成废物流与营养蛋白之间的路线。",
+    "role": {
+      "zh": "气体发酵与营养蛋白",
+      "en": "Gas fermentation & nutritional protein"
+    },
+    "chains": [
+      {
+        "id": "2025-5781:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5781:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2025-5781:route:0:edge:0",
+          "2025-5781:route:0:edge:1",
+          "2025-5781:route:0:edge:2",
+          "2025-5781:route:0:edge:3",
+          "2025-5781:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "C. necator / 气体发酵",
+          "en": "C. necator gas fermentation"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5781"
+    ],
+    "description_en": "SCUT-China uses the hydrogen-oxidizing bacterium Cupriavidus necator to connect carbon dioxide, urine-derived nitrogen and water-electrolysis gases with human alpha-lactalbumin production.",
+    "narrative": {
+      "zh": "SCUT-China 以氢氧化细菌 Cupriavidus necator 为底盘，将二氧化碳、尿源氮及电解水产生的气体连接到人 α-乳白蛋白生产，形成废物流与营养蛋白之间的路线。",
+      "en": "SCUT-China uses the hydrogen-oxidizing bacterium Cupriavidus necator to connect carbon dioxide, urine-derived nitrogen and water-electrolysis gases with human alpha-lactalbumin production."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5781:route:0:step:0",
+      "label": {
+        "zh": "C. necator / 气体发酵",
+        "en": "C. necator gas fermentation"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false,
+      "description": "SCUT-China 以氢氧化细菌 Cupriavidus necator 为底盘，将二氧化碳、尿源氮及电解水产生的气体连接到人 α-乳白蛋白生产，形成废物流与营养蛋白之间的路线。",
+      "description_en": "SCUT-China uses the hydrogen-oxidizing bacterium Cupriavidus necator to connect carbon dioxide, urine-derived nitrogen and water-electrolysis gases with human alpha-lactalbumin production.",
+      "narrative": {
+        "zh": "SCUT-China 以氢氧化细菌 Cupriavidus necator 为底盘，将二氧化碳、尿源氮及电解水产生的气体连接到人 α-乳白蛋白生产，形成废物流与营养蛋白之间的路线。",
+        "en": "SCUT-China uses the hydrogen-oxidizing bacterium Cupriavidus necator to connect carbon dioxide, urine-derived nitrogen and water-electrolysis gases with human alpha-lactalbumin production."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5781:route:0:edge:0",
+      "source": "co2",
+      "target": "2025-5781:route:0:step:0",
+      "label": {
+        "zh": "呼出 CO₂",
+        "en": "Exhaled CO2 → C. necator gas fermentation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:route:0:edge:1",
+      "source": "urine",
+      "target": "2025-5781:route:0:step:0",
+      "label": {
+        "zh": "尿液回收 urea",
+        "en": "Urine → C. necator gas fermentation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:route:0:edge:2",
+      "source": "h2",
+      "target": "2025-5781:route:0:step:0",
+      "label": {
+        "zh": "电解 H₂",
+        "en": "Hydrogen H2 → C. necator gas fermentation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:route:0:edge:3",
+      "source": "f_air",
+      "target": "2025-5781:route:0:step:0",
+      "label": {
+        "zh": "O₂",
+        "en": "Project oxygen O2 → C. necator gas fermentation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:route:0:edge:4",
+      "source": "2025-5781:route:0:step:0",
+      "target": "prod_lactalbumin",
+      "label": {
+        "zh": "human α-lactalbumin",
+        "en": "C. necator gas fermentation → Human alpha-lactalbumin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:use:prod_lactalbumin",
+      "source": "prod_lactalbumin",
+      "target": "f_foodsafe",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Human alpha-lactalbumin → Food processing & qualification"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5781:use:f_foodsafe",
+      "source": "f_foodsafe",
+      "target": "food",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Food processing & qualification → Food"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5781",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5781"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5781:route:0:depends",
+      "owner": "2025-5781",
+      "route": "2025-5781:route:0",
+      "source": "2025-5781:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5781"
+      ]
+    }
+  ],
+  "enhancements": []
+}

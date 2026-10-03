@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "supply",
+    "source": "earth",
+    "target": "cargo",
+    "label": {
+      "zh": "发射与交会对接",
+      "en": "Earth supply & manufacturing → Upmass logistics"
+    },
+    "category": "material",
+    "source_ids": [
+      "tianzhou",
+      "cygnus"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "food_up",
+    "source": "cargo",
+    "target": "food",
+    "label": {
+      "zh": "食品补给",
+      "en": "Upmass logistics → Food"
+    },
+    "category": "material",
+    "source_ids": [
+      "tianzhou",
+      "veggie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "equip_up",
+    "source": "cargo",
+    "target": "equipment",
+    "label": {
+      "zh": "物资与设备",
+      "en": "Upmass logistics → Clothing, packaging & equipment"
+    },
+    "category": "material",
+    "source_ids": [
+      "tianzhou"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "eat",
+    "source": "food",
+    "target": "crew",
+    "label": {
+      "zh": "进食",
+      "en": "Food → Crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "veggie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "drink",
+    "source": "water",
+    "target": "crew",
+    "label": {
+      "zh": "饮用／复水／清洁",
+      "en": "Usable water → Crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "water"
+    ]
+  },
+  {
+    "id": "breathe",
+    "source": "air",
+    "target": "crew",
+    "label": {
+      "zh": "消耗 O₂",
+      "en": "Cabin air: O2 / N2 → Crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "air"
+    ]
+  },
+  {
+    "id": "respire",
+    "source": "crew",
+    "target": "co2",
+    "label": {
+      "zh": "呼吸代谢",
+      "en": "Crew → Exhaled CO2"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "air"
+    ]
+  },
+  {
+    "id": "excrete",
+    "source": "crew",
+    "target": "wastewater",
+    "label": {
+      "zh": "尿液、汗与呼吸水",
+      "en": "Crew → Wastewater & condensate"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "collectwater",
+    "source": "wastewater",
+    "target": "wrs",
+    "label": {
+      "zh": "收集与处理",
+      "en": "Wastewater & condensate → Water recovery system"
+    },
+    "category": "material",
+    "source_ids": [
+      "water",
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "recoverwater",
+    "source": "wrs",
+    "target": "water",
+    "label": {
+      "zh": "回收净化水",
+      "en": "Water recovery system → Usable water"
+    },
+    "category": "material",
+    "source_ids": [
+      "water",
+      "china"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "water_electro",
+    "source": "water",
+    "target": "electrolysis",
+    "label": {
+      "zh": "H₂O",
+      "en": "Usable water → Water electrolysis"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "china",
+      "russian"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "air"
+    ]
+  },
+  {
+    "id": "o2_generate",
+    "source": "electrolysis",
+    "target": "air",
+    "label": {
+      "zh": "O₂ 回舱",
+      "en": "Water electrolysis → Cabin air: O2 / N2"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "china",
+      "russian"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "air"
+    ]
+  },
+  {
+    "id": "h2_generate",
+    "source": "electrolysis",
+    "target": "h2",
+    "label": {
+      "zh": "副产 H₂",
+      "en": "Water electrolysis → Hydrogen H2"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "co2_sab",
+    "source": "co2",
+    "target": "sabatier",
+    "label": {
+      "zh": "捕集的 CO₂",
+      "en": "Exhaled CO2 → CO2 reduction / Sabatier"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "h2_sab",
+    "source": "h2",
+    "target": "sabatier",
+    "label": {
+      "zh": "H₂",
+      "en": "Hydrogen H2 → CO2 reduction / Sabatier"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "sab_water",
+    "source": "sabatier",
+    "target": "water",
+    "label": {
+      "zh": "反应产水",
+      "en": "CO2 reduction / Sabatier → Usable water"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "air"
+    ]
+  },
+  {
+    "id": "sab_ch4",
+    "source": "sabatier",
+    "target": "methane",
+    "label": {
+      "zh": "CH₄ 副产物",
+      "en": "CO2 reduction / Sabatier → Methane CH4"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "ch4_vent",
+    "source": "methane",
+    "target": "vacuum",
+    "label": {
+      "zh": "排放 CH₄",
+      "en": "Methane CH4 → Venting to space"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls",
+      "oxygen_limit"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "h2_vent",
+    "source": "h2",
+    "target": "vacuum",
+    "label": {
+      "zh": "未利用 H₂ 排放",
+      "en": "Hydrogen H2 → Venting to space"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "co2_vent",
+    "source": "co2",
+    "target": "vacuum",
+    "label": {
+      "zh": "未回收 CO₂ 排放",
+      "en": "Exhaled CO2 → Venting to space"
+    },
+    "category": "material",
+    "source_ids": [
+      "acls",
+      "iss_vent"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "feces",
+    "source": "crew",
+    "target": "solid",
+    "label": {
+      "zh": "粪便与卫生耗材",
+      "en": "Crew → Solid waste"
+    },
+    "category": "material",
+    "source_ids": [
+      "toilet"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "worn",
+    "source": "equipment",
+    "target": "solid",
+    "label": {
+      "zh": "废衣物、包装与失效件",
+      "en": "Clothing, packaging & equipment → Solid waste"
+    },
+    "category": "material",
+    "source_ids": [
+      "laundry",
+      "cygnus"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "trash",
+    "source": "solid",
+    "target": "disposal",
+    "label": {
+      "zh": "装入离站货运飞船",
+      "en": "Solid waste → Controlled reentry disposal"
+    },
+    "category": "material",
+    "source_ids": [
+      "toilet",
+      "cygnus"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "sample_return",
+    "source": "samples",
+    "target": "return",
+    "label": {
+      "zh": "返回舱回收",
+      "en": "Experimental products & samples → Return to Earth"
+    },
+    "category": "material",
+    "source_ids": [
+      "dragon"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "equip_return",
+    "source": "equipment",
+    "target": "return",
+    "label": {
+      "zh": "选定硬件返回检查",
+      "en": "Clothing, packaging & equipment → Return to Earth"
+    },
+    "category": "material",
+    "source_ids": [
+      "cygnus",
+      "dragon"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "logistics"
+    ]
+  },
+  {
+    "id": "sunpower",
+    "source": "sun",
+    "target": "power",
+    "label": {
+      "zh": "光伏发电",
+      "en": "Solar radiation → Photovoltaics & power"
+    },
+    "category": "energy",
+    "source_ids": [
+      "solar",
+      "power"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "energy"
+    ]
+  },
+  {
+    "id": "power_heat",
+    "source": "power",
+    "target": "heat",
+    "label": {
+      "zh": "设备耗能最终成热",
+      "en": "Photovoltaics & power → Waste heat"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal",
+      "power"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "energy"
+    ]
+  },
+  {
+    "id": "crew_heat",
+    "source": "crew",
+    "target": "heat",
+    "label": {
+      "zh": "代谢放热",
+      "en": "Crew → Waste heat"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "heat_radiator",
+    "source": "heat",
+    "target": "radiator",
+    "label": {
+      "zh": "冷却回路传热",
+      "en": "Waste heat → Radiator"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview"
+    ]
+  },
+  {
+    "id": "radiate",
+    "source": "radiator",
+    "target": "space",
+    "label": {
+      "zh": "红外辐射散热",
+      "en": "Radiator → Radiative heat sink"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "overview",
+      "energy"
+    ]
+  },
+  {
+    "id": "urine_out",
+    "source": "crew",
+    "target": "urine",
+    "label": {
+      "zh": "排尿",
+      "en": "Crew → Urine"
+    },
+    "category": "material",
+    "source_ids": [
+      "toilet",
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "vapour_out",
+    "source": "crew",
+    "target": "humidity",
+    "label": {
+      "zh": "呼吸／蒸发出汗",
+      "en": "Crew → Respiration & sweat vapour"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "dehumidify",
+    "source": "humidity",
+    "target": "condense",
+    "label": {
+      "zh": "风机收集湿空气",
+      "en": "Respiration & sweat vapour → Humidity condensation"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "condensate",
+    "source": "condense",
+    "target": "condensate",
+    "label": {
+      "zh": "冷凝成液水",
+      "en": "Humidity condensation → Condensate"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "urine_process",
+    "source": "urine",
+    "target": "upa",
+    "label": {
+      "zh": "预处理后进料",
+      "en": "Urine → Urine distillation / UPA"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "distillate",
+    "source": "upa",
+    "target": "wpa",
+    "label": {
+      "zh": "蒸馏回收水",
+      "en": "Urine distillation / UPA → Filtration & purification / WPA"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "brine_out",
+    "source": "upa",
+    "target": "brine",
+    "label": {
+      "zh": "含水浓盐水",
+      "en": "Urine distillation / UPA → Urine brine"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "bpa_in",
+    "source": "brine",
+    "target": "bpa",
+    "label": {
+      "zh": "进一步提水",
+      "en": "Urine brine → Brine processing / BPA"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "bpa_vapour",
+    "source": "bpa",
+    "target": "humidity",
+    "label": {
+      "zh": "膜分离／蒸发出的水蒸气",
+      "en": "Brine processing / BPA → Respiration & sweat vapour"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "bpa_residue",
+    "source": "bpa",
+    "target": "residue",
+    "label": {
+      "zh": "残留物／处理袋",
+      "en": "Brine processing / BPA → Retained salts & consumables"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "cond_wpa",
+    "source": "condensate",
+    "target": "wpa",
+    "label": {
+      "zh": "冷凝水",
+      "en": "Condensate → Filtration & purification / WPA"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "purify",
+    "source": "wpa",
+    "target": "water",
+    "label": {
+      "zh": "多级净化／质量检查",
+      "en": "Filtration & purification / WPA → Usable water"
+    },
+    "category": "material",
+    "source_ids": [
+      "water",
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "filter_waste",
+    "source": "wpa",
+    "target": "residue",
+    "label": {
+      "zh": "更换滤材与截留物",
+      "en": "Filtration & purification / WPA → Retained salts & consumables"
+    },
+    "category": "material",
+    "source_ids": [
+      "water"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "residue_dispose",
+    "source": "residue",
+    "target": "solid",
+    "label": {
+      "zh": "废物收集",
+      "en": "Retained salts & consumables → Solid waste"
+    },
+    "category": "material",
+    "source_ids": [
+      "water",
+      "toilet"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "water"
+    ]
+  },
+  {
+    "id": "capture",
+    "source": "co2",
+    "target": "scrub",
+    "label": {
+      "zh": "吸附／解吸分离",
+      "en": "Exhaled CO2 → CO2 separation"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss",
+      "acls",
+      "russian"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "scrub_sab",
+    "source": "scrub",
+    "target": "sabatier",
+    "label": {
+      "zh": "CO₂ 浓缩流",
+      "en": "CO2 separation → CO2 reduction / Sabatier"
+    },
+    "category": "material",
+    "source_ids": [
+      "acls",
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "scrub_vent",
+    "source": "scrub",
+    "target": "vacuum",
+    "label": {
+      "zh": "CO₂ 解吸排空",
+      "en": "CO2 separation → Venting to space"
+    },
+    "category": "material",
+    "source_ids": [
+      "iss_vent",
+      "acls"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "contam",
+    "source": "equipment",
+    "target": "contaminants",
+    "label": {
+      "zh": "材料释放／颗粒",
+      "en": "Clothing, packaging & equipment → Trace gases & particles"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "trace",
+    "source": "contaminants",
+    "target": "clean",
+    "label": {
+      "zh": "吸附／催化／过滤",
+      "en": "Trace gases & particles → Trace contaminant removal"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "clean_air",
+    "source": "clean",
+    "target": "air",
+    "label": {
+      "zh": "净化后空气",
+      "en": "Trace contaminant removal → Cabin air: O2 / N2"
+    },
+    "category": "material",
+    "source_ids": [
+      "eclss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "air"
+    ]
+  },
+  {
+    "id": "prop_up",
+    "source": "cargo",
+    "target": "propellant",
+    "label": {
+      "zh": "推进剂补给",
+      "en": "Upmass logistics → Propellant / working fluid"
+    },
+    "category": "material",
+    "source_ids": [
+      "tianzhou"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "engine_in",
+    "source": "propellant",
+    "target": "engine",
+    "label": {
+      "zh": "燃料与氧化剂",
+      "en": "Propellant / working fluid → Chemical thruster"
+    },
+    "category": "material",
+    "source_ids": [
+      "rocket"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "engine_out",
+    "source": "engine",
+    "target": "exhaust",
+    "label": {
+      "zh": "喷出反应产物",
+      "en": "Chemical thruster → Exhaust to environment"
+    },
+    "category": "material",
+    "source_ids": [
+      "rocket"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "raw_up",
+    "source": "cargo",
+    "target": "feedstock",
+    "label": {
+      "zh": "原料／实验耗材",
+      "en": "Upmass logistics → Manufacturing / research supplies"
+    },
+    "category": "material",
+    "source_ids": [
+      "tianzhou",
+      "print"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "print_in",
+    "source": "feedstock",
+    "target": "printer",
+    "label": {
+      "zh": "塑料丝／金属原料",
+      "en": "Manufacturing / research supplies → In-space 3D printing"
+    },
+    "category": "material",
+    "source_ids": [
+      "print"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "print_out",
+    "source": "printer",
+    "target": "samples",
+    "label": {
+      "zh": "打印零件／试样",
+      "en": "In-space 3D printing → Experimental products & samples"
+    },
+    "category": "material",
+    "source_ids": [
+      "print",
+      "refab"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "research",
+    "source": "feedstock",
+    "target": "samples",
+    "label": {
+      "zh": "实验转化／样品培养",
+      "en": "Manufacturing / research supplies → Experimental products & samples"
+    },
+    "category": "material",
+    "source_ids": [
+      "dragon",
+      "print"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "water_hot",
+    "source": "coolant",
+    "target": "ammonia",
+    "label": {
+      "zh": "换热器传热",
+      "en": "Internal water cooling loop → External ammonia cooling loop"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "cool_heat",
+    "source": "heat",
+    "target": "coolant",
+    "label": {
+      "zh": "吸收舱内热量",
+      "en": "Waste heat → Internal water cooling loop"
+    },
+    "category": "energy",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "ammonia_radiator",
+    "source": "ammonia",
+    "target": "radiator",
+    "label": {
+      "zh": "热氨流向散热器",
+      "en": "External ammonia cooling loop → Radiator"
+    },
+    "category": "material",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "ammonia_back",
+    "source": "radiator",
+    "target": "ammonia",
+    "label": {
+      "zh": "冷氨返回",
+      "en": "Radiator → External ammonia cooling loop"
+    },
+    "category": "material",
+    "source_ids": [
+      "thermal"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "lights",
+    "source": "power",
+    "target": "light",
+    "label": {
+      "zh": "电力转为光照",
+      "en": "Photovoltaics & power → Controlled lighting"
+    },
+    "category": "energy",
+    "source_ids": [
+      "plantmedia"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "energy"
+    ]
+  },
+  {
+    "id": "plant_nutrients",
+    "source": "nutrients",
+    "target": "plants",
+    "label": {
+      "zh": "种子／肥料／基质",
+      "en": "Seeds, substrate & nutrients → In-orbit crops / Veggie"
+    },
+    "category": "material",
+    "source_ids": [
+      "plantmedia"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "plant_water",
+    "source": "water",
+    "target": "plants",
+    "label": {
+      "zh": "补水",
+      "en": "Usable water → In-orbit crops / Veggie"
+    },
+    "category": "material",
+    "source_ids": [
+      "plantmedia"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "plant_co2",
+    "source": "co2",
+    "target": "plants",
+    "label": {
+      "zh": "光合作用固定 CO₂",
+      "en": "Exhaled CO2 → In-orbit crops / Veggie"
+    },
+    "category": "material",
+    "source_ids": [
+      "plantmedia",
+      "veggie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "plant_light",
+    "source": "light",
+    "target": "plants",
+    "label": {
+      "zh": "生长灯",
+      "en": "Controlled lighting → In-orbit crops / Veggie"
+    },
+    "category": "energy",
+    "source_ids": [
+      "plantmedia"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "plant_food",
+    "source": "plants",
+    "target": "crew",
+    "label": {
+      "zh": "少量鲜食",
+      "en": "In-orbit crops / Veggie → Crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "veggie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "plant_residue",
+    "source": "plants",
+    "target": "biomass",
+    "label": {
+      "zh": "留样／不可食组织",
+      "en": "In-orbit crops / Veggie → Experimental biomass"
+    },
+    "category": "material",
+    "source_ids": [
+      "veggie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "algae_co2",
+    "source": "bio_co2",
+    "target": "algae",
+    "label": {
+      "zh": "CO₂ 培养",
+      "en": "Culture-system CO2 → ArtemISS cyanobacteria"
+    },
+    "category": "material",
+    "source_ids": [
+      "artemiss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "algae_light",
+    "source": "light",
+    "target": "algae",
+    "label": {
+      "zh": "光照",
+      "en": "Controlled lighting → ArtemISS cyanobacteria"
+    },
+    "category": "energy",
+    "source_ids": [
+      "artemiss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "algae_o2",
+    "source": "algae",
+    "target": "bio_o2",
+    "label": {
+      "zh": "光合产氧",
+      "en": "ArtemISS cyanobacteria → Experimental oxygen"
+    },
+    "category": "material",
+    "source_ids": [
+      "artemiss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "algae_mass",
+    "source": "algae",
+    "target": "biomass",
+    "label": {
+      "zh": "生长形成生物量",
+      "en": "ArtemISS cyanobacteria → Experimental biomass"
+    },
+    "category": "material",
+    "source_ids": [
+      "artemiss"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "plants"
+    ]
+  },
+  {
+    "id": "fish_plant",
+    "source": "fish",
+    "target": "aquatic",
+    "label": {
+      "zh": "呼吸 CO₂",
+      "en": "Zebrafish → Hornwort"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "plant_fish",
+    "source": "aquatic",
+    "target": "fish",
+    "label": {
+      "zh": "光合 O₂",
+      "en": "Hornwort → Zebrafish"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "fish_feed",
+    "source": "fishfeed",
+    "target": "fish",
+    "label": {
+      "zh": "自动投喂",
+      "en": "Stored fish feed → Zebrafish"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "fish_excrete",
+    "source": "fish",
+    "target": "fishwaste",
+    "label": {
+      "zh": "排泄／代谢产物",
+      "en": "Zebrafish → Fish excreta"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish",
+      "aqh"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "bio_filter",
+    "source": "fishwaste",
+    "target": "biofilter",
+    "label": {
+      "zh": "微生物分解／处理",
+      "en": "Fish excreta → Microbial biofilter"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish",
+      "aqh"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "filteredwater",
+    "source": "biofilter",
+    "target": "aquawater",
+    "label": {
+      "zh": "净化循环水",
+      "en": "Microbial biofilter → Aquatic circulation water"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish",
+      "aqh",
+      "aqh_run"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "water_fish",
+    "source": "aquawater",
+    "target": "fish",
+    "label": {
+      "zh": "维持水环境",
+      "en": "Aquatic circulation water → Zebrafish"
+    },
+    "category": "material",
+    "source_ids": [
+      "fish",
+      "aqh_run"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "light_aquatic",
+    "source": "light",
+    "target": "aquatic",
+    "label": {
+      "zh": "受控光照",
+      "en": "Controlled lighting → Hornwort"
+    },
+    "category": "energy",
+    "source_ids": [
+      "fish"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "aquatic"
+    ]
+  },
+  {
+    "id": "g_excrete",
+    "source": "gcrew",
+    "target": "gwaste",
+    "label": {
+      "zh": "排泄物／厨余",
+      "en": "Ground-test crew → Organic waste / residues"
+    },
+    "category": "material",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_liq",
+    "source": "gwaste",
+    "target": "liquefy",
+    "label": {
+      "zh": "有机废物处理",
+      "en": "Organic waste / residues → Microbial liquefaction"
+    },
+    "category": "material",
+    "source_ids": [
+      "liquefy"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_ammonium",
+    "source": "liquefy",
+    "target": "ammonium",
+    "label": {
+      "zh": "厌氧转化",
+      "en": "Microbial liquefaction → Ammonium / organic acids"
+    },
+    "category": "material",
+    "source_ids": [
+      "liquefy"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_photo",
+    "source": "ammonium",
+    "target": "photohetero",
+    "label": {
+      "zh": "有机酸利用",
+      "en": "Ammonium / organic acids → Photoheterotrophic microbes"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_nit_in",
+    "source": "photohetero",
+    "target": "nitrification",
+    "label": {
+      "zh": "含铵物流",
+      "en": "Photoheterotrophic microbes → Microbial nitrification"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_nitrate",
+    "source": "nitrification",
+    "target": "nitrate",
+    "label": {
+      "zh": "NH₄⁺ → NO₂⁻ → NO₃⁻",
+      "en": "Microbial nitrification → Nitrate & nutrients"
+    },
+    "category": "material",
+    "source_ids": [
+      "nitrify"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_fertilize",
+    "source": "nitrate",
+    "target": "gplant",
+    "label": {
+      "zh": "营养盐吸收",
+      "en": "Nitrate & nutrients → Plants / photosynthetic microbes"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_photosynthesis",
+    "source": "gplant",
+    "target": "gfood",
+    "label": {
+      "zh": "光合生产",
+      "en": "Plants / photosynthetic microbes → Food & oxygen"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_eat",
+    "source": "gfood",
+    "target": "gcrew",
+    "label": {
+      "zh": "供食／供氧",
+      "en": "Food & oxygen → Ground-test crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_resp",
+    "source": "gcrew",
+    "target": "gco2",
+    "label": {
+      "zh": "呼吸",
+      "en": "Ground-test crew → Ground-system CO2"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_carbon",
+    "source": "gco2",
+    "target": "gplant",
+    "label": {
+      "zh": "碳固定",
+      "en": "Ground-system CO2 → Plants / photosynthetic microbes"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_water",
+    "source": "gplant",
+    "target": "gwater",
+    "label": {
+      "zh": "蒸腾／冷凝",
+      "en": "Plants / photosynthetic microbes → Recovered water"
+    },
+    "category": "material",
+    "source_ids": [
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_drink",
+    "source": "gwater",
+    "target": "gcrew",
+    "label": {
+      "zh": "回收水",
+      "en": "Recovered water → Ground-test crew"
+    },
+    "category": "material",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_residue",
+    "source": "gplant",
+    "target": "gwaste",
+    "label": {
+      "zh": "不可食生物量",
+      "en": "Plants / photosynthetic microbes → Organic waste / residues"
+    },
+    "category": "material",
+    "source_ids": [
+      "liquefy"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "g_light",
+    "source": "genergy",
+    "target": "gplant",
+    "label": {
+      "zh": "灯光／环境控制",
+      "en": "External power / lighting → Plants / photosynthetic microbes"
+    },
+    "category": "energy",
+    "source_ids": [
+      "pilot"
+    ],
+    "layer": "ground",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "ground"
+    ]
+  },
+  {
+    "id": "fuel_in",
+    "source": "storedho",
+    "target": "fuelcell",
+    "label": {
+      "zh": "H₂ + O₂",
+      "en": "Stored H2 + O2 → Hydrogen–oxygen fuel cell"
+    },
+    "category": "material",
+    "source_ids": [
+      "apollo"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "fuel_water",
+    "source": "fuelcell",
+    "target": "water",
+    "label": {
+      "zh": "副产水供乘员",
+      "en": "Hydrogen–oxygen fuel cell → Usable water"
+    },
+    "category": "material",
+    "source_ids": [
+      "apollo"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "fuel_electric",
+    "source": "fuelcell",
+    "target": "power",
+    "label": {
+      "zh": "发电",
+      "en": "Hydrogen–oxygen fuel cell → Photovoltaics & power"
+    },
+    "category": "energy",
+    "source_ids": [
+      "apollo"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "li_in",
+    "source": "co2",
+    "target": "lioh",
+    "label": {
+      "zh": "化学吸收",
+      "en": "Exhaled CO2 → LiOH CO2 absorption"
+    },
+    "category": "material",
+    "source_ids": [
+      "lioh"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "li_out",
+    "source": "lioh",
+    "target": "carbonate",
+    "label": {
+      "zh": "固定为碳酸盐",
+      "en": "LiOH CO2 absorption → Carbonate waste"
+    },
+    "category": "material",
+    "source_ids": [
+      "lioh"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "candle_out",
+    "source": "candle",
+    "target": "air",
+    "label": {
+      "zh": "一次性化学供氧",
+      "en": "Chemical oxygen generator → Cabin air: O2 / N2"
+    },
+    "category": "material",
+    "source_ids": [
+      "russian"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "mars_in",
+    "source": "marsco2",
+    "target": "moxie",
+    "label": {
+      "zh": "压缩／过滤大气",
+      "en": "Martian atmospheric CO2 → MOXIE electrolysis"
+    },
+    "category": "material",
+    "source_ids": [
+      "moxie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "mars_o2",
+    "source": "moxie",
+    "target": "marso2",
+    "label": {
+      "zh": "高温固体氧化物电解",
+      "en": "MOXIE electrolysis → Mars experimental O2"
+    },
+    "category": "material",
+    "source_ids": [
+      "moxie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "mars_co",
+    "source": "moxie",
+    "target": "marsco",
+    "label": {
+      "zh": "CO 与残余气体",
+      "en": "MOXIE electrolysis → CO & residual gases"
+    },
+    "category": "material",
+    "source_ids": [
+      "moxie"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "other"
+    ]
+  },
+  {
+    "id": "launch_fuel",
+    "source": "earth",
+    "target": "launch_engine",
+    "label": {
+      "zh": "燃料／氧化剂",
+      "en": "Earth supply & manufacturing → Launch propulsion"
+    },
+    "category": "material",
+    "source_ids": [
+      "rocket"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "launch_exhaust",
+    "source": "launch_engine",
+    "target": "exhaust",
+    "label": {
+      "zh": "发射尾气",
+      "en": "Launch propulsion → Exhaust to environment"
+    },
+    "category": "material",
+    "source_ids": [
+      "rocket"
+    ],
+    "layer": "baseline",
+    "scenario": "observed",
+    "owner": null,
+    "views": [
+      "logistics"
+    ]
+  }
+]

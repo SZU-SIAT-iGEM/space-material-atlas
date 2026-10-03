@@ -1,0 +1,166 @@
+{
+  "roster": {
+    "id": "2025-5634",
+    "official_id": 5634,
+    "name": "TUDarmstadt",
+    "year": 2025,
+    "country": "DEU",
+    "city": "Darmstadt",
+    "region": "europe",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5634",
+    "wiki": "https://2025.igem.wiki/tudarmstadt",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5634",
+    "year": 2025,
+    "name": "TUDarmstadt",
+    "url": "https://2025.igem.wiki/tudarmstadt",
+    "location": "Germany (Darmstadt)",
+    "organizer_type": "Collegiate",
+    "description": "ClaresO4− 利用工程枯草芽孢杆菌处理火星水冰中的高氯酸盐，将当地含盐水资源与后续净化、生命支持及农业用水相连接。",
+    "role": {
+      "zh": "高氯酸盐水生物处理",
+      "en": "Perchlorate water biotreatment"
+    },
+    "chains": [
+      {
+        "id": "2025-5634:route:0",
+        "theme": "water",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5634:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2025-5634:route:0:edge:0",
+          "2025-5634:route:0:edge:1"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered B. subtilis / Perchlorate detoxification",
+          "en": "B. subtilis perchlorate treatment"
+        }
+      }
+    ],
+    "primary_theme": "water",
+    "themes": [
+      "water"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5634"
+    ],
+    "description_en": "ClaresO4− uses engineered Bacillus subtilis to treat perchlorate in Martian water and ice, connecting local water resources with purification, life support and cultivation.",
+    "narrative": {
+      "zh": "ClaresO4− 利用工程枯草芽孢杆菌处理火星水冰中的高氯酸盐，将当地含盐水资源与后续净化、生命支持及农业用水相连接。",
+      "en": "ClaresO4− uses engineered Bacillus subtilis to treat perchlorate in Martian water and ice, connecting local water resources with purification, life support and cultivation."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5634:route:0:step:0",
+      "label": {
+        "zh": "枯草芽孢杆菌处理高氯酸盐",
+        "en": "B. subtilis perchlorate treatment"
+      },
+      "kind": "process",
+      "theme": "water",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5634",
+      "route": "2025-5634:route:0",
+      "source_ids": [
+        "team:2025-5634"
+      ],
+      "demonstration": false,
+      "description": "ClaresO4− 利用工程枯草芽孢杆菌处理火星水冰中的高氯酸盐，将当地含盐水资源与后续净化、生命支持及农业用水相连接。",
+      "description_en": "ClaresO4− uses engineered Bacillus subtilis to treat perchlorate in Martian water and ice, connecting local water resources with purification, life support and cultivation.",
+      "narrative": {
+        "zh": "ClaresO4− 利用工程枯草芽孢杆菌处理火星水冰中的高氯酸盐，将当地含盐水资源与后续净化、生命支持及农业用水相连接。",
+        "en": "ClaresO4− uses engineered Bacillus subtilis to treat perchlorate in Martian water and ice, connecting local water resources with purification, life support and cultivation."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5634:route:0:edge:0",
+      "source": "ig_perchwater",
+      "target": "2025-5634:route:0:step:0",
+      "label": {
+        "zh": "含 perchlorate 的水／冰",
+        "en": "Perchlorate-bearing Mars water → B. subtilis perchlorate treatment"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5634",
+      "route": "2025-5634:route:0",
+      "theme": "water",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5634"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5634:route:0:edge:1",
+      "source": "2025-5634:route:0:step:0",
+      "target": "f_waterplant",
+      "label": {
+        "zh": "解毒后水 → 净化监测",
+        "en": "B. subtilis perchlorate treatment → Project water purification"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5634",
+      "route": "2025-5634:route:0",
+      "theme": "water",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5634"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5634:interface:f_waterplant",
+      "source": "f_waterplant",
+      "target": "water",
+      "label": {
+        "zh": "达到使用要求后供水",
+        "en": "Project water purification → Usable water"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5634",
+      "theme": "water",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5634"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5634:route:0:depends",
+      "owner": "2025-5634",
+      "route": "2025-5634:route:0",
+      "source": "2025-5634:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5634"
+      ]
+    }
+  ],
+  "enhancements": []
+}

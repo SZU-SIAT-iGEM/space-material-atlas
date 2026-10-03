@@ -1,0 +1,186 @@
+{
+  "roster": {
+    "id": "2024-5034",
+    "official_id": 5034,
+    "name": "Nanjing-China",
+    "year": 2024,
+    "country": "CHN",
+    "city": "Nanjing",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5034",
+    "wiki": "https://2024.igem.wiki/nanjing-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5034",
+    "year": 2024,
+    "name": "Nanjing-China",
+    "url": "https://2024.igem.wiki/nanjing-china",
+    "location": "China (Nanjing)",
+    "organizer_type": "Collegiate",
+    "description": "Nanjing-China 将希瓦氏菌的磷富集与胞外电子传递相结合，从含磷废物流中回收营养元素，并连接生物产电与农业肥料两条用途。",
+    "role": {
+      "zh": "磷回收与生物产电",
+      "en": "Phosphorus recovery & bioelectricity"
+    },
+    "chains": [
+      {
+        "id": "2024-5034:route:0",
+        "theme": "water",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5034:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5034:route:0:edge:0",
+          "2024-5034:route:0:edge:1",
+          "2024-5034:route:0:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Shewanella / 磷回收",
+          "en": "Shewanella phosphorus recovery"
+        }
+      }
+    ],
+    "primary_theme": "water",
+    "themes": [
+      "water"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5034"
+    ],
+    "description_en": "Nanjing-China combines phosphorus accumulation and extracellular electron transfer in Shewanella, linking phosphorus-bearing waste to nutrient recovery, bioelectricity and agricultural fertilizer.",
+    "narrative": {
+      "zh": "Nanjing-China 将希瓦氏菌的磷富集与胞外电子传递相结合，从含磷废物流中回收营养元素，并连接生物产电与农业肥料两条用途。",
+      "en": "Nanjing-China combines phosphorus accumulation and extracellular electron transfer in Shewanella, linking phosphorus-bearing waste to nutrient recovery, bioelectricity and agricultural fertilizer."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5034:route:0:step:0",
+      "label": {
+        "zh": "Shewanella / 磷回收",
+        "en": "Shewanella phosphorus recovery"
+      },
+      "kind": "process",
+      "theme": "water",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5034",
+      "route": "2024-5034:route:0",
+      "source_ids": [
+        "team:2024-5034"
+      ],
+      "demonstration": false,
+      "description": "Nanjing-China 将希瓦氏菌的磷富集与胞外电子传递相结合，从含磷废物流中回收营养元素，并连接生物产电与农业肥料两条用途。",
+      "description_en": "Nanjing-China combines phosphorus accumulation and extracellular electron transfer in Shewanella, linking phosphorus-bearing waste to nutrient recovery, bioelectricity and agricultural fertilizer.",
+      "narrative": {
+        "zh": "Nanjing-China 将希瓦氏菌的磷富集与胞外电子传递相结合，从含磷废物流中回收营养元素，并连接生物产电与农业肥料两条用途。",
+        "en": "Nanjing-China combines phosphorus accumulation and extracellular electron transfer in Shewanella, linking phosphorus-bearing waste to nutrient recovery, bioelectricity and agricultural fertilizer."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5034:route:0:edge:0",
+      "source": "f_waste",
+      "target": "2024-5034:route:0:step:0",
+      "label": {
+        "zh": "含磷废物",
+        "en": "Bioprocessable organic waste → Shewanella phosphorus recovery"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5034",
+      "route": "2024-5034:route:0",
+      "theme": "water",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5034"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5034:route:0:edge:1",
+      "source": "2024-5034:route:0:step:0",
+      "target": "f_salts",
+      "label": {
+        "zh": "回收磷／磷酸盐肥料",
+        "en": "Shewanella phosphorus recovery → Culture nutrients"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5034",
+      "route": "2024-5034:route:0",
+      "theme": "water",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5034"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5034:route:0:edge:2",
+      "source": "2024-5034:route:0:step:0",
+      "target": "f_power",
+      "label": {
+        "zh": "产电",
+        "en": "Shewanella phosphorus recovery → Bioelectricity"
+      },
+      "category": "energy",
+      "layer": "project",
+      "owner": "2024-5034",
+      "route": "2024-5034:route:0",
+      "theme": "water",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5034"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5034:context:solid:f_waste",
+      "source": "solid",
+      "target": "f_waste",
+      "label": {
+        "zh": "可处理的有机组分",
+        "en": "Solid waste → Bioprocessable organic waste"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5034",
+      "theme": "materials",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5034"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5034:route:0:depends",
+      "owner": "2024-5034",
+      "route": "2024-5034:route:0",
+      "source": "2024-5034:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5034"
+      ]
+    }
+  ],
+  "enhancements": []
+}

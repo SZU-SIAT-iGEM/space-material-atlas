@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6475",
+    "official_id": 6475,
+    "name": "BGCFullerton",
+    "year": 2026,
+    "country": "USA",
+    "city": "Fullerton",
+    "region": "north-america",
+    "organizer_type": "commercial",
+    "url": "https://teams.igem.org/6475",
+    "wiki": "https://2026.igem.wiki/bgcfullerton",
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

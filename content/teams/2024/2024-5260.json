@@ -1,0 +1,205 @@
+{
+  "roster": {
+    "id": "2024-5260",
+    "official_id": 5260,
+    "name": "ABOA",
+    "year": 2024,
+    "country": "FIN",
+    "city": "Turku",
+    "region": "europe",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5260",
+    "wiki": "https://2024.igem.wiki/aboa",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5260",
+    "year": 2024,
+    "name": "ABOA",
+    "url": "https://2024.igem.wiki/aboa",
+    "location": "Finland (Turku)",
+    "organizer_type": "Collegiate",
+    "description": "AstroVita 将微生物细胞工厂用于营养分子的原位生产。路线包含作为维生素 A 前体的 β-胡萝卜素，以及维生素 C、E，连接培养营养与宇航员食品。",
+    "role": {
+      "zh": "微生物维生素生产",
+      "en": "Microbial vitamin production"
+    },
+    "chains": [
+      {
+        "id": "2024-5260:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5260:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5260:route:0:edge:0",
+          "2024-5260:route:0:edge:1",
+          "2024-5260:route:0:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Microbial cell factory / AstroVita",
+          "en": "AstroVita microbial production"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5260"
+    ],
+    "description_en": "AstroVita uses microbial cell factories for local nutrient production, including beta-carotene as a vitamin A precursor and vitamins C and E, linking cultivation nutrients to astronaut food.",
+    "narrative": {
+      "zh": "AstroVita 将微生物细胞工厂用于营养分子的原位生产。路线包含作为维生素 A 前体的 β-胡萝卜素，以及维生素 C、E，连接培养营养与宇航员食品。",
+      "en": "AstroVita uses microbial cell factories for local nutrient production, including beta-carotene as a vitamin A precursor and vitamins C and E, linking cultivation nutrients to astronaut food."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5260:route:0:step:0",
+      "label": {
+        "zh": "AstroVita 微生物工厂",
+        "en": "AstroVita microbial production"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5260",
+      "route": "2024-5260:route:0",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false,
+      "description": "AstroVita 将微生物细胞工厂用于营养分子的原位生产。路线包含作为维生素 A 前体的 β-胡萝卜素，以及维生素 C、E，连接培养营养与宇航员食品。",
+      "description_en": "AstroVita uses microbial cell factories for local nutrient production, including beta-carotene as a vitamin A precursor and vitamins C and E, linking cultivation nutrients to astronaut food.",
+      "narrative": {
+        "zh": "AstroVita 将微生物细胞工厂用于营养分子的原位生产。路线包含作为维生素 A 前体的 β-胡萝卜素，以及维生素 C、E，连接培养营养与宇航员食品。",
+        "en": "AstroVita uses microbial cell factories for local nutrient production, including beta-carotene as a vitamin A precursor and vitamins C and E, linking cultivation nutrients to astronaut food."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5260:route:0:edge:0",
+      "source": "f_sugars",
+      "target": "2024-5260:route:0:step:0",
+      "label": {
+        "zh": "发酵碳源",
+        "en": "Fermentation carbon source → AstroVita microbial production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5260",
+      "route": "2024-5260:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5260:route:0:edge:1",
+      "source": "f_salts",
+      "target": "2024-5260:route:0:step:0",
+      "label": {
+        "zh": "营养成分",
+        "en": "Culture nutrients → AstroVita microbial production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5260",
+      "route": "2024-5260:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5260:route:0:edge:2",
+      "source": "2024-5260:route:0:step:0",
+      "target": "prod_vitamins",
+      "label": {
+        "zh": "Vitamins A / C / E",
+        "en": "AstroVita microbial production → Beta-carotene / vitamins C, E"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5260",
+      "route": "2024-5260:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5260:use:prod_vitamins",
+      "source": "prod_vitamins",
+      "target": "f_foodsafe",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Beta-carotene / vitamins C, E → Food processing & qualification"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5260",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5260:use:f_foodsafe",
+      "source": "f_foodsafe",
+      "target": "food",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Food processing & qualification → Food"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5260",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5260"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5260:route:0:depends",
+      "owner": "2024-5260",
+      "route": "2024-5260:route:0",
+      "source": "2024-5260:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5260"
+      ]
+    }
+  ],
+  "enhancements": []
+}

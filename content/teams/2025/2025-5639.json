@@ -1,0 +1,230 @@
+{
+  "roster": {
+    "id": "2025-5639",
+    "official_id": 5639,
+    "name": "SHSBNU-China",
+    "year": 2025,
+    "country": "CHN",
+    "city": "Beijing",
+    "region": "asia",
+    "organizer_type": "secondary-education",
+    "url": "https://teams.igem.org/5639",
+    "wiki": "https://2025.igem.wiki/shsbnu-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5639",
+    "year": 2025,
+    "name": "SHSBNU-China",
+    "url": "https://2025.igem.wiki/shsbnu-china",
+    "location": "China (Beijing)",
+    "organizer_type": "High School",
+    "description": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+    "role": {
+      "zh": "结构蛋白与黏附水凝胶",
+      "en": "Structural proteins & adhesive hydrogel"
+    },
+    "chains": [
+      {
+        "id": "2025-5639:route:0",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5639:route:0:step:0",
+          "2025-5639:route:0:step:1"
+        ],
+        "edge_ids": [
+          "2025-5639:route:0:edge:0",
+          "2025-5639:route:0:edge:1",
+          "2025-5639:route:0:edge:2",
+          "2025-5639:route:0:edge:3"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered E. coli → 结构蛋白／融合蛋白",
+          "en": "E. coli protein expression → Structural / fusion proteins"
+        }
+      }
+    ],
+    "primary_theme": "materials",
+    "themes": [
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5639"
+    ],
+    "description_en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts.",
+    "narrative": {
+      "zh": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+      "en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5639:route:0:step:0",
+      "label": {
+        "zh": "工程大肠杆菌表达",
+        "en": "E. coli protein expression"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false,
+      "description": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+      "description_en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts.",
+      "narrative": {
+        "zh": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+        "en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts."
+      }
+    },
+    {
+      "id": "2025-5639:route:0:step:1",
+      "label": {
+        "zh": "结构蛋白／融合蛋白",
+        "en": "Structural / fusion proteins"
+      },
+      "kind": "material",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false,
+      "description": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+      "description_en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts.",
+      "narrative": {
+        "zh": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+        "en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5639:route:0:edge:0",
+      "source": "f_sugars",
+      "target": "2025-5639:route:0:step:0",
+      "label": {
+        "zh": "碳源",
+        "en": "Fermentation carbon source → E. coli protein expression"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5639:route:0:edge:1",
+      "source": "f_salts",
+      "target": "2025-5639:route:0:step:0",
+      "label": {
+        "zh": "营养",
+        "en": "Culture nutrients → E. coli protein expression"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5639:route:0:edge:2",
+      "source": "2025-5639:route:0:step:0",
+      "target": "2025-5639:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "E. coli protein expression → Structural / fusion proteins"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5639:route:0:edge:3",
+      "source": "2025-5639:route:0:step:1",
+      "target": "ig_repair",
+      "label": {
+        "zh": "adhesive hydrogel",
+        "en": "Structural / fusion proteins → Adhesive hydrogel"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5639:context:ig_repair:equipment",
+      "source": "ig_repair",
+      "target": "equipment",
+      "label": {
+        "zh": "预期维修用途",
+        "en": "Adhesive hydrogel → Clothing, packaging & equipment"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2025-5639",
+      "theme": "materials",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5639"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5639:route:0:depends",
+      "owner": "2025-5639",
+      "route": "2025-5639:route:0",
+      "source": "2025-5639:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5639"
+      ]
+    }
+  ],
+  "enhancements": []
+}

@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "earth",
+    "label": {
+      "zh": "地球补给与制造",
+      "en": "Earth supply & manufacturing"
+    },
+    "kind": "boundary",
+    "description": "食品、耗材和设备由地球制造并通过货运进入太空系统。",
+    "source_ids": [
+      "cygnus",
+      "tianzhou"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "earth_input",
+    "description_en": "Food, consumables and equipment are manufactured on Earth and delivered to space systems."
+  },
+  {
+    "id": "cargo",
+    "label": {
+      "zh": "上行货运",
+      "en": "Upmass logistics"
+    },
+    "kind": "process",
+    "description": "上行货运连接地球补给与制造的输入与食品、衣物、包装、工具与设备、推进剂／工作介质等下游环节。",
+    "source_ids": [
+      "acls",
+      "cygnus",
+      "eclss",
+      "print",
+      "russian",
+      "tianzhou",
+      "veggie",
+      "water"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Upmass logistics connects Earth supply & manufacturing with Food, Clothing, packaging & equipment, Propellant / working fluid.",
+    "narrative": {
+      "zh": "上行货运连接地球补给与制造的输入与食品、衣物、包装、工具与设备、推进剂／工作介质等下游环节。",
+      "en": "Upmass logistics connects Earth supply & manufacturing with Food, Clothing, packaging & equipment, Propellant / working fluid."
+    }
+  },
+  {
+    "id": "food",
+    "label": {
+      "zh": "食品",
+      "en": "Food"
+    },
+    "kind": "material",
+    "description": "食品连接上行货运、食品后处理的输入与宇航员等下游环节。",
+    "source_ids": [
+      "tianzhou",
+      "veggie"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Food connects Upmass logistics, Food post-processing with Crew.",
+    "narrative": {
+      "zh": "食品连接上行货运、食品后处理的输入与宇航员等下游环节。",
+      "en": "Food connects Upmass logistics, Food post-processing with Crew."
+    }
+  },
+  {
+    "id": "water",
+    "label": {
+      "zh": "可用水",
+      "en": "Usable water"
+    },
+    "kind": "material",
+    "description": "可用水连接水回收系统、CO₂ 还原／Sabatier、过滤／催化净化 WPA的输入与宇航员、电解制氧、在轨作物／Veggie等下游环节。",
+    "source_ids": [
+      "acls",
+      "apollo",
+      "china",
+      "eclss",
+      "plantmedia",
+      "russian",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Usable water connects Water recovery system, CO2 reduction / Sabatier, Filtration & purification / WPA with Crew, Water electrolysis, In-orbit crops / Veggie.",
+    "narrative": {
+      "zh": "可用水连接水回收系统、CO₂ 还原／Sabatier、过滤／催化净化 WPA的输入与宇航员、电解制氧、在轨作物／Veggie等下游环节。",
+      "en": "Usable water connects Water recovery system, CO2 reduction / Sabatier, Filtration & purification / WPA with Crew, Water electrolysis, In-orbit crops / Veggie."
+    }
+  },
+  {
+    "id": "air",
+    "label": {
+      "zh": "舱内空气 O₂ / N₂",
+      "en": "Cabin air: O2 / N2"
+    },
+    "kind": "material",
+    "description": "舱内空气 O₂ / N₂连接电解制氧、微量污染物净化、固体化学氧源的输入与宇航员等下游环节。",
+    "source_ids": [
+      "china",
+      "eclss",
+      "russian"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Cabin air: O2 / N2 connects Water electrolysis, Trace contaminant removal, Chemical oxygen generator with Crew.",
+    "narrative": {
+      "zh": "舱内空气 O₂ / N₂连接电解制氧、微量污染物净化、固体化学氧源的输入与宇航员等下游环节。",
+      "en": "Cabin air: O2 / N2 connects Water electrolysis, Trace contaminant removal, Chemical oxygen generator with Crew."
+    }
+  },
+  {
+    "id": "crew",
+    "label": {
+      "zh": "宇航员",
+      "en": "Crew"
+    },
+    "kind": "actor",
+    "description": "宇航员连接食品、水和空气的利用，以及呼出气体、尿液和固体废物的产生。",
+    "source_ids": [
+      "eclss",
+      "thermal",
+      "toilet",
+      "veggie",
+      "water"
+    ],
+    "theme": "human",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "crew",
+    "description_en": "Crew connects the use of food, water and cabin air with exhaled gases, urine and solid waste."
+  },
+  {
+    "id": "co2",
+    "label": {
+      "zh": "呼出 CO₂",
+      "en": "Exhaled CO2"
+    },
+    "kind": "material",
+    "description": "呼出 CO₂连接宇航员的输入与CO₂ 还原／Sabatier、舱外排放、CO₂ 分离装置等下游环节。",
+    "source_ids": [
+      "acls",
+      "eclss",
+      "iss_vent",
+      "lioh",
+      "plantmedia",
+      "russian",
+      "veggie"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Exhaled CO2 connects Crew with CO2 reduction / Sabatier, Venting to space, CO2 separation.",
+    "narrative": {
+      "zh": "呼出 CO₂连接宇航员的输入与CO₂ 还原／Sabatier、舱外排放、CO₂ 分离装置等下游环节。",
+      "en": "Exhaled CO2 connects Crew with CO2 reduction / Sabatier, Venting to space, CO2 separation."
+    }
+  },
+  {
+    "id": "wastewater",
+    "label": {
+      "zh": "尿液与冷凝水",
+      "en": "Wastewater & condensate"
+    },
+    "kind": "material",
+    "description": "尿液与冷凝水连接宇航员的输入与水回收系统等下游环节。",
+    "source_ids": [
+      "eclss",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Wastewater & condensate connects Crew with Water recovery system.",
+    "narrative": {
+      "zh": "尿液与冷凝水连接宇航员的输入与水回收系统等下游环节。",
+      "en": "Wastewater & condensate connects Crew with Water recovery system."
+    }
+  },
+  {
+    "id": "wrs",
+    "label": {
+      "zh": "水回收系统",
+      "en": "Water recovery system"
+    },
+    "kind": "process",
+    "description": "水回收系统连接尿液与冷凝水的输入与可用水等下游环节。",
+    "source_ids": [
+      "china",
+      "eclss",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Water recovery system connects Wastewater & condensate with Usable water.",
+    "narrative": {
+      "zh": "水回收系统连接尿液与冷凝水的输入与可用水等下游环节。",
+      "en": "Water recovery system connects Wastewater & condensate with Usable water."
+    }
+  },
+  {
+    "id": "electrolysis",
+    "label": {
+      "zh": "电解制氧",
+      "en": "Water electrolysis"
+    },
+    "kind": "process",
+    "description": "电解制氧连接可用水的输入与舱内空气 O₂ / N₂、氢气 H₂等下游环节。",
+    "source_ids": [
+      "china",
+      "eclss",
+      "russian"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Water electrolysis connects Usable water with Cabin air: O2 / N2, Hydrogen H2.",
+    "narrative": {
+      "zh": "电解制氧连接可用水的输入与舱内空气 O₂ / N₂、氢气 H₂等下游环节。",
+      "en": "Water electrolysis connects Usable water with Cabin air: O2 / N2, Hydrogen H2."
+    }
+  },
+  {
+    "id": "sabatier",
+    "label": {
+      "zh": "CO₂ 还原／Sabatier",
+      "en": "CO2 reduction / Sabatier"
+    },
+    "kind": "process",
+    "description": "CO₂ 还原／Sabatier连接呼出 CO₂、氢气 H₂、CO₂ 分离装置的输入与可用水、甲烷 CH₄等下游环节。",
+    "source_ids": [
+      "acls",
+      "eclss"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "CO2 reduction / Sabatier connects Exhaled CO2, Hydrogen H2, CO2 separation with Usable water, Methane CH4.",
+    "narrative": {
+      "zh": "CO₂ 还原／Sabatier连接呼出 CO₂、氢气 H₂、CO₂ 分离装置的输入与可用水、甲烷 CH₄等下游环节。",
+      "en": "CO2 reduction / Sabatier connects Exhaled CO2, Hydrogen H2, CO2 separation with Usable water, Methane CH4."
+    }
+  },
+  {
+    "id": "h2",
+    "label": {
+      "zh": "氢气 H₂",
+      "en": "Hydrogen H2"
+    },
+    "kind": "material",
+    "description": "氢气 H₂连接电解制氧的输入与CO₂ 还原／Sabatier、舱外排放、C. necator / 气体发酵等下游环节。",
+    "source_ids": [
+      "acls",
+      "eclss"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Hydrogen H2 connects Water electrolysis with CO2 reduction / Sabatier, Venting to space, C. necator gas fermentation.",
+    "narrative": {
+      "zh": "氢气 H₂连接电解制氧的输入与CO₂ 还原／Sabatier、舱外排放、C. necator / 气体发酵等下游环节。",
+      "en": "Hydrogen H2 connects Water electrolysis with CO2 reduction / Sabatier, Venting to space, C. necator gas fermentation."
+    }
+  },
+  {
+    "id": "methane",
+    "label": {
+      "zh": "甲烷 CH₄",
+      "en": "Methane CH4"
+    },
+    "kind": "material",
+    "description": "甲烷 CH₄连接CO₂ 还原／Sabatier的输入与舱外排放等下游环节。",
+    "source_ids": [
+      "acls",
+      "eclss",
+      "oxygen_limit"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Methane CH4 connects CO2 reduction / Sabatier with Venting to space.",
+    "narrative": {
+      "zh": "甲烷 CH₄连接CO₂ 还原／Sabatier的输入与舱外排放等下游环节。",
+      "en": "Methane CH4 connects CO2 reduction / Sabatier with Venting to space."
+    }
+  },
+  {
+    "id": "solid",
+    "label": {
+      "zh": "固体废物",
+      "en": "Solid waste"
+    },
+    "kind": "material",
+    "description": "固体废物连接宇航员、衣物、包装、工具与设备、残留盐、有机物与耗材的输入与废弃物 · 再入处置等下游环节。",
+    "source_ids": [
+      "cygnus",
+      "laundry",
+      "toilet",
+      "water"
+    ],
+    "theme": "materials",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Solid waste connects Crew, Clothing, packaging & equipment, Retained salts & consumables with Waste · reentry disposal.",
+    "narrative": {
+      "zh": "固体废物连接宇航员、衣物、包装、工具与设备、残留盐、有机物与耗材的输入与废弃物 · 再入处置等下游环节。",
+      "en": "Solid waste connects Crew, Clothing, packaging & equipment, Retained salts & consumables with Waste · reentry disposal."
+    }
+  },
+  {
+    "id": "equipment",
+    "label": {
+      "zh": "衣物、包装、工具与设备",
+      "en": "Clothing, packaging & equipment"
+    },
+    "kind": "material",
+    "description": "衣物、包装、工具与设备连接上行货运的输入与固体废物、返回地球、微量污染物／颗粒等下游环节。",
+    "source_ids": [
+      "cygnus",
+      "dragon",
+      "eclss",
+      "laundry",
+      "tianzhou"
+    ],
+    "theme": "materials",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Clothing, packaging & equipment connects Upmass logistics with Solid waste, Return to Earth, Trace gases & particles.",
+    "narrative": {
+      "zh": "衣物、包装、工具与设备连接上行货运的输入与固体废物、返回地球、微量污染物／颗粒等下游环节。",
+      "en": "Clothing, packaging & equipment connects Upmass logistics with Solid waste, Return to Earth, Trace gases & particles."
+    }
+  },
+  {
+    "id": "return",
+    "label": {
+      "zh": "返回地球",
+      "en": "Return to Earth"
+    },
+    "kind": "boundary",
+    "description": "样品、产品或设备通过下行运输返回地球，离开当前太空系统。",
+    "source_ids": [
+      "cygnus",
+      "dragon"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "earth_return",
+    "description_en": "Samples, products or equipment leave the space system through return transport to Earth."
+  },
+  {
+    "id": "disposal",
+    "label": {
+      "zh": "废弃物 · 再入处置",
+      "en": "Waste · reentry disposal"
+    },
+    "kind": "boundary",
+    "description": "废弃物随货运飞行器受控再入大气层处置，离开当前循环。",
+    "source_ids": [
+      "cygnus",
+      "toilet"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "disposal",
+    "description_en": "Waste leaves the cycle through controlled atmospheric reentry of a cargo vehicle."
+  },
+  {
+    "id": "vacuum",
+    "label": {
+      "zh": "舱外排放",
+      "en": "Venting to space"
+    },
+    "kind": "boundary",
+    "description": "排放物经舱外出口离开舱内物质循环。",
+    "source_ids": [
+      "acls",
+      "eclss",
+      "iss_vent",
+      "oxygen_limit"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "discharge",
+    "description_en": "Vented material leaves the internal material cycle through outlets to space."
+  },
+  {
+    "id": "sun",
+    "label": {
+      "zh": "太阳辐射",
+      "en": "Solar radiation"
+    },
+    "kind": "energy",
+    "description": "太阳辐射连接相关资源与光伏／电池与供电等下游环节。",
+    "source_ids": [
+      "power",
+      "solar"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Solar radiation connects related resources with Photovoltaics & power.",
+    "narrative": {
+      "zh": "太阳辐射连接相关资源与光伏／电池与供电等下游环节。",
+      "en": "Solar radiation connects related resources with Photovoltaics & power."
+    }
+  },
+  {
+    "id": "power",
+    "label": {
+      "zh": "光伏／电池与供电",
+      "en": "Photovoltaics & power"
+    },
+    "kind": "process",
+    "description": "光伏／电池与供电连接太阳辐射、氢氧燃料电池的输入与废热、受控灯光等下游环节。",
+    "source_ids": [
+      "apollo",
+      "eclss",
+      "plantmedia",
+      "power",
+      "solar",
+      "thermal",
+      "water"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Photovoltaics & power connects Solar radiation, Hydrogen–oxygen fuel cell with Waste heat, Controlled lighting.",
+    "narrative": {
+      "zh": "光伏／电池与供电连接太阳辐射、氢氧燃料电池的输入与废热、受控灯光等下游环节。",
+      "en": "Photovoltaics & power connects Solar radiation, Hydrogen–oxygen fuel cell with Waste heat, Controlled lighting."
+    }
+  },
+  {
+    "id": "heat",
+    "label": {
+      "zh": "废热",
+      "en": "Waste heat"
+    },
+    "kind": "energy",
+    "description": "废热连接光伏／电池与供电、宇航员的输入与散热器、舱内水冷却回路等下游环节。",
+    "source_ids": [
+      "power",
+      "thermal"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Waste heat connects Photovoltaics & power, Crew with Radiator, Internal water cooling loop.",
+    "narrative": {
+      "zh": "废热连接光伏／电池与供电、宇航员的输入与散热器、舱内水冷却回路等下游环节。",
+      "en": "Waste heat connects Photovoltaics & power, Crew with Radiator, Internal water cooling loop."
+    }
+  },
+  {
+    "id": "radiator",
+    "label": {
+      "zh": "散热器",
+      "en": "Radiator"
+    },
+    "kind": "process",
+    "description": "散热器连接废热、舱外氨冷却回路的输入与辐射散热至空间、舱外氨冷却回路等下游环节。",
+    "source_ids": [
+      "thermal"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Radiator connects Waste heat, External ammonia cooling loop with Radiative heat rejection, External ammonia cooling loop.",
+    "narrative": {
+      "zh": "散热器连接废热、舱外氨冷却回路的输入与辐射散热至空间、舱外氨冷却回路等下游环节。",
+      "en": "Radiator connects Waste heat, External ammonia cooling loop with Radiative heat rejection, External ammonia cooling loop."
+    }
+  },
+  {
+    "id": "space",
+    "label": {
+      "zh": "辐射散热至空间",
+      "en": "Radiative heat rejection"
+    },
+    "kind": "boundary",
+    "description": "散热器以热辐射将热量传向周围空间。",
+    "source_ids": [
+      "thermal"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "energy_sink",
+    "description_en": "Radiators transfer heat to the surrounding space through thermal radiation."
+  },
+  {
+    "id": "urine",
+    "label": {
+      "zh": "尿液",
+      "en": "Urine"
+    },
+    "kind": "material",
+    "description": "尿液连接宇航员的输入与尿液蒸馏 UPA、P. fluorescens / 促生工程菌、C. necator / 气体发酵等下游环节。",
+    "source_ids": [
+      "toilet",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Urine connects Crew with Urine distillation / UPA, P. fluorescens root stimulation, C. necator gas fermentation.",
+    "narrative": {
+      "zh": "尿液连接宇航员的输入与尿液蒸馏 UPA、P. fluorescens / 促生工程菌、C. necator / 气体发酵等下游环节。",
+      "en": "Urine connects Crew with Urine distillation / UPA, P. fluorescens root stimulation, C. necator gas fermentation."
+    }
+  },
+  {
+    "id": "humidity",
+    "label": {
+      "zh": "呼吸／汗液水蒸气",
+      "en": "Respiration & sweat vapour"
+    },
+    "kind": "material",
+    "description": "呼吸／汗液水蒸气连接宇航员、浓盐水处理 BPA的输入与除湿冷凝等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Respiration & sweat vapour connects Crew, Brine processing / BPA with Humidity condensation.",
+    "narrative": {
+      "zh": "呼吸／汗液水蒸气连接宇航员、浓盐水处理 BPA的输入与除湿冷凝等下游环节。",
+      "en": "Respiration & sweat vapour connects Crew, Brine processing / BPA with Humidity condensation."
+    }
+  },
+  {
+    "id": "condense",
+    "label": {
+      "zh": "除湿冷凝",
+      "en": "Humidity condensation"
+    },
+    "kind": "process",
+    "description": "除湿冷凝连接呼吸／汗液水蒸气的输入与冷凝水等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Humidity condensation connects Respiration & sweat vapour with Condensate.",
+    "narrative": {
+      "zh": "除湿冷凝连接呼吸／汗液水蒸气的输入与冷凝水等下游环节。",
+      "en": "Humidity condensation connects Respiration & sweat vapour with Condensate."
+    }
+  },
+  {
+    "id": "condensate",
+    "label": {
+      "zh": "冷凝水",
+      "en": "Condensate"
+    },
+    "kind": "material",
+    "description": "冷凝水连接除湿冷凝的输入与过滤／催化净化 WPA等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Condensate connects Humidity condensation with Filtration & purification / WPA.",
+    "narrative": {
+      "zh": "冷凝水连接除湿冷凝的输入与过滤／催化净化 WPA等下游环节。",
+      "en": "Condensate connects Humidity condensation with Filtration & purification / WPA."
+    }
+  },
+  {
+    "id": "upa",
+    "label": {
+      "zh": "尿液蒸馏 UPA",
+      "en": "Urine distillation / UPA"
+    },
+    "kind": "process",
+    "description": "尿液蒸馏 UPA连接尿液的输入与过滤／催化净化 WPA、尿液浓盐水等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Urine distillation / UPA connects Urine with Filtration & purification / WPA, Urine brine.",
+    "narrative": {
+      "zh": "尿液蒸馏 UPA连接尿液的输入与过滤／催化净化 WPA、尿液浓盐水等下游环节。",
+      "en": "Urine distillation / UPA connects Urine with Filtration & purification / WPA, Urine brine."
+    }
+  },
+  {
+    "id": "brine",
+    "label": {
+      "zh": "尿液浓盐水",
+      "en": "Urine brine"
+    },
+    "kind": "material",
+    "description": "尿液浓盐水连接尿液蒸馏 UPA的输入与浓盐水处理 BPA等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Urine brine connects Urine distillation / UPA with Brine processing / BPA.",
+    "narrative": {
+      "zh": "尿液浓盐水连接尿液蒸馏 UPA的输入与浓盐水处理 BPA等下游环节。",
+      "en": "Urine brine connects Urine distillation / UPA with Brine processing / BPA."
+    }
+  },
+  {
+    "id": "bpa",
+    "label": {
+      "zh": "浓盐水处理 BPA",
+      "en": "Brine processing / BPA"
+    },
+    "kind": "process",
+    "description": "浓盐水处理 BPA连接尿液浓盐水的输入与呼吸／汗液水蒸气、残留盐、有机物与耗材等下游环节。",
+    "source_ids": [
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Brine processing / BPA connects Urine brine with Respiration & sweat vapour, Retained salts & consumables.",
+    "narrative": {
+      "zh": "浓盐水处理 BPA连接尿液浓盐水的输入与呼吸／汗液水蒸气、残留盐、有机物与耗材等下游环节。",
+      "en": "Brine processing / BPA connects Urine brine with Respiration & sweat vapour, Retained salts & consumables."
+    }
+  },
+  {
+    "id": "wpa",
+    "label": {
+      "zh": "过滤／催化净化 WPA",
+      "en": "Filtration & purification / WPA"
+    },
+    "kind": "process",
+    "description": "过滤／催化净化 WPA连接尿液蒸馏 UPA、冷凝水的输入与可用水、残留盐、有机物与耗材等下游环节。",
+    "source_ids": [
+      "eclss",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Filtration & purification / WPA connects Urine distillation / UPA, Condensate with Usable water, Retained salts & consumables.",
+    "narrative": {
+      "zh": "过滤／催化净化 WPA连接尿液蒸馏 UPA、冷凝水的输入与可用水、残留盐、有机物与耗材等下游环节。",
+      "en": "Filtration & purification / WPA connects Urine distillation / UPA, Condensate with Usable water, Retained salts & consumables."
+    }
+  },
+  {
+    "id": "residue",
+    "label": {
+      "zh": "残留盐、有机物与耗材",
+      "en": "Retained salts & consumables"
+    },
+    "kind": "material",
+    "description": "残留盐、有机物与耗材连接浓盐水处理 BPA、过滤／催化净化 WPA的输入与固体废物等下游环节。",
+    "source_ids": [
+      "toilet",
+      "water"
+    ],
+    "theme": "water",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Retained salts & consumables connects Brine processing / BPA, Filtration & purification / WPA with Solid waste.",
+    "narrative": {
+      "zh": "残留盐、有机物与耗材连接浓盐水处理 BPA、过滤／催化净化 WPA的输入与固体废物等下游环节。",
+      "en": "Retained salts & consumables connects Brine processing / BPA, Filtration & purification / WPA with Solid waste."
+    }
+  },
+  {
+    "id": "scrub",
+    "label": {
+      "zh": "CO₂ 分离装置",
+      "en": "CO2 separation"
+    },
+    "kind": "process",
+    "description": "CO₂ 分离装置连接呼出 CO₂的输入与CO₂ 还原／Sabatier、舱外排放等下游环节。",
+    "source_ids": [
+      "acls",
+      "eclss",
+      "iss_vent",
+      "russian"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "CO2 separation connects Exhaled CO2 with CO2 reduction / Sabatier, Venting to space.",
+    "narrative": {
+      "zh": "CO₂ 分离装置连接呼出 CO₂的输入与CO₂ 还原／Sabatier、舱外排放等下游环节。",
+      "en": "CO2 separation connects Exhaled CO2 with CO2 reduction / Sabatier, Venting to space."
+    }
+  },
+  {
+    "id": "clean",
+    "label": {
+      "zh": "微量污染物净化",
+      "en": "Trace contaminant removal"
+    },
+    "kind": "process",
+    "description": "微量污染物净化连接微量污染物／颗粒的输入与舱内空气 O₂ / N₂等下游环节。",
+    "source_ids": [
+      "eclss"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Trace contaminant removal connects Trace gases & particles with Cabin air: O2 / N2.",
+    "narrative": {
+      "zh": "微量污染物净化连接微量污染物／颗粒的输入与舱内空气 O₂ / N₂等下游环节。",
+      "en": "Trace contaminant removal connects Trace gases & particles with Cabin air: O2 / N2."
+    }
+  },
+  {
+    "id": "contaminants",
+    "label": {
+      "zh": "微量污染物／颗粒",
+      "en": "Trace gases & particles"
+    },
+    "kind": "material",
+    "description": "微量污染物／颗粒连接衣物、包装、工具与设备的输入与微量污染物净化等下游环节。",
+    "source_ids": [
+      "eclss"
+    ],
+    "theme": "air",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Trace gases & particles connects Clothing, packaging & equipment with Trace contaminant removal.",
+    "narrative": {
+      "zh": "微量污染物／颗粒连接衣物、包装、工具与设备的输入与微量污染物净化等下游环节。",
+      "en": "Trace gases & particles connects Clothing, packaging & equipment with Trace contaminant removal."
+    }
+  },
+  {
+    "id": "propellant",
+    "label": {
+      "zh": "推进剂／工作介质",
+      "en": "Propellant / working fluid"
+    },
+    "kind": "material",
+    "description": "推进剂／工作介质连接上行货运的输入与化学推进器等下游环节。",
+    "source_ids": [
+      "rocket",
+      "tianzhou"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Propellant / working fluid connects Upmass logistics with Chemical thruster.",
+    "narrative": {
+      "zh": "推进剂／工作介质连接上行货运的输入与化学推进器等下游环节。",
+      "en": "Propellant / working fluid connects Upmass logistics with Chemical thruster."
+    }
+  },
+  {
+    "id": "engine",
+    "label": {
+      "zh": "化学推进器",
+      "en": "Chemical thruster"
+    },
+    "kind": "process",
+    "description": "化学推进器将推进剂转化为喷流，为飞行器提供推力。",
+    "source_ids": [
+      "rocket"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Chemical thrusters convert propellants into exhaust to provide thrust.",
+    "narrative": {
+      "zh": "化学推进器将推进剂转化为喷流，为飞行器提供推力。",
+      "en": "Chemical thrusters convert propellants into exhaust to provide thrust."
+    }
+  },
+  {
+    "id": "exhaust",
+    "label": {
+      "zh": "推进喷流／尾气",
+      "en": "Propulsion exhaust"
+    },
+    "kind": "boundary",
+    "description": "推进过程的喷流携带物质离开飞行器。",
+    "source_ids": [
+      "rocket"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "discharge",
+    "description_en": "Propulsion exhaust carries matter out of the vehicle."
+  },
+  {
+    "id": "samples",
+    "label": {
+      "zh": "实验样品／产品",
+      "en": "Experimental products & samples"
+    },
+    "kind": "material",
+    "description": "实验样品／产品连接在轨 3D 打印、制造原料与实验耗材的输入与返回地球等下游环节。",
+    "source_ids": [
+      "dragon",
+      "print",
+      "refab"
+    ],
+    "theme": "materials",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Experimental products & samples connects In-space 3D printing, Manufacturing / research supplies with Return to Earth.",
+    "narrative": {
+      "zh": "实验样品／产品连接在轨 3D 打印、制造原料与实验耗材的输入与返回地球等下游环节。",
+      "en": "Experimental products & samples connects In-space 3D printing, Manufacturing / research supplies with Return to Earth."
+    }
+  },
+  {
+    "id": "feedstock",
+    "label": {
+      "zh": "制造原料与实验耗材",
+      "en": "Manufacturing / research supplies"
+    },
+    "kind": "material",
+    "description": "制造原料与实验耗材连接上行货运的输入与在轨 3D 打印、实验样品／产品等下游环节。",
+    "source_ids": [
+      "dragon",
+      "print",
+      "tianzhou"
+    ],
+    "theme": "materials",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Manufacturing / research supplies connects Upmass logistics with In-space 3D printing, Experimental products & samples.",
+    "narrative": {
+      "zh": "制造原料与实验耗材连接上行货运的输入与在轨 3D 打印、实验样品／产品等下游环节。",
+      "en": "Manufacturing / research supplies connects Upmass logistics with In-space 3D printing, Experimental products & samples."
+    }
+  },
+  {
+    "id": "printer",
+    "label": {
+      "zh": "在轨 3D 打印",
+      "en": "In-space 3D printing"
+    },
+    "kind": "process",
+    "description": "在轨 3D 打印连接制造原料与实验耗材的输入与实验样品／产品等下游环节。",
+    "source_ids": [
+      "print",
+      "refab"
+    ],
+    "theme": "materials",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "In-space 3D printing connects Manufacturing / research supplies with Experimental products & samples.",
+    "narrative": {
+      "zh": "在轨 3D 打印连接制造原料与实验耗材的输入与实验样品／产品等下游环节。",
+      "en": "In-space 3D printing connects Manufacturing / research supplies with Experimental products & samples."
+    }
+  },
+  {
+    "id": "coolant",
+    "label": {
+      "zh": "舱内水冷却回路",
+      "en": "Internal water cooling loop"
+    },
+    "kind": "process",
+    "description": "舱内水冷却回路连接废热的输入与舱外氨冷却回路等下游环节。",
+    "source_ids": [
+      "thermal"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Internal water cooling loop connects Waste heat with External ammonia cooling loop.",
+    "narrative": {
+      "zh": "舱内水冷却回路连接废热的输入与舱外氨冷却回路等下游环节。",
+      "en": "Internal water cooling loop connects Waste heat with External ammonia cooling loop."
+    }
+  },
+  {
+    "id": "ammonia",
+    "label": {
+      "zh": "舱外氨冷却回路",
+      "en": "External ammonia cooling loop"
+    },
+    "kind": "process",
+    "description": "舱外氨冷却回路连接舱内水冷却回路、散热器的输入与散热器等下游环节。",
+    "source_ids": [
+      "thermal"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "External ammonia cooling loop connects Internal water cooling loop, Radiator with Radiator.",
+    "narrative": {
+      "zh": "舱外氨冷却回路连接舱内水冷却回路、散热器的输入与散热器等下游环节。",
+      "en": "External ammonia cooling loop connects Internal water cooling loop, Radiator with Radiator."
+    }
+  },
+  {
+    "id": "light",
+    "label": {
+      "zh": "受控灯光",
+      "en": "Controlled lighting"
+    },
+    "kind": "energy",
+    "description": "受控灯光连接光伏／电池与供电的输入与在轨作物／Veggie、ArtemISS 在轨光生物反应器、金鱼藻等下游环节。",
+    "source_ids": [
+      "artemiss",
+      "fish",
+      "plantmedia"
+    ],
+    "theme": "energy",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Controlled lighting connects Photovoltaics & power with In-orbit crops / Veggie, ArtemISS orbital photobioreactor, Hornwort.",
+    "narrative": {
+      "zh": "受控灯光连接光伏／电池与供电的输入与在轨作物／Veggie、ArtemISS 在轨光生物反应器、金鱼藻等下游环节。",
+      "en": "Controlled lighting connects Photovoltaics & power with In-orbit crops / Veggie, ArtemISS orbital photobioreactor, Hornwort."
+    }
+  },
+  {
+    "id": "plants",
+    "label": {
+      "zh": "在轨作物／Veggie",
+      "en": "In-orbit crops / Veggie"
+    },
+    "kind": "process",
+    "description": "Veggie 在空间站内提供光照和植物培养环境，连接种植资源、作物生长与收获物。",
+    "source_ids": [
+      "plantmedia",
+      "veggie"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Veggie provides lighting and a plant-growth environment aboard the space station, linking cultivation resources with crops and harvests.",
+    "narrative": {
+      "zh": "Veggie 在空间站内提供光照和植物培养环境，连接种植资源、作物生长与收获物。",
+      "en": "Veggie provides lighting and a plant-growth environment aboard the space station, linking cultivation resources with crops and harvests."
+    }
+  },
+  {
+    "id": "nutrients",
+    "label": {
+      "zh": "种子、基质与营养盐",
+      "en": "Seeds, substrate & nutrients"
+    },
+    "kind": "material",
+    "description": "种子、基质与营养盐连接相关资源与在轨作物／Veggie等下游环节。",
+    "source_ids": [
+      "plantmedia"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Seeds, substrate & nutrients connects related resources with In-orbit crops / Veggie.",
+    "narrative": {
+      "zh": "种子、基质与营养盐连接相关资源与在轨作物／Veggie等下游环节。",
+      "en": "Seeds, substrate & nutrients connects related resources with In-orbit crops / Veggie."
+    }
+  },
+  {
+    "id": "algae",
+    "label": {
+      "zh": "ArtemISS 在轨光生物反应器",
+      "en": "ArtemISS orbital photobioreactor"
+    },
+    "kind": "process",
+    "description": "ArtemISS 以 Arthrospira 培养为核心，连接光照、二氧化碳、微生物生长与氧气产生。",
+    "source_ids": [
+      "artemiss"
+    ],
+    "theme": "bioreactor",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "ArtemISS centers on Arthrospira cultivation, connecting light, carbon dioxide, microbial growth and oxygen production.",
+    "narrative": {
+      "zh": "ArtemISS 以 Arthrospira 培养为核心，连接光照、二氧化碳、微生物生长与氧气产生。",
+      "en": "ArtemISS centers on Arthrospira cultivation, connecting light, carbon dioxide, microbial growth and oxygen production."
+    }
+  },
+  {
+    "id": "bio_o2",
+    "label": {
+      "zh": "实验产生的 O₂",
+      "en": "Experimental oxygen"
+    },
+    "kind": "material",
+    "description": "实验产生的 O₂连接ArtemISS 在轨光生物反应器的输入。",
+    "source_ids": [
+      "artemiss"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Experimental oxygen connects ArtemISS orbital photobioreactor.",
+    "narrative": {
+      "zh": "实验产生的 O₂连接ArtemISS 在轨光生物反应器的输入。",
+      "en": "Experimental oxygen connects ArtemISS orbital photobioreactor."
+    }
+  },
+  {
+    "id": "bio_co2",
+    "label": {
+      "zh": "培养系统 CO₂",
+      "en": "Culture-system CO2"
+    },
+    "kind": "material",
+    "description": "培养系统 CO₂连接相关资源与ArtemISS 在轨光生物反应器等下游环节。",
+    "source_ids": [
+      "artemiss"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Culture-system CO2 connects related resources with ArtemISS orbital photobioreactor.",
+    "narrative": {
+      "zh": "培养系统 CO₂连接相关资源与ArtemISS 在轨光生物反应器等下游环节。",
+      "en": "Culture-system CO2 connects related resources with ArtemISS orbital photobioreactor."
+    }
+  },
+  {
+    "id": "biomass",
+    "label": {
+      "zh": "实验生物量／残体",
+      "en": "Experimental biomass"
+    },
+    "kind": "material",
+    "description": "实验生物量／残体连接在轨作物／Veggie、ArtemISS 在轨光生物反应器的输入。",
+    "source_ids": [
+      "artemiss",
+      "veggie"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Experimental biomass connects In-orbit crops / Veggie, ArtemISS orbital photobioreactor.",
+    "narrative": {
+      "zh": "实验生物量／残体连接在轨作物／Veggie、ArtemISS 在轨光生物反应器的输入。",
+      "en": "Experimental biomass connects In-orbit crops / Veggie, ArtemISS orbital photobioreactor."
+    }
+  },
+  {
+    "id": "fish",
+    "label": {
+      "zh": "斑马鱼",
+      "en": "Zebrafish"
+    },
+    "kind": "process",
+    "description": "斑马鱼连接金鱼藻、储存饲料、水生系统循环水的输入与金鱼藻、鱼类排泄物等下游环节。",
+    "source_ids": [
+      "aqh",
+      "aqh_run",
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Zebrafish connects Hornwort, Stored fish feed, Aquatic circulation water with Hornwort, Fish excreta.",
+    "narrative": {
+      "zh": "斑马鱼连接金鱼藻、储存饲料、水生系统循环水的输入与金鱼藻、鱼类排泄物等下游环节。",
+      "en": "Zebrafish connects Hornwort, Stored fish feed, Aquatic circulation water with Hornwort, Fish excreta."
+    }
+  },
+  {
+    "id": "aquatic",
+    "label": {
+      "zh": "金鱼藻",
+      "en": "Hornwort"
+    },
+    "kind": "process",
+    "description": "金鱼藻连接斑马鱼、受控灯光的输入与斑马鱼等下游环节。",
+    "source_ids": [
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Hornwort connects Zebrafish, Controlled lighting with Zebrafish.",
+    "narrative": {
+      "zh": "金鱼藻连接斑马鱼、受控灯光的输入与斑马鱼等下游环节。",
+      "en": "Hornwort connects Zebrafish, Controlled lighting with Zebrafish."
+    }
+  },
+  {
+    "id": "aquawater",
+    "label": {
+      "zh": "水生系统循环水",
+      "en": "Aquatic circulation water"
+    },
+    "kind": "material",
+    "description": "水生系统循环水连接微生物处理／生物滤器的输入与斑马鱼等下游环节。",
+    "source_ids": [
+      "aqh",
+      "aqh_run",
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Aquatic circulation water connects Microbial biofilter with Zebrafish.",
+    "narrative": {
+      "zh": "水生系统循环水连接微生物处理／生物滤器的输入与斑马鱼等下游环节。",
+      "en": "Aquatic circulation water connects Microbial biofilter with Zebrafish."
+    }
+  },
+  {
+    "id": "fishwaste",
+    "label": {
+      "zh": "鱼类排泄物",
+      "en": "Fish excreta"
+    },
+    "kind": "material",
+    "description": "鱼类排泄物连接斑马鱼的输入与微生物处理／生物滤器等下游环节。",
+    "source_ids": [
+      "aqh",
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Fish excreta connects Zebrafish with Microbial biofilter.",
+    "narrative": {
+      "zh": "鱼类排泄物连接斑马鱼的输入与微生物处理／生物滤器等下游环节。",
+      "en": "Fish excreta connects Zebrafish with Microbial biofilter."
+    }
+  },
+  {
+    "id": "biofilter",
+    "label": {
+      "zh": "微生物处理／生物滤器",
+      "en": "Microbial biofilter"
+    },
+    "kind": "process",
+    "description": "生物滤器利用微生物处理养殖水中的代谢废物，连接鱼类排泄与水循环。",
+    "source_ids": [
+      "aqh",
+      "aqh_run",
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Biofilters use microorganisms to process metabolic waste in aquaculture water, linking fish excretion with water circulation.",
+    "narrative": {
+      "zh": "生物滤器利用微生物处理养殖水中的代谢废物，连接鱼类排泄与水循环。",
+      "en": "Biofilters use microorganisms to process metabolic waste in aquaculture water, linking fish excretion with water circulation."
+    }
+  },
+  {
+    "id": "fishfeed",
+    "label": {
+      "zh": "储存饲料",
+      "en": "Stored fish feed"
+    },
+    "kind": "material",
+    "description": "储存饲料连接相关资源与斑马鱼等下游环节。",
+    "source_ids": [
+      "fish"
+    ],
+    "theme": "agriculture",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Stored fish feed connects related resources with Zebrafish.",
+    "narrative": {
+      "zh": "储存饲料连接相关资源与斑马鱼等下游环节。",
+      "en": "Stored fish feed connects related resources with Zebrafish."
+    }
+  },
+  {
+    "id": "gcrew",
+    "label": {
+      "zh": "地面实验乘员",
+      "en": "Ground-study crew"
+    },
+    "kind": "actor",
+    "description": "地面密闭生态系统中的乘员参与资源利用与废物流产生。",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "boundary_role": "crew",
+    "description_en": "Crew in ground-based closed ecosystems participates in resource use and waste generation."
+  },
+  {
+    "id": "gwaste",
+    "label": {
+      "zh": "有机废物／残体",
+      "en": "Organic waste / residues"
+    },
+    "kind": "material",
+    "description": "有机废物／残体连接地面实验乘员、植物／光合微生物的输入与微生物液化等下游环节。",
+    "source_ids": [
+      "liquefy",
+      "lunar_palace",
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Organic waste / residues connects Ground-study crew, Plants / photosynthetic microbes with Microbial liquefaction.",
+    "narrative": {
+      "zh": "有机废物／残体连接地面实验乘员、植物／光合微生物的输入与微生物液化等下游环节。",
+      "en": "Organic waste / residues connects Ground-study crew, Plants / photosynthetic microbes with Microbial liquefaction."
+    }
+  },
+  {
+    "id": "liquefy",
+    "label": {
+      "zh": "微生物液化",
+      "en": "Microbial liquefaction"
+    },
+    "kind": "process",
+    "description": "微生物液化连接有机废物／残体的输入与NH₄⁺／有机酸／矿物等下游环节。",
+    "source_ids": [
+      "liquefy"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Microbial liquefaction connects Organic waste / residues with Ammonium / organic acids.",
+    "narrative": {
+      "zh": "微生物液化连接有机废物／残体的输入与NH₄⁺／有机酸／矿物等下游环节。",
+      "en": "Microbial liquefaction connects Organic waste / residues with Ammonium / organic acids."
+    }
+  },
+  {
+    "id": "ammonium",
+    "label": {
+      "zh": "NH₄⁺／有机酸／矿物",
+      "en": "Ammonium / organic acids"
+    },
+    "kind": "material",
+    "description": "NH₄⁺／有机酸／矿物连接微生物液化的输入与光异养微生物等下游环节。",
+    "source_ids": [
+      "liquefy",
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Ammonium / organic acids connects Microbial liquefaction with Photoheterotrophic microbes.",
+    "narrative": {
+      "zh": "NH₄⁺／有机酸／矿物连接微生物液化的输入与光异养微生物等下游环节。",
+      "en": "Ammonium / organic acids connects Microbial liquefaction with Photoheterotrophic microbes."
+    }
+  },
+  {
+    "id": "photohetero",
+    "label": {
+      "zh": "光异养微生物",
+      "en": "Photoheterotrophic microbes"
+    },
+    "kind": "process",
+    "description": "光异养微生物连接NH₄⁺／有机酸／矿物的输入与硝化微生物等下游环节。",
+    "source_ids": [
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Photoheterotrophic microbes connects Ammonium / organic acids with Microbial nitrification.",
+    "narrative": {
+      "zh": "光异养微生物连接NH₄⁺／有机酸／矿物的输入与硝化微生物等下游环节。",
+      "en": "Photoheterotrophic microbes connects Ammonium / organic acids with Microbial nitrification."
+    }
+  },
+  {
+    "id": "nitrification",
+    "label": {
+      "zh": "硝化微生物",
+      "en": "Microbial nitrification"
+    },
+    "kind": "process",
+    "description": "硝化微生物连接光异养微生物的输入与硝酸盐及营养盐等下游环节。",
+    "source_ids": [
+      "melissa",
+      "nitrify"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Microbial nitrification connects Photoheterotrophic microbes with Nitrate & nutrients.",
+    "narrative": {
+      "zh": "硝化微生物连接光异养微生物的输入与硝酸盐及营养盐等下游环节。",
+      "en": "Microbial nitrification connects Photoheterotrophic microbes with Nitrate & nutrients."
+    }
+  },
+  {
+    "id": "nitrate",
+    "label": {
+      "zh": "硝酸盐及营养盐",
+      "en": "Nitrate & nutrients"
+    },
+    "kind": "material",
+    "description": "硝酸盐及营养盐连接硝化微生物的输入与植物／光合微生物等下游环节。",
+    "source_ids": [
+      "melissa",
+      "nitrify"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Nitrate & nutrients connects Microbial nitrification with Plants / photosynthetic microbes.",
+    "narrative": {
+      "zh": "硝酸盐及营养盐连接硝化微生物的输入与植物／光合微生物等下游环节。",
+      "en": "Nitrate & nutrients connects Microbial nitrification with Plants / photosynthetic microbes."
+    }
+  },
+  {
+    "id": "gplant",
+    "label": {
+      "zh": "植物／光合微生物",
+      "en": "Plants / photosynthetic microbes"
+    },
+    "kind": "process",
+    "description": "植物／光合微生物连接硝酸盐及营养盐、CO₂、外部电力／灯光的输入与食物与氧气、净化水／冷凝水、有机废物／残体等下游环节。",
+    "source_ids": [
+      "liquefy",
+      "melissa",
+      "pilot"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Plants / photosynthetic microbes connects Nitrate & nutrients, Ground-system CO2, External power / lighting with Food & oxygen, Recovered water, Organic waste / residues.",
+    "narrative": {
+      "zh": "植物／光合微生物连接硝酸盐及营养盐、CO₂、外部电力／灯光的输入与食物与氧气、净化水／冷凝水、有机废物／残体等下游环节。",
+      "en": "Plants / photosynthetic microbes connects Nitrate & nutrients, Ground-system CO2, External power / lighting with Food & oxygen, Recovered water, Organic waste / residues."
+    }
+  },
+  {
+    "id": "gfood",
+    "label": {
+      "zh": "食物与氧气",
+      "en": "Food & oxygen"
+    },
+    "kind": "material",
+    "description": "食物与氧气连接植物／光合微生物的输入与地面实验乘员等下游环节。",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Food & oxygen connects Plants / photosynthetic microbes with Ground-study crew.",
+    "narrative": {
+      "zh": "食物与氧气连接植物／光合微生物的输入与地面实验乘员等下游环节。",
+      "en": "Food & oxygen connects Plants / photosynthetic microbes with Ground-study crew."
+    }
+  },
+  {
+    "id": "gwater",
+    "label": {
+      "zh": "净化水／冷凝水",
+      "en": "Recovered water"
+    },
+    "kind": "material",
+    "description": "净化水／冷凝水连接植物／光合微生物的输入与地面实验乘员等下游环节。",
+    "source_ids": [
+      "lunar_palace",
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Recovered water connects Plants / photosynthetic microbes with Ground-study crew.",
+    "narrative": {
+      "zh": "净化水／冷凝水连接植物／光合微生物的输入与地面实验乘员等下游环节。",
+      "en": "Recovered water connects Plants / photosynthetic microbes with Ground-study crew."
+    }
+  },
+  {
+    "id": "gco2",
+    "label": {
+      "zh": "CO₂",
+      "en": "Ground-system CO2"
+    },
+    "kind": "material",
+    "description": "CO₂连接地面实验乘员的输入与植物／光合微生物等下游环节。",
+    "source_ids": [
+      "melissa"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "Ground-system CO2 connects Ground-study crew with Plants / photosynthetic microbes.",
+    "narrative": {
+      "zh": "CO₂连接地面实验乘员的输入与植物／光合微生物等下游环节。",
+      "en": "Ground-system CO2 connects Ground-study crew with Plants / photosynthetic microbes."
+    }
+  },
+  {
+    "id": "genergy",
+    "label": {
+      "zh": "外部电力／灯光",
+      "en": "External power / lighting"
+    },
+    "kind": "energy",
+    "description": "外部电力／灯光连接相关资源与植物／光合微生物等下游环节。",
+    "source_ids": [
+      "pilot"
+    ],
+    "theme": "ground",
+    "layer": "ground",
+    "future": false,
+    "description_en": "External power / lighting connects related resources with Plants / photosynthetic microbes.",
+    "narrative": {
+      "zh": "外部电力／灯光连接相关资源与植物／光合微生物等下游环节。",
+      "en": "External power / lighting connects related resources with Plants / photosynthetic microbes."
+    }
+  },
+  {
+    "id": "fuelcell",
+    "label": {
+      "zh": "氢氧燃料电池",
+      "en": "Hydrogen–oxygen fuel cell"
+    },
+    "kind": "process",
+    "description": "氢氧燃料电池连接储存 H₂ 与 O₂的输入与可用水、光伏／电池与供电等下游环节。",
+    "source_ids": [
+      "apollo"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Hydrogen–oxygen fuel cell connects Stored H2 + O2 with Usable water, Photovoltaics & power.",
+    "narrative": {
+      "zh": "氢氧燃料电池连接储存 H₂ 与 O₂的输入与可用水、光伏／电池与供电等下游环节。",
+      "en": "Hydrogen–oxygen fuel cell connects Stored H2 + O2 with Usable water, Photovoltaics & power."
+    }
+  },
+  {
+    "id": "storedho",
+    "label": {
+      "zh": "储存 H₂ 与 O₂",
+      "en": "Stored H2 + O2"
+    },
+    "kind": "material",
+    "description": "储存 H₂ 与 O₂连接相关资源与氢氧燃料电池等下游环节。",
+    "source_ids": [
+      "apollo"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Stored H2 + O2 connects related resources with Hydrogen–oxygen fuel cell.",
+    "narrative": {
+      "zh": "储存 H₂ 与 O₂连接相关资源与氢氧燃料电池等下游环节。",
+      "en": "Stored H2 + O2 connects related resources with Hydrogen–oxygen fuel cell."
+    }
+  },
+  {
+    "id": "lioh",
+    "label": {
+      "zh": "一次性 LiOH 吸收剂",
+      "en": "LiOH CO2 absorption"
+    },
+    "kind": "process",
+    "description": "一次性 LiOH 吸收剂连接呼出 CO₂的输入与废吸收剂／碳酸盐等下游环节。",
+    "source_ids": [
+      "lioh"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "LiOH CO2 absorption connects Exhaled CO2 with Carbonate waste.",
+    "narrative": {
+      "zh": "一次性 LiOH 吸收剂连接呼出 CO₂的输入与废吸收剂／碳酸盐等下游环节。",
+      "en": "LiOH CO2 absorption connects Exhaled CO2 with Carbonate waste."
+    }
+  },
+  {
+    "id": "carbonate",
+    "label": {
+      "zh": "废吸收剂／碳酸盐",
+      "en": "Carbonate waste"
+    },
+    "kind": "material",
+    "description": "废吸收剂／碳酸盐连接一次性 LiOH 吸收剂的输入。",
+    "source_ids": [
+      "lioh"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Carbonate waste connects LiOH CO2 absorption.",
+    "narrative": {
+      "zh": "废吸收剂／碳酸盐连接一次性 LiOH 吸收剂的输入。",
+      "en": "Carbonate waste connects LiOH CO2 absorption."
+    }
+  },
+  {
+    "id": "candle",
+    "label": {
+      "zh": "固体化学氧源",
+      "en": "Chemical oxygen generator"
+    },
+    "kind": "process",
+    "description": "固体化学氧源通过化学反应释放储存于材料中的氧。",
+    "source_ids": [
+      "russian"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Solid chemical oxygen sources release oxygen stored in a material through a chemical reaction.",
+    "narrative": {
+      "zh": "固体化学氧源通过化学反应释放储存于材料中的氧。",
+      "en": "Solid chemical oxygen sources release oxygen stored in a material through a chemical reaction."
+    }
+  },
+  {
+    "id": "marsco2",
+    "label": {
+      "zh": "火星大气 CO₂",
+      "en": "Martian atmospheric CO₂"
+    },
+    "kind": "boundary",
+    "description": "火星大气为当地二氧化碳转化路线提供碳资源。",
+    "source_ids": [
+      "moxie"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "local_resource",
+    "description_en": "The Martian atmosphere supplies carbon resources for local carbon-dioxide conversion routes."
+  },
+  {
+    "id": "moxie",
+    "label": {
+      "zh": "MOXIE 高温电解",
+      "en": "MOXIE electrolysis"
+    },
+    "kind": "process",
+    "description": "MOXIE 高温电解连接火星大气 CO₂的输入与实验氧气 O₂、火星制氧排气等下游环节。",
+    "source_ids": [
+      "moxie"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "MOXIE electrolysis connects Martian atmospheric CO₂ with Mars experimental O2, Mars oxygen-process exhaust.",
+    "narrative": {
+      "zh": "MOXIE 高温电解连接火星大气 CO₂的输入与实验氧气 O₂、火星制氧排气等下游环节。",
+      "en": "MOXIE electrolysis connects Martian atmospheric CO₂ with Mars experimental O2, Mars oxygen-process exhaust."
+    }
+  },
+  {
+    "id": "marso2",
+    "label": {
+      "zh": "实验氧气 O₂",
+      "en": "Mars experimental O2"
+    },
+    "kind": "material",
+    "description": "MOXIE 路线从火星二氧化碳中分离得到氧气，连接当地大气资源与氧气生产。",
+    "source_ids": [
+      "moxie"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "The MOXIE route separates oxygen from Martian carbon dioxide, linking atmospheric resources with oxygen production.",
+    "narrative": {
+      "zh": "MOXIE 路线从火星二氧化碳中分离得到氧气，连接当地大气资源与氧气生产。",
+      "en": "The MOXIE route separates oxygen from Martian carbon dioxide, linking atmospheric resources with oxygen production."
+    }
+  },
+  {
+    "id": "marsco",
+    "label": {
+      "zh": "火星制氧排气",
+      "en": "Mars oxygen-process exhaust"
+    },
+    "kind": "boundary",
+    "description": "高温电解产生的含一氧化碳气流排出制氧过程。",
+    "source_ids": [
+      "moxie"
+    ],
+    "theme": "heritage",
+    "layer": "baseline",
+    "future": false,
+    "boundary_role": "discharge",
+    "description_en": "A carbon-monoxide-containing stream exits the high-temperature oxygen-production process."
+  },
+  {
+    "id": "launch_engine",
+    "label": {
+      "zh": "发射火箭推进",
+      "en": "Launch propulsion"
+    },
+    "kind": "process",
+    "description": "发射火箭推进为地球与太空之间的运输提供动力。",
+    "source_ids": [
+      "rocket",
+      "tianzhou"
+    ],
+    "theme": "logistics",
+    "layer": "baseline",
+    "future": false,
+    "description_en": "Launch propulsion powers transport between Earth and space.",
+    "narrative": {
+      "zh": "发射火箭推进为地球与太空之间的运输提供动力。",
+      "en": "Launch propulsion powers transport between Earth and space."
+    }
+  }
+]

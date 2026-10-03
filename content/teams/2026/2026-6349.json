@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6349",
+    "official_id": 6349,
+    "name": "Barcelona-UB",
+    "year": 2026,
+    "country": "ESP",
+    "city": "Barcelona",
+    "region": "europe",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6349",
+    "wiki": "https://2026.igem.wiki/barcelona-ub",
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

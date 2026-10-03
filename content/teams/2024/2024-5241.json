@@ -1,0 +1,166 @@
+{
+  "roster": {
+    "id": "2024-5241",
+    "official_id": 5241,
+    "name": "ECIB-PKU",
+    "year": 2024,
+    "country": "CHN",
+    "city": "Qidong",
+    "region": "asia",
+    "organizer_type": "community-lab",
+    "url": "https://teams.igem.org/5241",
+    "wiki": "https://2024.igem.wiki/ecib-pku",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5241",
+    "year": 2024,
+    "name": "ECIB-PKU",
+    "url": "https://2024.igem.wiki/ecib-pku",
+    "location": "China (Qidong)",
+    "organizer_type": "Community Lab",
+    "description": "ECIB-PKU 以工程大肠杆菌生产黑色素，并将其与水凝胶和微藻相关体系结合，形成面向太空环境的防护材料路线。",
+    "role": {
+      "zh": "黑色素防护材料",
+      "en": "Melanin shielding material"
+    },
+    "chains": [
+      {
+        "id": "2024-5241:route:0",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5241:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5241:route:0:edge:0",
+          "2024-5241:route:0:edge:1"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered E. coli / Melanin synthesis",
+          "en": "E. coli melanin synthesis"
+        }
+      }
+    ],
+    "primary_theme": "materials",
+    "themes": [
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5241"
+    ],
+    "description_en": "ECIB-PKU uses engineered E. coli to produce melanin and combines it with hydrogel and microalgal systems in a protective-material route for space environments.",
+    "narrative": {
+      "zh": "ECIB-PKU 以工程大肠杆菌生产黑色素，并将其与水凝胶和微藻相关体系结合，形成面向太空环境的防护材料路线。",
+      "en": "ECIB-PKU uses engineered E. coli to produce melanin and combines it with hydrogel and microalgal systems in a protective-material route for space environments."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5241:route:0:step:0",
+      "label": {
+        "zh": "工程大肠杆菌合成黑色素",
+        "en": "E. coli melanin synthesis"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5241",
+      "route": "2024-5241:route:0",
+      "source_ids": [
+        "team:2024-5241"
+      ],
+      "demonstration": false,
+      "description": "ECIB-PKU 以工程大肠杆菌生产黑色素，并将其与水凝胶和微藻相关体系结合，形成面向太空环境的防护材料路线。",
+      "description_en": "ECIB-PKU uses engineered E. coli to produce melanin and combines it with hydrogel and microalgal systems in a protective-material route for space environments.",
+      "narrative": {
+        "zh": "ECIB-PKU 以工程大肠杆菌生产黑色素，并将其与水凝胶和微藻相关体系结合，形成面向太空环境的防护材料路线。",
+        "en": "ECIB-PKU uses engineered E. coli to produce melanin and combines it with hydrogel and microalgal systems in a protective-material route for space environments."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5241:route:0:edge:0",
+      "source": "f_sugars",
+      "target": "2024-5241:route:0:step:0",
+      "label": {
+        "zh": "发酵碳源与营养",
+        "en": "Fermentation carbon source → E. coli melanin synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5241",
+      "route": "2024-5241:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5241"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5241:route:0:edge:1",
+      "source": "2024-5241:route:0:step:0",
+      "target": "prod_melanin",
+      "label": {
+        "zh": "melanin → shielding material",
+        "en": "E. coli melanin synthesis → Melanin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5241",
+      "route": "2024-5241:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5241"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5241:context:prod_melanin:equipment",
+      "source": "prod_melanin",
+      "target": "equipment",
+      "label": {
+        "zh": "预期防护材料用途",
+        "en": "Melanin → Clothing, packaging & equipment"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5241",
+      "theme": "materials",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5241"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5241:route:0:depends",
+      "owner": "2024-5241",
+      "route": "2024-5241:route:0",
+      "source": "2024-5241:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5241"
+      ]
+    }
+  ],
+  "enhancements": []
+}

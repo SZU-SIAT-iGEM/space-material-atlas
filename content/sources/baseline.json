@@ -1,0 +1,498 @@
+[
+  {
+    "id": "water",
+    "title": "ISS 水回收达到 98% 的技术演示",
+    "url": "https://www.nasa.gov/missions/station/iss-research/nasa-achieves-water-recovery-milestone-on-international-space-station/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2023-06-20",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "eclss",
+    "title": "Environmental Control and Life Support Systems",
+    "url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2025-04-04",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "china",
+    "title": "中国空间站再生生保指标；引述航天员中心负责人",
+    "url": "https://www.news.cn/tech/2023-04/13/c_1129520453.htm",
+    "publisher": "新华社／中国航天员中心",
+    "event_or_publication_date": "2023-04-13",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "acls",
+    "title": "Advanced Closed Loop System",
+    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Advanced_Closed_Loop_System",
+    "publisher": "ESA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "acls_run",
+    "title": "ACLS 在九人驻站期间参与空气净化",
+    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/New_life_support_system_cleans_air_during_full-house_Space_Station",
+    "publisher": "ESA",
+    "event_or_publication_date": "2019-12-10",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "oxygen_limit",
+    "title": "SpaceCraft Oxygen Recovery",
+    "url": "https://www.nasa.gov/spacecraft-oxygen-recovery-scor/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2024-02-01",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "toilet",
+    "title": "太空厕所的尿液与固体废物路径",
+    "url": "https://www.nasa.gov/humans-in-space/boldly-go-nasas-new-space-toilet-offers-more-comfort-improved-efficiency-for-deep-space-missions/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2020-09-17",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "laundry",
+    "title": "Space Washing Machine Designs",
+    "url": "https://www.nasa.gov/centers-and-facilities/glenn/nasa-glenn-interns-take-space-washing-machine-designs-for-a-spin/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2021-07-29",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "cygnus",
+    "title": "第一艘正式 Cygnus 任务的运输和垃圾处置回顾",
+    "url": "https://www.nasa.gov/history/10-years-ago-the-first-operational-cygnus-cargo-mission-to-the-space-station/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2024-01-09",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "dragon",
+    "title": "Dragon 完成第34次货运任务并带回样品",
+    "url": "https://www.nasa.gov/blogs/spacestation/2026/06/17/spacex-dragon-splashes-down-in-pacific-completes-cargo-mission/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2026-06-17",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "tianzhou",
+    "title": "天舟六号成功发射，运载消耗品、推进剂和实验装置",
+    "url": "https://www.cmse.gov.cn/xwzx/202305/t20230510_53509.html",
+    "publisher": "中国载人航天工程办公室",
+    "event_or_publication_date": "2023-05-10",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "xenon",
+    "title": "天舟六号货物种类及电推进氙气瓶",
+    "url": "https://www.cmse.gov.cn/fxrw/tzlh/mtjj/202305/t20230510_53503.html",
+    "publisher": "中国载人航天工程官网／央视",
+    "event_or_publication_date": "2023-05",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "reentry",
+    "title": "天舟六号已受控再入大气层",
+    "url": "https://www.cmse.gov.cn/xwzx/202401/t20240119_54997.html",
+    "publisher": "中国载人航天工程办公室",
+    "event_or_publication_date": "2024-01-19",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "thermal",
+    "title": "ISS Active Thermal Control System Overview",
+    "url": "https://www.nasa.gov/wp-content/uploads/2021/02/473486main_iss_atcs_overview.pdf",
+    "publisher": "NASA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "solar",
+    "title": "ISS 组装部件与已安装太阳能电池阵",
+    "url": "https://www.nasa.gov/international-space-station/international-space-station-assembly-elements/",
+    "publisher": "NASA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "power",
+    "title": "The ISS Engineering Feat: Power and Cooling",
+    "url": "https://issnationallab.org/education/the-iss-engineering-feat-power-and-cooling/",
+    "publisher": "ISS National Laboratory",
+    "event_or_publication_date": "2020-01-13",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "veggie",
+    "title": "Space Vegetables for the ISS and Beyond",
+    "url": "https://ntrs.nasa.gov/citations/20160004060",
+    "publisher": "NASA / Gioia Massa",
+    "event_or_publication_date": "2016",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "plantmedia",
+    "title": "Veggie 的灯光与植物培养枕",
+    "url": "https://www.nasa.gov/missions/station/veggie-will-expand-fresh-food-production-on-space-station/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2014-04-10",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "artemiss",
+    "title": "Green smoothies in space：ArtemISS 实验结果",
+    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Green_smoothies_in_space",
+    "publisher": "ESA",
+    "event_or_publication_date": "2018-10-04",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "fish",
+    "title": "Breakthrough in enclosed aquatic ecosystems in space",
+    "url": "https://www.the-innovation.org/article/id/6728238c52700000d7002804",
+    "publisher": "The Innovation / Xie et al.",
+    "event_or_publication_date": "2024",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "aqh",
+    "title": "Aquatic Habitat 设备与生物过滤器",
+    "url": "https://iss.jaxa.jp/en/kiboexp/pm/aqh/",
+    "publisher": "JAXA",
+    "event_or_publication_date": "2009-05-13",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "aqh_run",
+    "title": "Microgravity promotes osteoclast activity in medaka fish reared at the ISS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4585676/",
+    "publisher": "Scientific Reports / Chatani et al.",
+    "event_or_publication_date": "2015",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "melissa",
+    "title": "MELiSSA Closed Loop Compartments",
+    "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Melissa/Closed_Loop_Compartments",
+    "publisher": "ESA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "liquefy",
+    "title": "MELiSSA Compartment I",
+    "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Melissa/Compartment_I_The_liquefying_compartment",
+    "publisher": "ESA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "nitrify",
+    "title": "MELiSSA Compartment III",
+    "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Melissa/Compartment_III_The_nitrifying_compartment",
+    "publisher": "ESA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "pilot",
+    "title": "MELiSSA 地面中试设施",
+    "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Life_support_pilot_plant_paves_the_way_to_Moon_and_beyond",
+    "publisher": "ESA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "lunar_palace",
+    "title": "月宫一号地基有人综合密闭实验系统",
+    "url": "https://news.buaa.edu.cn/info/1002/43189.htm",
+    "publisher": "北京航空航天大学／新华社",
+    "event_or_publication_date": "2018-04-21",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "print",
+    "title": "ISS 3D Printing: Saving Weight and Space at Launch",
+    "url": "https://www.nasa.gov/missions/station/iss-research/3d-printing-saving-weight-and-space-at-launch/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2025-03-21",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "refab",
+    "title": "Refabricator 实際打印采用地面一次再生的材料",
+    "url": "https://www.nasa.gov/blogs/stationreport/2020/01/28/iss-daily-summary-report-1-28-2020/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2020-01-28",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "moxie",
+    "title": "MOXIE 完成火星制氧实验",
+    "url": "https://www.nasa.gov/missions/mars-2020-perseverance/perseverance-rover/nasas-oxygen-generating-experiment-moxie-completes-mars-mission/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2023-09-06",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "russian",
+    "title": "Mir 的 Elektron、Vozdukh 和备用化学系统",
+    "url": "https://www.nasa.gov/history/SP-4225/documentation/admin-letter/letter.htm",
+    "publisher": "NASA",
+    "event_or_publication_date": "1997",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "iss_vent",
+    "title": "ISS ECLSS Venting and Implications",
+    "url": "https://ntrs.nasa.gov/api/citations/20180006142/downloads/20180006142.pdf",
+    "publisher": "NASA",
+    "event_or_publication_date": "2018",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "apollo",
+    "title": "Fuel cell powerplant operation in Apollo spacecraft",
+    "url": "https://ntrs.nasa.gov/citations/19730037972",
+    "publisher": "NASA / Ching",
+    "event_or_publication_date": "1972",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "lioh",
+    "title": "Apollo 13 Mission Details",
+    "url": "https://www.nasa.gov/missions/apollo/apollo-13-mission-details/",
+    "publisher": "NASA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "rocket",
+    "title": "Rocket Propulsion",
+    "url": "https://www.grc.nasa.gov/www/k-12/airplane/rocket.html",
+    "publisher": "NASA Glenn",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_kitchen",
+    "title": "中国空间站在轨烹饪烘焙实际应用",
+    "url": "https://news.cctv.com/2025/11/04/ARTI4KAl9Z1KaBuJyaSFCsne251104.shtml",
+    "publisher": "新华社／央视",
+    "event_or_publication_date": "2025-11-04",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_food",
+    "title": "Deep Space Food Challenge：地面食物系统演示",
+    "url": "https://www.nasa.gov/news-release/nasa-awards-1-25-million-to-three-teams-at-deep-space-food-finale/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2024-08-19",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_nucleus",
+    "title": "NuCLEUS 地面种植与昆虫食物系统",
+    "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/nasa-challenge-winners-cook/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2025-08-18",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_solarfoods",
+    "title": "Solar Foods 的深空食物挑战成果",
+    "url": "https://solarfoods.com/solar-foods-one-of-the-phase-iii-winners-of-the-nasa-deep-space-food-challenge/",
+    "publisher": "Solar Foods",
+    "event_or_publication_date": "2024-08-20",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_acetate",
+    "title": "Hybrid inorganic–biological artificial photosynthesis",
+    "url": "https://www.nature.com/articles/s43016-022-00530-x",
+    "publisher": "Nature Food / Hann et al.",
+    "event_or_publication_date": "2022-06-23",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_circular",
+    "title": "ESA circular life support research activities",
+    "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/From_waste_to_resource_ESA_funds_circular_economy_innovations_for_space",
+    "publisher": "ESA",
+    "event_or_publication_date": "2026-04-02",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_urine",
+    "title": "VunaNexus 尿液处理与肥料",
+    "url": "https://business.esa.int/projects/vunanexus",
+    "publisher": "ESA Business Applications",
+    "event_or_publication_date": "2023-11-27",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_pyrolysis",
+    "title": "Hydrogen Recovery by Methane Pyrolysis to Elemental Carbon",
+    "url": "https://ntrs.nasa.gov/citations/20190030386",
+    "publisher": "NASA NTRS / Yates et al.",
+    "event_or_publication_date": "2019",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_oscar",
+    "title": "OSCAR 第二次亚轨道飞行结果",
+    "url": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-researchers-gain-valuable-data-from-oscars-second-flight/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2021-09-28",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_recycle",
+    "title": "LunaRecycle Phase 2：地面再生原型",
+    "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/centennial-challenges/nasa-awards-first-prize-in-phase-2-of-agencys-lunarecycle-challenge/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2026-08-28",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_moonwater",
+    "title": "Moon Water and Ices",
+    "url": "https://science.nasa.gov/moon/moon-water-and-ices/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2026-02-12",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_lunarprop",
+    "title": "Technology Assessment for Producing Propellant From Lunar Water",
+    "url": "https://ntrs.nasa.gov/citations/20230010039",
+    "publisher": "NASA NTRS / Paz",
+    "event_or_publication_date": "2023",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_regolith",
+    "title": "ESA 地面月壤模拟物氧气／金属提取",
+    "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/ESA_opens_oxygen_plant_making_air_out_of_moondust",
+    "publisher": "ESA",
+    "event_or_publication_date": "2020-01-17",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_carbothermal",
+    "title": "NASA 真空环境模拟月壤提氧",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/nasa-successfully-extracts-oxygen-from-lunar-soil-simulant/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2023-04-25",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_copr",
+    "title": "COPR flight-like reactor thermal vacuum testing",
+    "url": "https://ntrs.nasa.gov/citations/20250004151",
+    "publisher": "NASA NTRS / Haggerty et al.",
+    "event_or_publication_date": "2025",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_marsice",
+    "title": "NASA Mars subsurface water ice mapping",
+    "url": "https://www.nasa.gov/solar-system/planets/mars/nasa-is-locating-ice-on-mars-with-this-new-map/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2023-10-26",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_cyano",
+    "title": "Low-pressure N₂/CO₂ cyanobacterial growth",
+    "url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2021.611798/full",
+    "publisher": "Frontiers in Microbiology / Verseux et al.",
+    "event_or_publication_date": "2021-02-16",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_cyano24",
+    "title": "Mars-specific cyanobacterial growth conditions",
+    "url": "https://www.nature.com/articles/s41526-024-00440-1",
+    "publisher": "npj Microgravity / Verseux et al.",
+    "event_or_publication_date": "2024",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_biofuel",
+    "title": "Designing Martian rocket propellant bioproduction",
+    "url": "https://www.nature.com/articles/s41467-021-26393-7",
+    "publisher": "Nature Communications / Kruyer et al.",
+    "event_or_publication_date": "2021-10-25",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_biorock",
+    "title": "Space station biomining of rare earth elements",
+    "url": "https://www.nature.com/articles/s41467-020-19276-w",
+    "publisher": "Nature Communications / Cockell et al.",
+    "event_or_publication_date": "2020-11-10",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_mycotecture",
+    "title": "Research to grow habitats from fungi",
+    "url": "https://www.nasa.gov/news-release/nasa-advances-research-to-grow-habitats-in-space-from-fungi/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2024-06-26",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_fishfarm",
+    "title": "Space Aquaculture: Prospects for Raising Aquatic Vertebrates",
+    "url": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2021.699097/full",
+    "publisher": "Frontiers / Przybyla",
+    "event_or_publication_date": "2021",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_meat",
+    "title": "ESA explores cultivated meat for space food",
+    "url": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/ESA_explores_cultivated_meat_for_space_food",
+    "publisher": "ESA",
+    "event_or_publication_date": "2023-10-30",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_depot",
+    "title": "NASA future in-space refueling device tests",
+    "url": "https://www.nasa.gov/directorates/stmd/tech-demo-missions-program/cryogenic-fluid-management-cfm/nasa-tests-new-refuel-device-for-future-in-space-refueling-missions/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2026-06-26",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_zbo",
+    "title": "Zero-Boil-Off tank experiments",
+    "url": "https://science.nasa.gov/science-research/science-enabling-technology/zero-boil-off-tank-experiments-to-enable-long-duration-space-exploration/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2024-03-12",
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_windows",
+    "title": "Mars mission timeline and launch windows",
+    "url": "https://science.nasa.gov/planetary-science/programs/mars-exploration/mission-timeline/",
+    "publisher": "NASA",
+    "event_or_publication_date": null,
+    "accessed": "2026-09-06"
+  },
+  {
+    "id": "f_fission",
+    "title": "Fission Surface Power project",
+    "url": "https://www.nasa.gov/exploration-systems-development-mission-directorate/fission-surface-power/",
+    "publisher": "NASA",
+    "event_or_publication_date": "2025-04-18",
+    "accessed": "2026-09-06"
+  }
+]

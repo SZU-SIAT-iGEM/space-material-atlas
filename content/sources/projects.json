@@ -1,0 +1,360 @@
+[
+  {
+    "id": "team:2024-5034",
+    "url": "https://2024.igem.wiki/nanjing-china",
+    "title": "2024 Nanjing-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Nanjing-China 将希瓦氏菌的磷富集与胞外电子传递相结合，从含磷废物流中回收营养元素，并连接生物产电与农业肥料两条用途。",
+      "en": "Nanjing-China combines phosphorus accumulation and extracellular electron transfer in Shewanella, linking phosphorus-bearing waste to nutrient recovery, bioelectricity and agricultural fertilizer."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/nanjing-china/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5108",
+    "url": "https://2024.igem.wiki/toulouse-insa-ups",
+    "title": "2024 Toulouse-INSA-UPS",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "BioMoon 以利用肌酐的工程荧光假单胞菌连接尿液资源与植物种植。微生物促生作用将月壤基质、营养利用和作物生长联系起来。",
+      "en": "BioMoon connects urine resources with cultivation through engineered Pseudomonas fluorescens that uses creatinine. Plant-growth-promoting activity links regolith, nutrient use and crops."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/toulouse-insa-ups/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5135",
+    "url": "https://2024.igem.wiki/rbhs-san-diego",
+    "title": "2024 RBHS-San-Diego",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "RBHS-San-Diego 将细胞穿透肽、核定位信号与光修复酶组合为融合蛋白，围绕紫外线引起的 DNA 损伤构建修复路线。",
+      "en": "RBHS-San-Diego combines a cell-penetrating peptide, a nuclear-localization signal and photolyase in a fusion protein for a route addressing ultraviolet-induced DNA damage."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/rbhs-san-diego/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5155",
+    "url": "https://2024.igem.wiki/iit-madras",
+    "title": "2024 IIT-Madras",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+      "en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/iit-madras/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5210",
+    "url": "https://2024.igem.wiki/nmu-china",
+    "title": "2024 NMU-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Luminaid 以蓝细菌与需钠弧菌共培养为基础。蓝细菌利用光与无机碳产生氧气和有机碳，为异养菌提供资源，连接光合作用、代谢交换与生物功能。",
+      "en": "Luminaid centers on a cyanobacteria–Vibrio natriegens co-culture. Cyanobacteria use light and inorganic carbon to supply oxygen and organic carbon to heterotrophic partners."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2024-5241",
+    "url": "https://2024.igem.wiki/ecib-pku",
+    "title": "2024 ECIB-PKU",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "ECIB-PKU 以工程大肠杆菌生产黑色素，并将其与水凝胶和微藻相关体系结合，形成面向太空环境的防护材料路线。",
+      "en": "ECIB-PKU uses engineered E. coli to produce melanin and combines it with hydrogel and microalgal systems in a protective-material route for space environments."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/ecib-pku/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5260",
+    "url": "https://2024.igem.wiki/aboa",
+    "title": "2024 ABOA",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "AstroVita 将微生物细胞工厂用于营养分子的原位生产。路线包含作为维生素 A 前体的 β-胡萝卜素，以及维生素 C、E，连接培养营养与宇航员食品。",
+      "en": "AstroVita uses microbial cell factories for local nutrient production, including beta-carotene as a vitamin A precursor and vitamins C and E, linking cultivation nutrients to astronaut food."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/aboa/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5308",
+    "url": "https://2024.igem.wiki/sz-shd",
+    "title": "2024 SZ-SHD",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "SZ-SHD 将蓝细菌光合固碳与酵母制造相连接，生产番茄红素、柠檬烯和橙花醇等分子。另一条路线利用固氮菌改善农业基质，连接氮资源与火星种植。",
+      "en": "SZ-SHD links cyanobacterial carbon fixation with yeast production of lycopene, limonene and nerol. A separate nitrogen-fixing-bacteria route connects nitrogen resources with regolith improvement and cultivation."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/sz-shd/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2024-5370",
+    "url": "https://2024.igem.wiki/tianjin",
+    "title": "2024 Tianjin",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "SPACE TAICHI 以工程酿酒酵母为底盘，分别构建褪黑素与藏红花酸的生产路线。可替换的目标产物模块体现了微生物工厂在太空营养与健康分子生产中的用途。",
+      "en": "SPACE TAICHI builds separate melatonin and crocetin production routes in engineered Saccharomyces cerevisiae. Interchangeable product modules connect microbial manufacturing with space nutrition and health molecules."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2024.igem.wiki/tianjin/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5567",
+    "url": "https://2025.igem.wiki/jlu-cp",
+    "title": "2025 JLU-CP",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Tuneable Dream Drive 将红光调控与益生菌褪黑素合成结合，围绕宇航员昼夜节律构建可调控的肠道分子生产路线。",
+      "en": "Tuneable Dream Drive combines red-light regulation with probiotic melatonin synthesis in a controllable gut-based molecular production route centered on astronaut circadian rhythms."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/jlu-cp/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5571",
+    "url": "https://2025.igem.wiki/rochester",
+    "title": "2025 Rochester",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+      "en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2025-5634",
+    "url": "https://2025.igem.wiki/tudarmstadt",
+    "title": "2025 TUDarmstadt",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "ClaresO4− 利用工程枯草芽孢杆菌处理火星水冰中的高氯酸盐，将当地含盐水资源与后续净化、生命支持及农业用水相连接。",
+      "en": "ClaresO4− uses engineered Bacillus subtilis to treat perchlorate in Martian water and ice, connecting local water resources with purification, life support and cultivation."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2025-5639",
+    "url": "https://2025.igem.wiki/shsbnu-china",
+    "title": "2025 SHSBNU-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "SHSBNU-China 通过工程大肠杆菌生产与盲鳗中间丝和贻贝足蛋白相关的重组结构蛋白，组装黏附水凝胶，连接生物制造与舱体、航天服和伤口修复的应用构想。",
+      "en": "SHSBNU-China produces recombinant structural proteins related to hagfish intermediate filaments and mussel foot proteins in E. coli, assembling adhesive hydrogels for habitat, suit and wound-repair concepts."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/shsbnu-china/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5699",
+    "url": "https://2025.igem.wiki/tongji-china",
+    "title": "2025 Tongji-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+      "en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2025-5717",
+    "url": "https://2025.igem.wiki/cornell",
+    "title": "2025 Cornell",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+      "en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/cornell/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5723",
+    "url": "https://2025.igem.wiki/wuxi-dsas",
+    "title": "2025 WUXI-DSAS",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "WUXI-DSAS 将 CAHS、WDHN2 和 avLEA1 等抗逆相关蛋白用于作物工程，连接植物对干旱与温度变化的响应和太空农业中的作物生长。",
+      "en": "WUXI-DSAS applies stress-related proteins including CAHS, WDHN2 and avLEA1 to crop engineering, connecting plant responses to drought and temperature changes with cultivation in space agriculture."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/wuxi-dsas/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5781",
+    "url": "https://2025.igem.wiki/scut-china",
+    "title": "2025 SCUT-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "SCUT-China 以氢氧化细菌 Cupriavidus necator 为底盘，将二氧化碳、尿源氮及电解水产生的气体连接到人 α-乳白蛋白生产，形成废物流与营养蛋白之间的路线。",
+      "en": "SCUT-China uses the hydrogen-oxidizing bacterium Cupriavidus necator to connect carbon dioxide, urine-derived nitrogen and water-electrolysis gases with human alpha-lactalbumin production."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/scut-china/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5784",
+    "url": "https://2025.igem.wiki/ubc-vancouver",
+    "title": "2025 UBC-Vancouver",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "meduCA 通过细胞表面展示碳酸酐酶，连接二氧化碳转化与微生物诱导碳酸钙沉淀，形成生物建材。供光、供气和搅拌设计共同构成培养工艺。",
+      "en": "meduCA displays carbonic anhydrase on cell surfaces to connect carbon dioxide conversion with microbially induced calcium carbonate precipitation and building materials. Light, gas delivery and mixing form part of the cultivation process."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2025-5893",
+    "url": "https://2025.igem.wiki/ict-mumbai",
+    "title": "2025 ICT-Mumbai",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+      "en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    },
+    "display_url": "https://2025.igem.wiki/ict-mumbai/description",
+    "retrieved_at": "2026-09-08"
+  },
+  {
+    "id": "team:2025-5969",
+    "url": "https://2025.igem.wiki/uflorida",
+    "title": "2025 UFlorida",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "UFlorida 围绕骨钙素识别设计结合蛋白与生物传感器，将分子信号转化为宇航员骨健康相关信息。",
+      "en": "UFlorida designs binding proteins and biosensors around osteocalcin recognition, connecting a molecular signal with information about astronaut bone health."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2025-5983",
+    "url": "https://2025.igem.wiki/jiashu-china",
+    "title": "2025 Jiashu-China",
+    "kind": "official_wiki",
+    "description": {
+      "zh": "Mustronaut 围绕益生菌底盘构建 HMB 与血清素合成模块，将膳食和肠道代谢底物连接到肌肉健康、情绪与睡眠相关分子的局部生产。",
+      "en": "Mustronaut builds HMB and serotonin synthesis modules around a probiotic chassis, connecting dietary and gut metabolites with local production of molecules associated with muscle health, mood and sleep."
+    },
+    "display_kind": {
+      "zh": "团队项目资料",
+      "en": "Team project materials"
+    }
+  },
+  {
+    "id": "team:2026-6100",
+    "url": "",
+    "title": "2026 SZU-SIAT-China",
+    "kind": "team_supplied",
+    "description": {
+      "zh": "Friskoli 将细胞表面酶展示与趋化富集结合，增强菌体与固体底物的局部接触和传质，为太空生物反应器提供模块化工艺改良。纤维素用于展示这一路线，平台的作用范围由局部接触机制决定。",
+      "en": "Friskoli combines cell-surface enzyme display and chemotactic enrichment to improve local cell–solid-substrate contact and mass transfer as a modular contribution to space bioreactors. Cellulose illustrates the route; the platform is centered on the contact mechanism."
+    },
+    "display_kind": {
+      "zh": "团队提供资料",
+      "en": "Team-supplied materials"
+    }
+  },
+  {
+    "id": "team:2026-6273:hp-document",
+    "title": "HiZJU-China · UniCO-Fuel · Team-supplied material-flow description",
+    "url": "",
+    "kind": "team_supplied",
+    "publisher": "HiZJU-China",
+    "description": {
+      "zh": "依据团队提供的《HiZJU-China 物质流介绍HP.docx》整理。",
+      "en": "Compiled from the team-supplied HiZJU-China material-flow document."
+    }
+  },
+  {
+    "id": "team:2026-6055:technical-document",
+    "title": "BUCT · Air2Protein · 简介与技术路线 / Introduction and technical route",
+    "url": "",
+    "kind": "team_supplied",
+    "publisher": "BUCT",
+    "description": {
+      "zh": "BUCT 提供的 Air2Protein 中英文简介、技术路线图与模块说明。",
+      "en": "BUCT-supplied bilingual introduction, technical route diagram and module descriptions for Air2Protein."
+    }
+  }
+]

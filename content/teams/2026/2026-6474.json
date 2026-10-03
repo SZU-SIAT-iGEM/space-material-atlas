@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6474",
+    "official_id": 6474,
+    "name": "NUS-SPS",
+    "year": 2026,
+    "country": "SGP",
+    "city": "Singapore",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6474",
+    "wiki": null,
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

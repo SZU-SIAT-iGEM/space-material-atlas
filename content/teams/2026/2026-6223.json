@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6223",
+    "official_id": 6223,
+    "name": "EPFL",
+    "year": 2026,
+    "country": "CHE",
+    "city": "Lausanne",
+    "region": "europe",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6223",
+    "wiki": null,
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

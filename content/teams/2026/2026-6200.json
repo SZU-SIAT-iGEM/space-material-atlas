@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6200",
+    "official_id": 6200,
+    "name": "AEI Prep-Taiwan",
+    "year": 2026,
+    "country": "TWN",
+    "city": "Taipei",
+    "region": "asia",
+    "organizer_type": "commercial",
+    "url": "https://teams.igem.org/6200",
+    "wiki": "https://2026.igem.wiki/aei-prep-taiwan",
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

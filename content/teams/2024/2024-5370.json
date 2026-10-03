@@ -1,0 +1,205 @@
+{
+  "roster": {
+    "id": "2024-5370",
+    "official_id": 5370,
+    "name": "Tianjin",
+    "year": 2024,
+    "country": "CHN",
+    "city": "Tianjin",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5370",
+    "wiki": "https://2024.igem.wiki/tianjin",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5370",
+    "year": 2024,
+    "name": "Tianjin",
+    "url": "https://2024.igem.wiki/tianjin",
+    "location": "China (Tianjin)",
+    "organizer_type": "Collegiate",
+    "description": "SPACE TAICHI 以工程酿酒酵母为底盘，分别构建褪黑素与藏红花酸的生产路线。可替换的目标产物模块体现了微生物工厂在太空营养与健康分子生产中的用途。",
+    "role": {
+      "zh": "酵母健康分子生产",
+      "en": "Yeast-derived health molecules"
+    },
+    "chains": [
+      {
+        "id": "2024-5370:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5370:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5370:route:0:edge:0",
+          "2024-5370:route:0:edge:1",
+          "2024-5370:route:0:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered yeast / SPACE TAICHI",
+          "en": "SPACE TAICHI yeast synthesis"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5370"
+    ],
+    "description_en": "SPACE TAICHI builds separate melatonin and crocetin production routes in engineered Saccharomyces cerevisiae. Interchangeable product modules connect microbial manufacturing with space nutrition and health molecules.",
+    "narrative": {
+      "zh": "SPACE TAICHI 以工程酿酒酵母为底盘，分别构建褪黑素与藏红花酸的生产路线。可替换的目标产物模块体现了微生物工厂在太空营养与健康分子生产中的用途。",
+      "en": "SPACE TAICHI builds separate melatonin and crocetin production routes in engineered Saccharomyces cerevisiae. Interchangeable product modules connect microbial manufacturing with space nutrition and health molecules."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5370:route:0:step:0",
+      "label": {
+        "zh": "SPACE TAICHI 工程酵母",
+        "en": "SPACE TAICHI yeast synthesis"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5370",
+      "route": "2024-5370:route:0",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false,
+      "description": "SPACE TAICHI 以工程酿酒酵母为底盘，分别构建褪黑素与藏红花酸的生产路线。可替换的目标产物模块体现了微生物工厂在太空营养与健康分子生产中的用途。",
+      "description_en": "SPACE TAICHI builds separate melatonin and crocetin production routes in engineered Saccharomyces cerevisiae. Interchangeable product modules connect microbial manufacturing with space nutrition and health molecules.",
+      "narrative": {
+        "zh": "SPACE TAICHI 以工程酿酒酵母为底盘，分别构建褪黑素与藏红花酸的生产路线。可替换的目标产物模块体现了微生物工厂在太空营养与健康分子生产中的用途。",
+        "en": "SPACE TAICHI builds separate melatonin and crocetin production routes in engineered Saccharomyces cerevisiae. Interchangeable product modules connect microbial manufacturing with space nutrition and health molecules."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5370:route:0:edge:0",
+      "source": "f_sugars",
+      "target": "2024-5370:route:0:step:0",
+      "label": {
+        "zh": "发酵底物",
+        "en": "Fermentation carbon source → SPACE TAICHI yeast synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5370",
+      "route": "2024-5370:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5370:route:0:edge:1",
+      "source": "2024-5370:route:0:step:0",
+      "target": "prod_melatonin",
+      "label": {
+        "zh": "melatonin / crocetin",
+        "en": "SPACE TAICHI yeast synthesis → Melatonin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5370",
+      "route": "2024-5370:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5370:route:0:edge:2",
+      "source": "2024-5370:route:0:step:0",
+      "target": "prod_crocetin",
+      "label": {
+        "zh": "melatonin / crocetin",
+        "en": "SPACE TAICHI yeast synthesis → Crocetin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5370",
+      "route": "2024-5370:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5370:context:prod_melatonin:crew",
+      "source": "prod_melatonin",
+      "target": "crew",
+      "label": {
+        "zh": "预期生理作用 · 目标成功情景",
+        "en": "Melatonin → Crew"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5370",
+      "theme": "human",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5370:context:prod_crocetin:crew",
+      "source": "prod_crocetin",
+      "target": "crew",
+      "label": {
+        "zh": "预期生理作用 · 目标成功情景",
+        "en": "Crocetin → Crew"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5370",
+      "theme": "human",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5370"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5370:route:0:depends",
+      "owner": "2024-5370",
+      "route": "2024-5370:route:0",
+      "source": "2024-5370:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5370"
+      ]
+    }
+  ],
+  "enhancements": []
+}

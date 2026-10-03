@@ -1,0 +1,255 @@
+{
+  "roster": {
+    "id": "2024-5155",
+    "official_id": 5155,
+    "name": "IIT-Madras",
+    "year": 2024,
+    "country": "IND",
+    "city": "Chennai",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5155",
+    "wiki": "https://2024.igem.wiki/iit-madras",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5155",
+    "year": 2024,
+    "name": "IIT-Madras",
+    "url": "https://2024.igem.wiki/iit-madras",
+    "location": "India (Chennai)",
+    "organizer_type": "Collegiate",
+    "description": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+    "role": {
+      "zh": "硅溶解与硅藻固硅",
+      "en": "Silicate mobilization & diatom silica"
+    },
+    "chains": [
+      {
+        "id": "2024-5155:route:0",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5155:route:0:step:0",
+          "2024-5155:route:0:step:1",
+          "2024-5155:route:0:step:2"
+        ],
+        "edge_ids": [
+          "2024-5155:route:0:edge:0",
+          "2024-5155:route:0:edge:1",
+          "2024-5155:route:0:edge:2",
+          "2024-5155:route:0:edge:3",
+          "2024-5155:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "硅酸盐溶解菌 → Diatoms",
+          "en": "Silicate-solubilizing bacteria → Diatom silica fixation"
+        }
+      }
+    ],
+    "primary_theme": "materials",
+    "themes": [
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5155"
+    ],
+    "description_en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass.",
+    "narrative": {
+      "zh": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+      "en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5155:route:0:step:0",
+      "label": {
+        "zh": "硅酸盐溶解菌",
+        "en": "Silicate-solubilizing bacteria"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false,
+      "description": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+      "description_en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass.",
+      "narrative": {
+        "zh": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+        "en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass."
+      }
+    },
+    {
+      "id": "2024-5155:route:0:step:1",
+      "label": {
+        "zh": "可溶性硅酸",
+        "en": "Soluble silicic acid"
+      },
+      "kind": "material",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false,
+      "description": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+      "description_en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass.",
+      "narrative": {
+        "zh": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+        "en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass."
+      }
+    },
+    {
+      "id": "2024-5155:route:0:step:2",
+      "label": {
+        "zh": "硅藻固硅",
+        "en": "Diatom silica fixation"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false,
+      "description": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+      "description_en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass.",
+      "narrative": {
+        "zh": "Cosmobiome 将溶硅细菌与硅藻结合：细菌从火星矿物中释放可利用的硅，硅藻进一步固定硅，形成生物硅材料与生物量。",
+        "en": "Cosmobiome combines silicate-solubilizing bacteria and diatoms. Bacteria release available silicon from Martian minerals, and diatoms incorporate it into biogenic silica and biomass."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5155:route:0:edge:0",
+      "source": "f_marsminerals",
+      "target": "2024-5155:route:0:step:0",
+      "label": {
+        "zh": "火星 silicate",
+        "en": "Martian minerals / regolith → Silicate-solubilizing bacteria"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5155:route:0:edge:1",
+      "source": "2024-5155:route:0:step:0",
+      "target": "2024-5155:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Silicate-solubilizing bacteria → Soluble silicic acid"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5155:route:0:edge:2",
+      "source": "2024-5155:route:0:step:1",
+      "target": "2024-5155:route:0:step:2",
+      "label": {
+        "zh": "关键转化",
+        "en": "Soluble silicic acid → Diatom silica fixation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5155:route:0:edge:3",
+      "source": "2024-5155:route:0:step:2",
+      "target": "ig_silica",
+      "label": {
+        "zh": "生物硅／再生硅",
+        "en": "Diatom silica fixation → Biogenic silica"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5155:route:0:edge:4",
+      "source": "2024-5155:route:0:step:2",
+      "target": "ig_organic",
+      "label": {
+        "zh": "biomass",
+        "en": "Diatom silica fixation → Organic carbon / biomass category"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5155"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5155:route:0:depends",
+      "owner": "2024-5155",
+      "route": "2024-5155:route:0",
+      "source": "2024-5155:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5155"
+      ]
+    }
+  ],
+  "enhancements": []
+}

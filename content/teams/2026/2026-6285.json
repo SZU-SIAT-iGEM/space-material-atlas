@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6285",
+    "official_id": 6285,
+    "name": "BIT-LIFE",
+    "year": 2026,
+    "country": "CHN",
+    "city": "Beijing",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6285",
+    "wiki": "https://2026.igem.wiki/bit-life",
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

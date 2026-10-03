@@ -1,0 +1,146 @@
+{
+  "roster": {
+    "id": "2024-5135",
+    "official_id": 5135,
+    "name": "RBHS-San-Diego",
+    "year": 2024,
+    "country": "USA",
+    "city": "San Diego",
+    "region": "north-america",
+    "organizer_type": "secondary-education",
+    "url": "https://teams.igem.org/5135",
+    "wiki": "https://2024.igem.wiki/rbhs-san-diego",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5135",
+    "year": 2024,
+    "name": "RBHS-San-Diego",
+    "url": "https://2024.igem.wiki/rbhs-san-diego",
+    "location": "United States (San Diego)",
+    "organizer_type": "High School",
+    "description": "RBHS-San-Diego 将细胞穿透肽、核定位信号与光修复酶组合为融合蛋白，围绕紫外线引起的 DNA 损伤构建修复路线。",
+    "role": {
+      "zh": "光修复酶介导 DNA 修复",
+      "en": "Photolyase-mediated DNA repair"
+    },
+    "chains": [
+      {
+        "id": "2024-5135:route:0",
+        "theme": "human",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5135:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5135:route:0:edge:0",
+          "2024-5135:route:0:edge:1"
+        ],
+        "dependencies": [],
+        "label": {
+          "zh": "CPP–NLS–photolyase / 介导 DNA 修复",
+          "en": "CPP–NLS–photolyase repair"
+        }
+      }
+    ],
+    "primary_theme": "human",
+    "themes": [
+      "human"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5135"
+    ],
+    "description_en": "RBHS-San-Diego combines a cell-penetrating peptide, a nuclear-localization signal and photolyase in a fusion protein for a route addressing ultraviolet-induced DNA damage.",
+    "narrative": {
+      "zh": "RBHS-San-Diego 将细胞穿透肽、核定位信号与光修复酶组合为融合蛋白，围绕紫外线引起的 DNA 损伤构建修复路线。",
+      "en": "RBHS-San-Diego combines a cell-penetrating peptide, a nuclear-localization signal and photolyase in a fusion protein for a route addressing ultraviolet-induced DNA damage."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5135:route:0:step:0",
+      "label": {
+        "zh": "CPP–NLS–photolyase / 介导 DNA 修复",
+        "en": "CPP–NLS–photolyase repair"
+      },
+      "kind": "process",
+      "theme": "human",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5135",
+      "route": "2024-5135:route:0",
+      "source_ids": [
+        "team:2024-5135"
+      ],
+      "demonstration": false,
+      "description": "RBHS-San-Diego 将细胞穿透肽、核定位信号与光修复酶组合为融合蛋白，围绕紫外线引起的 DNA 损伤构建修复路线。",
+      "description_en": "RBHS-San-Diego combines a cell-penetrating peptide, a nuclear-localization signal and photolyase in a fusion protein for a route addressing ultraviolet-induced DNA damage.",
+      "narrative": {
+        "zh": "RBHS-San-Diego 将细胞穿透肽、核定位信号与光修复酶组合为融合蛋白，围绕紫外线引起的 DNA 损伤构建修复路线。",
+        "en": "RBHS-San-Diego combines a cell-penetrating peptide, a nuclear-localization signal and photolyase in a fusion protein for a route addressing ultraviolet-induced DNA damage."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5135:route:0:edge:0",
+      "source": "ig_uvdamage",
+      "target": "2024-5135:route:0:step:0",
+      "label": {
+        "zh": "DNA 损伤",
+        "en": "UV-induced DNA damage → CPP–NLS–photolyase repair"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5135",
+      "route": "2024-5135:route:0",
+      "theme": "human",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5135"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5135:route:0:edge:1",
+      "source": "2024-5135:route:0:step:0",
+      "target": "ig_repaired",
+      "label": {
+        "zh": "恢复生物状态",
+        "en": "CPP–NLS–photolyase repair → Repaired DNA state"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5135",
+      "route": "2024-5135:route:0",
+      "theme": "human",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5135"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5135:context:ig_repaired:crew",
+      "source": "ig_repaired",
+      "target": "crew",
+      "label": {
+        "zh": "预期人体保护",
+        "en": "Repaired DNA state → Crew"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5135",
+      "theme": "human",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5135"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [],
+  "enhancements": []
+}

@@ -1,0 +1,322 @@
+{
+  "roster": {
+    "id": "2025-5893",
+    "official_id": 5893,
+    "name": "ICT-Mumbai",
+    "year": 2025,
+    "country": "IND",
+    "city": "Mumbai",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5893",
+    "wiki": "https://2025.igem.wiki/ict-mumbai",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5893",
+    "year": 2025,
+    "name": "ICT-Mumbai",
+    "url": "https://2025.igem.wiki/ict-mumbai",
+    "location": "India (Mumbai)",
+    "organizer_type": "Collegiate",
+    "description": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+    "role": {
+      "zh": "尿素制蛋白与培养防护",
+      "en": "Urea-to-protein & culture protection"
+    },
+    "chains": [
+      {
+        "id": "2025-5893:route:0",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5893:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2025-5893:route:0:edge:0",
+          "2025-5893:route:0:edge:1",
+          "2025-5893:route:0:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered yeast / 蛋白／氨基酸生产",
+          "en": "Yeast protein / amino acid synthesis"
+        }
+      },
+      {
+        "id": "2025-5893:route:1",
+        "theme": "bioreactor",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5893:route:1:step:0"
+        ],
+        "edge_ids": [
+          "2025-5893:route:1:edge:0",
+          "2025-5893:route:1:edge:1"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Melanin shielding / 附加制造支路",
+          "en": "Melanin shielding production"
+        }
+      }
+    ],
+    "primary_theme": "bioreactor",
+    "themes": [
+      "bioreactor"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5893"
+    ],
+    "description_en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system.",
+    "narrative": {
+      "zh": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+      "en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5893:route:0:step:0",
+      "label": {
+        "zh": "工程酵母生产蛋白",
+        "en": "Yeast protein / amino acid synthesis"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5893",
+      "route": "2025-5893:route:0",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false,
+      "description": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+      "description_en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system.",
+      "narrative": {
+        "zh": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+        "en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system."
+      }
+    },
+    {
+      "id": "2025-5893:route:1:step:0",
+      "label": {
+        "zh": "黑色素防护材料制造",
+        "en": "Melanin shielding production"
+      },
+      "kind": "process",
+      "theme": "bioreactor",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5893",
+      "route": "2025-5893:route:1",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false,
+      "description": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+      "description_en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system.",
+      "narrative": {
+        "zh": "ICT-Mumbai 以尿素为氮源，利用工程酿酒酵母生产富蛋白生物量与食品原料；同时引入 DSUP 和黑色素相关防护，将资源利用与培养系统保护相连接。",
+        "en": "ICT-Mumbai uses urea as a nitrogen source for engineered yeast production of protein-rich biomass and food ingredients, alongside DSUP and melanin-related protection for the cultivation system."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5893:route:0:edge:0",
+      "source": "urine",
+      "target": "2025-5893:route:0:step:0",
+      "label": {
+        "zh": "urea 氮源",
+        "en": "Urine → Yeast protein / amino acid synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:route:0:edge:1",
+      "source": "f_sugars",
+      "target": "2025-5893:route:0:step:0",
+      "label": {
+        "zh": "培养碳源",
+        "en": "Fermentation carbon source → Yeast protein / amino acid synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:route:0:edge:2",
+      "source": "2025-5893:route:0:step:0",
+      "target": "prod_scp",
+      "label": {
+        "zh": "protein-rich biomass / SCP",
+        "en": "Yeast protein / amino acid synthesis → Protein-rich yeast biomass"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:0",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:route:1:edge:0",
+      "source": "f_sugars",
+      "target": "2025-5893:route:1:step:0",
+      "label": {
+        "zh": "培养碳源",
+        "en": "Fermentation carbon source → Melanin shielding production"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:route:1:edge:1",
+      "source": "2025-5893:route:1:step:0",
+      "target": "prod_melanin",
+      "label": {
+        "zh": "melanin shielding",
+        "en": "Melanin shielding production → Melanin"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:1",
+      "theme": "bioreactor",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:use:prod_scp",
+      "source": "prod_scp",
+      "target": "f_foodsafe",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Protein-rich yeast biomass → Food processing & qualification"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5893:use:f_foodsafe",
+      "source": "f_foodsafe",
+      "target": "food",
+      "label": {
+        "zh": "预期食品用途／需后处理",
+        "en": "Food processing & qualification → Food"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5893",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5893:route:0:depends",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:0",
+      "source": "2025-5893:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5893"
+      ]
+    },
+    {
+      "id": "2025-5893:route:1:depends",
+      "owner": "2025-5893",
+      "route": "2025-5893:route:1",
+      "source": "2025-5893:route:1:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5893"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2025-5893:effect:protection",
+      "owner": "2025-5893",
+      "source": "2025-5893:route:1:step:0",
+      "target": "space_bioreactor",
+      "kind": "protection",
+      "category": "enhancement",
+      "label": {
+        "zh": "防护",
+        "en": "Shielding"
+      },
+      "scope": "黑色素膜等防护结构为培养物提供环境保护。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2025-5893"
+      ],
+      "scope_en": "Protective structures including melanin films shelter cultures from environmental exposure."
+    }
+  ]
+}

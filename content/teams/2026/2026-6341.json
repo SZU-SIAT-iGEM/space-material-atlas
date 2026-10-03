@@ -1,0 +1,20 @@
+{
+  "roster": {
+    "id": "2026-6341",
+    "official_id": 6341,
+    "name": "KAUST-KSA",
+    "year": 2026,
+    "country": "SAU",
+    "city": "Makkah",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/6341",
+    "wiki": "https://2026.igem.wiki/kaust-ksa",
+    "integrated": false
+  },
+  "team": null,
+  "nodes": [],
+  "edges": [],
+  "dependencies": [],
+  "enhancements": []
+}

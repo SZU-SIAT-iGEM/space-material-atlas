@@ -1,0 +1,325 @@
+{
+  "roster": {
+    "id": "2025-5699",
+    "official_id": 5699,
+    "name": "Tongji-China",
+    "year": 2025,
+    "country": "CHN",
+    "city": "Shanghai",
+    "region": "asia",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5699",
+    "wiki": "https://2025.igem.wiki/tongji-china",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5699",
+    "year": 2025,
+    "name": "Tongji-China",
+    "url": "https://2025.igem.wiki/tongji-china",
+    "location": "China (Shanghai)",
+    "organizer_type": "Collegiate",
+    "description": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+    "role": {
+      "zh": "水生养殖与甲壳回收",
+      "en": "Aquaculture & shell recycling"
+    },
+    "chains": [
+      {
+        "id": "2025-5699:route:0",
+        "theme": "agriculture",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5699:route:0:step:0",
+          "2025-5699:route:0:step:1"
+        ],
+        "edge_ids": [
+          "2025-5699:route:0:edge:0",
+          "2025-5699:route:0:edge:1",
+          "2025-5699:route:0:edge:2",
+          "2025-5699:route:0:edge:3"
+        ],
+        "dependencies": [
+          "space_agriculture"
+        ],
+        "label": {
+          "zh": "Aquatic plant–crayfish → Crayfish",
+          "en": "Aquatic plant–crayfish co-culture → Crayfish food processing"
+        }
+      },
+      {
+        "id": "2025-5699:route:1",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5699:route:1:step:0"
+        ],
+        "edge_ids": [
+          "2025-5699:route:1:edge:0",
+          "2025-5699:route:1:edge:1"
+        ],
+        "dependencies": [],
+        "label": {
+          "zh": "Purification / reuse / / degradation",
+          "en": "Shell purification / reuse / degradation"
+        }
+      }
+    ],
+    "primary_theme": "agriculture",
+    "themes": [
+      "agriculture",
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5699"
+    ],
+    "description_en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery.",
+    "narrative": {
+      "zh": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+      "en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5699:route:0:step:0",
+      "label": {
+        "zh": "水生植物与小龙虾共培养",
+        "en": "Aquatic plant–crayfish co-culture"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false,
+      "description": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+      "description_en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery.",
+      "narrative": {
+        "zh": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+        "en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery."
+      }
+    },
+    {
+      "id": "2025-5699:route:0:step:1",
+      "label": {
+        "zh": "小龙虾食品加工",
+        "en": "Crayfish food processing"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false,
+      "description": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+      "description_en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery.",
+      "narrative": {
+        "zh": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+        "en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery."
+      }
+    },
+    {
+      "id": "2025-5699:route:1:step:0",
+      "label": {
+        "zh": "甲壳纯化、再利用与降解",
+        "en": "Shell purification / reuse / degradation"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5699",
+      "route": "2025-5699:route:1",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false,
+      "description": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+      "description_en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery.",
+      "narrative": {
+        "zh": "Tongji-China 将水生植物与小龙虾共培养用于食物生产，并围绕食用后的甲壳设计纯化、再利用与降解路线，连接水生养殖和甲壳资源回收。",
+        "en": "Tongji-China links aquatic-plant–crayfish co-culture with food production and designs purification, reuse and degradation routes for discarded shells, connecting aquaculture with shell-resource recovery."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5699:route:0:edge:0",
+      "source": "f_plantfeed",
+      "target": "2025-5699:route:0:step:0",
+      "label": {
+        "zh": "水生植物／生物量",
+        "en": "Aquatic plant feed → Aquatic plant–crayfish co-culture"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:route:0:edge:1",
+      "source": "2025-5699:route:0:step:0",
+      "target": "2025-5699:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Aquatic plant–crayfish co-culture → Crayfish food processing"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:route:0:edge:2",
+      "source": "2025-5699:route:0:step:1",
+      "target": "f_foodsafe",
+      "label": {
+        "zh": "食用产品",
+        "en": "Crayfish food processing → Food processing & qualification"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:route:0:edge:3",
+      "source": "2025-5699:route:0:step:1",
+      "target": "ig_chitin",
+      "label": {
+        "zh": "shell / chitin waste",
+        "en": "Crayfish food processing → Shell / chitin waste"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:route:1:edge:0",
+      "source": "ig_chitin",
+      "target": "2025-5699:route:1:step:0",
+      "label": {
+        "zh": "甲壳／几丁质废物",
+        "en": "Shell / chitin waste → Shell purification / reuse / degradation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:1",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:route:1:edge:1",
+      "source": "2025-5699:route:1:step:0",
+      "target": "ig_shellproducts",
+      "label": {
+        "zh": "回收／再生产品",
+        "en": "Shell purification / reuse / degradation → Shell-derived products"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:1",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5699:interface:f_foodsafe",
+      "source": "f_foodsafe",
+      "target": "food",
+      "label": {
+        "zh": "食品后处理与食物供给",
+        "en": "Food post-processing and food supply"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5699",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5699:route:0:depends",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "source": "2025-5699:route:0:step:0",
+      "target": "space_agriculture",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5699"
+      ]
+    },
+    {
+      "id": "2025-5699:route:0:agri-system",
+      "owner": "2025-5699",
+      "route": "2025-5699:route:0",
+      "source": "growing_medium",
+      "target": "space_agriculture",
+      "category": "dependency",
+      "label": {
+        "zh": "种植条件",
+        "en": "Cultivation conditions"
+      },
+      "source_ids": [
+        "team:2025-5699"
+      ],
+      "demonstration": false
+    }
+  ],
+  "enhancements": []
+}

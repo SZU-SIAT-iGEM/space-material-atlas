@@ -1,0 +1,206 @@
+{
+  "roster": {
+    "id": "2024-5108",
+    "official_id": 5108,
+    "name": "Toulouse-INSA-UPS",
+    "year": 2024,
+    "country": "FRA",
+    "city": "Toulouse",
+    "region": "europe",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5108",
+    "wiki": "https://2024.igem.wiki/toulouse-insa-ups",
+    "integrated": true
+  },
+  "team": {
+    "id": "2024-5108",
+    "year": 2024,
+    "name": "Toulouse-INSA-UPS",
+    "url": "https://2024.igem.wiki/toulouse-insa-ups",
+    "location": "France (Toulouse)",
+    "organizer_type": "Collegiate",
+    "description": "BioMoon 以利用肌酐的工程荧光假单胞菌连接尿液资源与植物种植。微生物促生作用将月壤基质、营养利用和作物生长联系起来。",
+    "role": {
+      "zh": "肌酐利用与植物促生",
+      "en": "Creatinine use & plant stimulation"
+    },
+    "chains": [
+      {
+        "id": "2024-5108:route:0",
+        "theme": "agriculture",
+        "demonstration": false,
+        "step_ids": [
+          "2024-5108:route:0:step:0"
+        ],
+        "edge_ids": [
+          "2024-5108:route:0:edge:0",
+          "2024-5108:route:0:edge:1",
+          "2024-5108:route:0:edge:2"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "P. fluorescens / 促生工程菌",
+          "en": "P. fluorescens root stimulation"
+        }
+      }
+    ],
+    "primary_theme": "agriculture",
+    "themes": [
+      "agriculture"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2024-5108"
+    ],
+    "description_en": "BioMoon connects urine resources with cultivation through engineered Pseudomonas fluorescens that uses creatinine. Plant-growth-promoting activity links regolith, nutrient use and crops.",
+    "narrative": {
+      "zh": "BioMoon 以利用肌酐的工程荧光假单胞菌连接尿液资源与植物种植。微生物促生作用将月壤基质、营养利用和作物生长联系起来。",
+      "en": "BioMoon connects urine resources with cultivation through engineered Pseudomonas fluorescens that uses creatinine. Plant-growth-promoting activity links regolith, nutrient use and crops."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2024-5108:route:0:step:0",
+      "label": {
+        "zh": "P. fluorescens / 促生工程菌",
+        "en": "P. fluorescens root stimulation"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2024-5108",
+      "route": "2024-5108:route:0",
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "demonstration": false,
+      "description": "BioMoon 以利用肌酐的工程荧光假单胞菌连接尿液资源与植物种植。微生物促生作用将月壤基质、营养利用和作物生长联系起来。",
+      "description_en": "BioMoon connects urine resources with cultivation through engineered Pseudomonas fluorescens that uses creatinine. Plant-growth-promoting activity links regolith, nutrient use and crops.",
+      "narrative": {
+        "zh": "BioMoon 以利用肌酐的工程荧光假单胞菌连接尿液资源与植物种植。微生物促生作用将月壤基质、营养利用和作物生长联系起来。",
+        "en": "BioMoon connects urine resources with cultivation through engineered Pseudomonas fluorescens that uses creatinine. Plant-growth-promoting activity links regolith, nutrient use and crops."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2024-5108:route:0:edge:0",
+      "source": "urine",
+      "target": "2024-5108:route:0:step:0",
+      "label": {
+        "zh": "尿液 creatinine",
+        "en": "Urine → P. fluorescens root stimulation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5108",
+      "route": "2024-5108:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5108:route:0:edge:1",
+      "source": "f_regolith",
+      "target": "2024-5108:route:0:step:0",
+      "label": {
+        "zh": "贫瘠月壤",
+        "en": "Lunar regolith → P. fluorescens root stimulation"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5108",
+      "route": "2024-5108:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5108:route:0:edge:2",
+      "source": "2024-5108:route:0:step:0",
+      "target": "ig_biostimulant",
+      "label": {
+        "zh": "养分动员／植物促生",
+        "en": "P. fluorescens root stimulation → Microbial biostimulant"
+      },
+      "category": "support",
+      "layer": "project",
+      "owner": "2024-5108",
+      "route": "2024-5108:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2024-5108:interface:ig_biostimulant",
+      "source": "ig_biostimulant",
+      "target": "growing_medium",
+      "label": {
+        "zh": "施用促生制剂",
+        "en": "Microbial biostimulant → Growing media / soil treatment"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2024-5108",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2024-5108:route:0:depends",
+      "owner": "2024-5108",
+      "route": "2024-5108:route:0",
+      "source": "2024-5108:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2024-5108"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2024-5108:effect:plant_stimulation",
+      "owner": "2024-5108",
+      "source": "2024-5108:route:0:step:0",
+      "target": "growing_medium",
+      "kind": "plant_stimulation",
+      "category": "enhancement",
+      "label": {
+        "zh": "促生",
+        "en": "Stimulation"
+      },
+      "scope": "肌酐利用与根际促生菌连接尿液资源和植物培养。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2024-5108"
+      ],
+      "scope_en": "Creatinine use and plant-growth-promoting rhizobacteria connect urine resources with plant cultivation."
+    }
+  ]
+}

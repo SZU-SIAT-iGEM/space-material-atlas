@@ -1,0 +1,33 @@
+# Standalone project. For an existing Wiki, use ci/wiki-integration.yml.
+image: node:22.14.0-bookworm
+stages: [test, deploy]
+variables:
+  PYTHONDONTWRITEBYTECODE: "1"
+  PYTHONIOENCODING: "utf-8"
+
+test-content:
+  stage: test
+  before_script:
+    - apt-get update -qq && apt-get install -y --no-install-recommends python3 python3-venv
+    - python3 -m venv .venv
+    - .venv/bin/pip install -r requirements-lock.txt
+  script:
+    - .venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v
+    - node tests/test_layout.cjs
+    - .venv/bin/python manage.py build
+  artifacts:
+    when: always
+    paths: [public, .state/last-build.json]
+    expire_in: 30 days
+
+pages:
+  stage: deploy
+  before_script:
+    - apt-get update -qq && apt-get install -y --no-install-recommends python3
+  script:
+    - python3 manage.py build
+    - python3 manage.py export-ci
+  artifacts:
+    paths: [public, dist/space-atlas-managed-ci-source.zip]
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

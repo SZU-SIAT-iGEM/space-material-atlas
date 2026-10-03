@@ -1,0 +1,269 @@
+{
+  "roster": {
+    "id": "2025-5717",
+    "official_id": 5717,
+    "name": "Cornell",
+    "year": 2025,
+    "country": "USA",
+    "city": "Ithaca",
+    "region": "north-america",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5717",
+    "wiki": "https://2025.igem.wiki/cornell",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5717",
+    "year": 2025,
+    "name": "Cornell",
+    "url": "https://2025.igem.wiki/cornell",
+    "location": "United States (Ithaca)",
+    "organizer_type": "Collegiate",
+    "description": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+    "role": {
+      "zh": "表土修复与生物膜反应器",
+      "en": "Regolith treatment & biofilm reactor"
+    },
+    "chains": [
+      {
+        "id": "2025-5717:route:0",
+        "theme": "agriculture",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5717:route:0:step:0",
+          "2025-5717:route:0:step:1"
+        ],
+        "edge_ids": [
+          "2025-5717:route:0:edge:0",
+          "2025-5717:route:0:edge:1",
+          "2025-5717:route:0:edge:2",
+          "2025-5717:route:0:edge:3"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Engineered E. coli → Synechococcus",
+          "en": "E. coli perchlorate reduction → Synechococcus metabolic exchange"
+        }
+      }
+    ],
+    "primary_theme": "agriculture",
+    "themes": [
+      "agriculture"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5717"
+    ],
+    "description_en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform.",
+    "narrative": {
+      "zh": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+      "en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5717:route:0:step:0",
+      "label": {
+        "zh": "工程大肠杆菌还原高氯酸盐",
+        "en": "E. coli perchlorate reduction"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false,
+      "description": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+      "description_en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform.",
+      "narrative": {
+        "zh": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+        "en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform."
+      }
+    },
+    {
+      "id": "2025-5717:route:0:step:1",
+      "label": {
+        "zh": "Synechococcus / 代谢交换／有机碳",
+        "en": "Synechococcus metabolic exchange"
+      },
+      "kind": "process",
+      "theme": "agriculture",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false,
+      "description": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+      "description_en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform.",
+      "narrative": {
+        "zh": "PRoSPER 将高氯酸盐处理、工程大肠杆菌与蓝细菌共培养相结合，连接火星表土处理、代谢交换和农业基质改良。ARC 生物膜反应器提供培养与接触的工艺平台。",
+        "en": "PRoSPER combines perchlorate treatment with E. coli–cyanobacteria co-culture, linking Martian regolith treatment, metabolite exchange and growing-medium improvement. The ARC biofilm reactor provides a cultivation and contact platform."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5717:route:0:edge:0",
+      "source": "ig_toxicregolith",
+      "target": "2025-5717:route:0:step:0",
+      "label": {
+        "zh": "受污染火星表土",
+        "en": "Perchlorate-bearing Mars regolith → E. coli perchlorate reduction"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5717:route:0:edge:1",
+      "source": "2025-5717:route:0:step:0",
+      "target": "2025-5717:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "E. coli perchlorate reduction → Synechococcus metabolic exchange"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5717:route:0:edge:2",
+      "source": "2025-5717:route:0:step:1",
+      "target": "ig_regomedia",
+      "label": {
+        "zh": "改良表土",
+        "en": "Synechococcus metabolic exchange → Improved growing medium"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5717:route:0:edge:3",
+      "source": "2025-5717:route:0:step:1",
+      "target": "ig_organic",
+      "label": {
+        "zh": "有机碳",
+        "en": "Synechococcus metabolic exchange → Organic carbon / biomass category"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "theme": "agriculture",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5717:interface:ig_regomedia",
+      "source": "ig_regomedia",
+      "target": "space_agriculture",
+      "label": {
+        "zh": "修复基质用于种植",
+        "en": "Improved growing medium → Space agriculture"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5717",
+      "theme": "agriculture",
+      "route": null,
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5717:route:0:depends",
+      "owner": "2025-5717",
+      "route": "2025-5717:route:0",
+      "source": "2025-5717:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5717"
+      ]
+    }
+  ],
+  "enhancements": [
+    {
+      "id": "2025-5717:effect:remediation",
+      "owner": "2025-5717",
+      "source": "2025-5717:route:0:step:0",
+      "target": "growing_medium",
+      "kind": "remediation",
+      "category": "enhancement",
+      "label": {
+        "zh": "修复",
+        "en": "Remediation"
+      },
+      "scope": "去除高氯酸盐的表土处理为植物培养提供基质。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "scope_en": "Perchlorate-removing regolith treatment provides a substrate for plant cultivation."
+    },
+    {
+      "id": "2025-5717:effect:biofilm_platform",
+      "owner": "2025-5717",
+      "source": "2025-5717:route:0:step:0",
+      "target": "space_bioreactor",
+      "kind": "biofilm_platform",
+      "category": "enhancement",
+      "label": {
+        "zh": "生物膜",
+        "en": "Biofilm"
+      },
+      "scope": "ARC 以模块化生物膜反应器组织培养过程。",
+      "scenario": "assumed_success",
+      "measured_gain": null,
+      "source_ids": [
+        "team:2025-5717"
+      ],
+      "scope_en": "ARC organizes cultivation in a modular biofilm reactor."
+    }
+  ]
+}

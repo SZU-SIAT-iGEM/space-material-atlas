@@ -1,0 +1,255 @@
+{
+  "roster": {
+    "id": "2025-5571",
+    "official_id": 5571,
+    "name": "Rochester",
+    "year": 2025,
+    "country": "USA",
+    "city": "Rochester",
+    "region": "north-america",
+    "organizer_type": "higher-education",
+    "url": "https://teams.igem.org/5571",
+    "wiki": "https://2025.igem.wiki/rochester",
+    "integrated": true
+  },
+  "team": {
+    "id": "2025-5571",
+    "year": 2025,
+    "name": "Rochester",
+    "url": "https://2025.igem.wiki/rochester",
+    "location": "United States (Rochester)",
+    "organizer_type": "Collegiate",
+    "description": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+    "role": {
+      "zh": "CO₂—乙酸—PHBV",
+      "en": "CO2–acetate–PHBV"
+    },
+    "chains": [
+      {
+        "id": "2025-5571:route:0",
+        "theme": "materials",
+        "demonstration": false,
+        "step_ids": [
+          "2025-5571:route:0:step:0",
+          "2025-5571:route:0:step:1",
+          "2025-5571:route:0:step:2"
+        ],
+        "edge_ids": [
+          "2025-5571:route:0:edge:0",
+          "2025-5571:route:0:edge:1",
+          "2025-5571:route:0:edge:2",
+          "2025-5571:route:0:edge:3",
+          "2025-5571:route:0:edge:4"
+        ],
+        "dependencies": [
+          "space_bioreactor"
+        ],
+        "label": {
+          "zh": "Autotrophic E. coli → Second E. coli",
+          "en": "Autotrophic E. coli → E. coli PHBV synthesis"
+        }
+      }
+    ],
+    "primary_theme": "materials",
+    "themes": [
+      "materials"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2025-5571"
+    ],
+    "description_en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch.",
+    "narrative": {
+      "zh": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+      "en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch."
+    }
+  },
+  "nodes": [
+    {
+      "id": "2025-5571:route:0:step:0",
+      "label": {
+        "zh": "自养大肠杆菌",
+        "en": "Autotrophic E. coli"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false,
+      "description": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+      "description_en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch.",
+      "narrative": {
+        "zh": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+        "en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch."
+      }
+    },
+    {
+      "id": "2025-5571:route:0:step:1",
+      "label": {
+        "zh": "乙酸",
+        "en": "Acetate"
+      },
+      "kind": "material",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false,
+      "description": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+      "description_en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch.",
+      "narrative": {
+        "zh": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+        "en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch."
+      }
+    },
+    {
+      "id": "2025-5571:route:0:step:2",
+      "label": {
+        "zh": "大肠杆菌合成 PHBV",
+        "en": "E. coli PHBV synthesis"
+      },
+      "kind": "process",
+      "theme": "materials",
+      "layer": "project",
+      "future": true,
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false,
+      "description": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+      "description_en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch.",
+      "narrative": {
+        "zh": "PHAntom 以两阶段大肠杆菌系统连接二氧化碳、乙酸与 PHBV 生物塑料。乙酸作为中间物，一部分进入聚合物生产，另一部分连接生物肥料用途。",
+        "en": "PHAntom connects carbon dioxide, acetate and PHBV bioplastic through a two-stage E. coli system. Acetate is the intermediate feeding polymer production and a separate biofertilizer branch."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2025-5571:route:0:edge:0",
+      "source": "marsco2",
+      "target": "2025-5571:route:0:step:0",
+      "label": {
+        "zh": "火星 CO₂",
+        "en": "Martian atmospheric CO2 → Autotrophic E. coli"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5571:route:0:edge:1",
+      "source": "2025-5571:route:0:step:0",
+      "target": "2025-5571:route:0:step:1",
+      "label": {
+        "zh": "关键转化",
+        "en": "Autotrophic E. coli → Acetate"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5571:route:0:edge:2",
+      "source": "2025-5571:route:0:step:1",
+      "target": "2025-5571:route:0:step:2",
+      "label": {
+        "zh": "关键转化",
+        "en": "Acetate → E. coli PHBV synthesis"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5571:route:0:edge:3",
+      "source": "2025-5571:route:0:step:2",
+      "target": "f_pha",
+      "label": {
+        "zh": "PHBV → 3D-printed parts",
+        "en": "E. coli PHBV synthesis → PHBV bioplastic"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false
+    },
+    {
+      "id": "2025-5571:route:0:edge:4",
+      "source": "2025-5571:route:0:step:1",
+      "target": "f_nutrients",
+      "label": {
+        "zh": "多余 acetate → biofertilizer",
+        "en": "Acetate → Proposed biofertilizer"
+      },
+      "category": "material",
+      "layer": "project",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "theme": "materials",
+      "scenario": "assumed_success",
+      "source_ids": [
+        "team:2025-5571"
+      ],
+      "demonstration": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "2025-5571:route:0:depends",
+      "owner": "2025-5571",
+      "route": "2025-5571:route:0",
+      "source": "2025-5571:route:0:step:0",
+      "target": "space_bioreactor",
+      "category": "dependency",
+      "basis": "process_inference",
+      "label": {
+        "zh": "依赖工艺",
+        "en": "Process dependency"
+      },
+      "demonstration": false,
+      "source_ids": [
+        "team:2025-5571"
+      ]
+    }
+  ],
+  "enhancements": []
+}

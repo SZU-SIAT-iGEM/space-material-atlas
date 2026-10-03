@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),cp=require('child_process');
+const root=path.resolve(__dirname,'..'),C=require('../web/core.js'),read=x=>JSON.parse(fs.readFileSync(path.join(root,x),'utf8'));
+const b=read('tests/fixtures/v7/baseline.json'),p=read('tests/fixtures/v7/projects.json');let passed=0;
+function test(name,fn){fn();passed++;console.log('PASS',name)}
+test('All 22 existing team bundles remain editable',()=>{for(const t of p.teams)assert.deepEqual(C.validateBundle(b,p,C.teamBundle(p,t.id)),[],t.id)});
+test('Browser and Python use identical projections',()=>{const py="import atlas,json; b=atlas.read(atlas.HERE/'tests/fixtures/v7/baseline.json');p=atlas.read(atlas.HERE/'tests/fixtures/v7/projects.json'); print(json.dumps({v:atlas.projection(b,p,v) for v in ['overview','effects']+list(atlas.theme_views(b))}))";const expected=JSON.parse(cp.execFileSync(process.env.PYTHON || (process.platform==='win32'?'python':'python3'),['-c',py],{cwd:__dirname,encoding:'utf8',env:{...process.env,PYTHONIOENCODING:'utf-8'}}));for(const [v,m] of Object.entries(expected))assert.deepEqual(C.project(b,p,v),m,v)});
+test('Turning off a team removes only its relations and badges',()=>{const m=C.project(b,p),v=C.visible(m,[]);assert(v.edges.every(e=>!e.owner));assert(!Object.values(v.nodes).some(n=>n.owner));const f=C.visible(m,['2026-6100']);assert(f.edges.some(e=>e.category==='enhancement'&&e.owner==='2026-6100'));assert(!f.nodes.f_cellulose)});
+test('Shared nodes and foreign sources cannot be overwritten',()=>{let q=C.teamBundle(p,p.teams[0].id);q.nodes[0].id='crew';assert(C.validateBundle(b,p,q).length);q=C.teamBundle(p,p.teams[0].id);q.sources.push({...p.sources.find(s=>!q.team.source_ids.includes(s.id)),title:'Changed'});assert(C.validateBundle(b,p,q).length)});
+test('Missing endpoints and unsafe URLs are rejected',()=>{let q=C.teamBundle(p,p.teams[0].id);q.edges[0].target='missing';assert(C.validateBundle(b,p,q).length);q=C.teamBundle(p,p.teams[0].id);q.sources[0].url='javascript:alert(1)';assert(C.validateBundle(b,p,q).length)});
+console.log(`${passed} core tests passed`);

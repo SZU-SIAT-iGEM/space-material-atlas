@@ -1,0 +1,82 @@
+[
+  {
+    "id": "water",
+    "label": {
+      "zh": "水与营养盐",
+      "en": "Water & nutrients"
+    },
+    "color": "#eaf4fa"
+  },
+  {
+    "id": "air",
+    "label": {
+      "zh": "空气与碳氧",
+      "en": "Air & carbon–oxygen"
+    },
+    "color": "#edf2fa"
+  },
+  {
+    "id": "agriculture",
+    "label": {
+      "zh": "食物与太空农业",
+      "en": "Food & space agriculture"
+    },
+    "color": "#eef5e9"
+  },
+  {
+    "id": "materials",
+    "label": {
+      "zh": "废物与材料",
+      "en": "Waste & materials"
+    },
+    "color": "#f6f0e6"
+  },
+  {
+    "id": "bioreactor",
+    "label": {
+      "zh": "太空生物反应器",
+      "en": "Space bioreactors"
+    },
+    "color": "#e9f5f0"
+  },
+  {
+    "id": "human",
+    "label": {
+      "zh": "人体与健康",
+      "en": "Crew & health"
+    },
+    "color": "#f4edf4"
+  },
+  {
+    "id": "logistics",
+    "label": {
+      "zh": "补给与处置",
+      "en": "Resupply & disposal"
+    },
+    "color": "#edf1f4"
+  },
+  {
+    "id": "energy",
+    "label": {
+      "zh": "能源与热管理",
+      "en": "Energy & thermal control"
+    },
+    "color": "#fcf5e6"
+  },
+  {
+    "id": "ground",
+    "label": {
+      "zh": "地面验证 · 单独图层",
+      "en": "Ground validation · separate layer"
+    },
+    "color": "#f1f1ed"
+  },
+  {
+    "id": "heritage",
+    "label": {
+      "zh": "历史与无人地外实验",
+      "en": "Historical & robotic demonstrations"
+    },
+    "color": "#f0f1f6"
+  }
+]

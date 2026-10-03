@@ -1,0 +1,7 @@
+{
+  "viz": "3.25.0",
+  "graphviz": "14.1.3",
+  "source": "Preserved byte-for-byte from the original space-atlas-v7 vendor/viz.cjs",
+  "upstream": "https://github.com/mdaines/viz-js/tree/v3",
+  "notes": "The retained distribution differs bytewise from the npm archive with the same version header. Both report Graphviz 14.1.3. Tested original coordinates and capacity behavior match. Reproducibility is bound to the checksum of this vendored file, not an unpinned package download."
+}

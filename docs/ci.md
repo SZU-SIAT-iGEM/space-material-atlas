@@ -26,7 +26,7 @@ No generated page connects to the local CMS. Close the backend and the static re
 
 ## Reproducibility and retention
 
-Run `python manage.py release i2026.P0.3` to create `releases/i2026.P0.3/`. It includes source/static ZIPs, complete content, layouts and checksums. Duplicate names are rejected. Commit source to the appropriate yearly Wiki repository or keep the release archive with it. Local `.state/` is intentionally excluded from source exports; preserve it separately for draft and editorial-history backups.
+Run `python manage.py release i2026.P0.4` to create `releases/i2026.P0.4/`. It includes source/static ZIPs, complete content, layouts and checksums. Duplicate names are rejected. Commit source to the appropriate yearly Wiki repository or keep the release archive with it. Local `.state/` is intentionally excluded from source exports; preserve it separately for draft and editorial-history backups.
 
 For a historical rebuild, extract its source ZIP into an empty directory and run the same build command. The archive is the engine/version boundary. Comparing/restoring content in today's studio does not replace today's application code.
 

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/versioning.md">i2026.P0.2 · Preview</a> ·
+  <a href="docs/versioning.md">i2026.P0.3 · Preview</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="docs/maintenance.md">Maintain</a> ·
   <a href="docs/ci.md">Deploy</a> ·
@@ -21,11 +21,11 @@
 
 An interactive atlas of space systems and iGEM project routes, backed by a local content studio. Maintain teams, shared materials and sources in modular JSON; build a standalone reader from the same source in CI. The reader and studio open in English and support Chinese.
 
-**Version: i2026.P0.2 · Prerelease.** Maintained by [SZU-SIAT-iGEM](https://github.com/SZU-SIAT-iGEM/space-material-atlas).
+**Version: i2026.P0.3 · Prerelease.** Maintained by [SZU-SIAT-iGEM](https://github.com/SZU-SIAT-iGEM/space-material-atlas).
 
 | Roster teams | Routes available | Awaiting additions | Nodes | Relations | Sources |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 38 | 24 | 14 | 180 | 266 | 86 |
+| 38 | 25 | 13 | 183 | 270 | 87 |
 
 Teams outside the roster are **Future outlook** and are not counted. A node's **Future** tag describes a space-application scenario, independently of team integration status.
 
@@ -135,7 +135,7 @@ Adjust the relative path to the host page. Public builds retain browsing and exp
 Names follow `iYEAR.[P|R]BASELINE.SUBMISSION`: `P` is prerelease and `R` is release. An example **next** submission is:
 
 ```sh
-python manage.py release i2026.P0.3 --notes "Next reviewed submission"
+python manage.py release i2026.P0.4 --notes "Next reviewed submission"
 ```
 
 Release names cannot be reused. Extract a snapshot's `source.zip` in an empty directory to rebuild its original implementation. Restoring content in today's studio uses today's engine. Local drafts and editorial history in `.state/` require a separate backup.

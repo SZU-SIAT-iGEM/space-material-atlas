@@ -336,6 +336,17 @@
     }
   },
   {
+    "id": "team:2026-6055:technical-document",
+    "title": "BUCT · Air2Protein · 简介与技术路线 / Introduction and technical route",
+    "url": "",
+    "kind": "team_supplied",
+    "publisher": "BUCT",
+    "description": {
+      "zh": "BUCT 提供的 Air2Protein 中英文简介、技术路线图与模块说明。",
+      "en": "BUCT-supplied bilingual introduction, technical route diagram and module descriptions for Air2Protein."
+    }
+  },
+  {
     "id": "team:2026-6273:hp-document",
     "title": "HiZJU-China · UniCO-Fuel · Team-supplied material-flow description",
     "url": "",
@@ -347,14 +358,13 @@
     }
   },
   {
-    "id": "team:2026-6055:technical-document",
-    "title": "BUCT · Air2Protein · 简介与技术路线 / Introduction and technical route",
+    "id": "uflorida:atlas-correspondence:2026-10-06",
+    "title": "UFlorida · Space Material Atlas project correspondence",
     "url": "",
     "kind": "team_supplied",
-    "publisher": "BUCT",
     "description": {
-      "zh": "BUCT 提供的 Air2Protein 中英文简介、技术路线图与模块说明。",
-      "en": "BUCT-supplied bilingual introduction, technical route diagram and module descriptions for Air2Protein."
+      "zh": "UFlorida 团队提供的邮件项目说明，介绍 2026 年多标志物生物传感平台，并回顾上一年度的骨钙素结合蛋白与骨健康监测项目。",
+      "en": "Project description supplied by UFlorida by email, covering its 2026 multi-biomarker biosensing platform and the previous year’s osteocalcin-binding protein and bone-health monitoring project."
     }
   }
 ]

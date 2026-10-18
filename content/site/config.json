@@ -16,5 +16,73 @@
   "about": {
     "zh": "本图谱整理太空物质循环相关技术与 iGEM 团队项目，以定性方式呈现资源、工艺和项目之间可能形成的联系。为iGEM太空赛道做一个承上启下的整理工作。具体项目路线按其目标实现后的情景展开，线条不表示流量或量化性能。图谱依据公开项目资料与团队提供的信息进行整理和校对，并经过审核，未对各项目开展深入研究，内容可能存在理解和表述的错漏。欢迎相关团队与读者联系维护者，补充资料或提出更正。",
     "en": "This atlas brings together space material-cycle technologies and iGEM projects to describe possible connections among resources, processes and teams. It serves as a preliminary and integrative overview for the iGEM Space village. Specific project pathways are developed based on the scenarios following the achievement of their objectives, and the lines do not represent flow or quantitative performance. The map is compiled and verified based on publicly available project information and details provided by teams, and has undergone review; it does not involve in-depth research on each project, so there may be errors or inaccuracies in understanding and expression. Relevant teams and readers are welcome to contact the maintainers to provide additional information or suggest corrections."
+  },
+  "provenance": {
+    "policy": {
+      "zh": "每支历史队伍保留原 Wiki 链接与来源。带“原团队已确认”标记的记录，已通过邮件取得原团队同意并核对；其余记录由公开材料整理，尚未经原团队审核，欢迎原团队联系修改。",
+      "en": "Each team record keeps its original wiki link and sources. A Team verified badge means the original team agreed by email and checked the record. Other records are compiled from public material and have not been reviewed by the original team; teams are welcome to contact the maintainers for corrections."
+    },
+    "statuses": {
+      "team_verified": {
+        "label": {
+          "zh": "原团队已确认",
+          "en": "Team verified"
+        },
+        "detail": {
+          "zh": "原团队已通过邮件同意收录并确认内容。",
+          "en": "The original team agreed by email and confirmed this record."
+        }
+      },
+      "maintainer": {
+        "label": {
+          "zh": "维护团队",
+          "en": "Maintainer team"
+        },
+        "detail": {
+          "zh": "本图谱维护团队自己的项目记录。",
+          "en": "The atlas maintainers' own project record."
+        }
+      },
+      "unreviewed": {
+        "label": {
+          "zh": "原团队未审核",
+          "en": "Not team-reviewed"
+        },
+        "detail": {
+          "zh": "根据公开材料整理，尚未经原团队审核。",
+          "en": "Compiled from public material and not yet reviewed by the original team."
+        }
+      }
+    },
+    "default_status": "unreviewed",
+    "reviews": {
+      "2026-6100": {
+        "status": "maintainer"
+      },
+      "2025-5717": {
+        "status": "team_verified",
+        "basis": "email"
+      },
+      "2025-5893": {
+        "status": "team_verified",
+        "basis": "email"
+      },
+      "2025-5969": {
+        "status": "team_verified",
+        "basis": "email"
+      },
+      "2026-6055": {
+        "status": "team_verified",
+        "basis": "email"
+      },
+      "2026-6273": {
+        "status": "team_verified",
+        "basis": "email"
+      },
+      "2026-6403": {
+        "status": "team_verified",
+        "basis": "email"
+      }
+    }
   }
 }

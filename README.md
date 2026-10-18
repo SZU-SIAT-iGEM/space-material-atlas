@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/versioning.md">i2026.P0.3 · Preview</a> ·
+  <a href="docs/versioning.md">i2026.R0.0 · Release</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="docs/maintenance.md">Maintain</a> ·
   <a href="docs/ci.md">Deploy</a> ·
@@ -21,7 +21,7 @@
 
 An interactive atlas of space systems and iGEM project routes, backed by a local content studio. Maintain teams, shared materials and sources in modular JSON; build a standalone reader from the same source in CI. The reader and studio open in English and support Chinese.
 
-**Version: i2026.P0.3 · Prerelease.** Maintained by [SZU-SIAT-iGEM](https://github.com/SZU-SIAT-iGEM/space-material-atlas).
+**Version: i2026.R0.0 · Release.** Maintained by [SZU-SIAT-iGEM](https://github.com/SZU-SIAT-iGEM/space-material-atlas).
 
 | Roster teams | Routes available | Awaiting additions | Nodes | Relations | Sources |
 | ---: | ---: | ---: | ---: | ---: | ---: |

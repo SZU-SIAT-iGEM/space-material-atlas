@@ -19,8 +19,8 @@
   },
   "provenance": {
     "policy": {
-      "zh": "每支历史队伍保留原 Wiki 链接与来源。带“原团队已确认”标记的记录，已通过邮件取得原团队同意并核对；其余记录由公开材料整理，尚未经原团队审核，欢迎原团队联系修改。",
-      "en": "Each team record keeps its original wiki link and sources. A Team verified badge means the original team agreed by email and checked the record. Other records are compiled from public material and have not been reviewed by the original team; teams are welcome to contact the maintainers for corrections."
+      "zh": "每支历史队伍保留原 Wiki 链接与来源。带“原团队已确认”标记的记录，已取得原团队确认；其余记录由公开材料整理，尚未经原团队审核，欢迎原团队联系修改。",
+      "en": "Each team record keeps its original wiki link and sources. A Team verified badge means the original team confirmed the record. Other records are compiled from public material and have not been reviewed by the original team; teams are welcome to contact the maintainers for corrections."
     },
     "statuses": {
       "team_verified": {
@@ -29,8 +29,8 @@
           "en": "Team verified"
         },
         "detail": {
-          "zh": "原团队已通过邮件同意收录并确认内容。",
-          "en": "The original team agreed by email and confirmed this record."
+          "zh": "原团队已确认收录内容。",
+          "en": "The original team confirmed the content of this record."
         }
       },
       "maintainer": {
@@ -82,6 +82,10 @@
       "2026-6403": {
         "status": "team_verified",
         "basis": "email"
+      },
+      "2026-6223": {
+        "status": "team_verified",
+        "basis": "team_supplied_via_maintainer"
       }
     }
   }

@@ -1,0 +1,69 @@
+{
+  "team": {
+    "id": "2026-6223",
+    "name": "EPFL",
+    "theme": "logistics",
+    "summary": {
+      "zh": "Orbit-AL · 再入金属环境监测",
+      "en": "Orbit-AL · Re-entry metal monitoring"
+    },
+    "description": {
+      "zh": "EPFL 2026 的 Orbit-AL 项目面向航天器再入产生的含铝、铁平流层气溶胶，提出气球采样、分级浸取与化学分析及生物传感相结合的监测路线。项目计划在地面至 30 km 高度采样，以 ICP-MS 和工程大肠杆菌传感器比较金属的浸取行为与细胞可利用性，获得由实验操作定义的金属可接近比例、Fe(II)/Fe(III) 比值及生物可利用比例。团队希望这些数据用于大气模型、模拟颗粒制备及再入环境影响评估，并检验化学浸取能否代表再入铁的生物摄取。",
+      "en": "Orbit-AL by EPFL 2026 proposes monitoring aluminium- and iron-bearing stratospheric aerosols from spacecraft re-entry through balloon sampling, differential extraction, chemical analysis and biosensing. The project targets sampling from the ground to 30 km, comparing metal leaching with cellular accessibility using ICP-MS and engineered E. coli sensors. Intended outputs include operationally defined accessible metal fractions, Fe(II)/Fe(III) ratios and bioavailable fractions. The team aims to inform atmospheric models, analogue-particle preparation and re-entry environmental assessment, and to test whether chemical leaching represents biological uptake of re-entry iron."
+    },
+    "url": "https://teams.igem.org/6223"
+  },
+  "sources": [
+    {
+      "id": "team:2026-6223:orbit-al-description",
+      "title": "EPFL 2026 · Orbit-AL — team-supplied project description",
+      "url": "",
+      "kind": "team_supplied"
+    }
+  ],
+  "routes": [
+    {
+      "id": "route:monitoring",
+      "theme": "logistics",
+      "label": {
+        "zh": "Orbit-AL · 再入金属环境监测",
+        "en": "Orbit-AL · Re-entry metal monitoring"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "edge:sample",
+      "route": "route:monitoring",
+      "source": "aerosols",
+      "target": "sampling",
+      "type": "material",
+      "label": {
+        "zh": "颗粒采集",
+        "en": "Particle collection"
+      }
+    },
+    {
+      "id": "edge:extracts",
+      "route": "route:monitoring",
+      "source": "sampling",
+      "target": "analysis",
+      "type": "material",
+      "label": {
+        "zh": "两种浸取液",
+        "en": "Two extraction fractions"
+      }
+    },
+    {
+      "id": "edge:readout",
+      "route": "route:monitoring",
+      "source": "analysis",
+      "target": "data",
+      "type": "information",
+      "label": {
+        "zh": "化学与生物测量结果",
+        "en": "Chemical & biological measurements"
+      }
+    }
+  ]
+}

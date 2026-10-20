@@ -1,0 +1,54 @@
+[
+  {
+    "id": "aerosols",
+    "route": "route:monitoring",
+    "kind": "material",
+    "label": {
+      "zh": "再入来源含铝铁气溶胶",
+      "en": "Re-entry Al/Fe aerosols"
+    },
+    "description": {
+      "zh": "目标样品为平流层中含航天器来源铝与铁的气溶胶颗粒，采样范围从地面至 30 km。团队拟参考飞机观测报道的 Li、Cu、Pb、Nb、Hf 示踪元素判断再入来源。项目关注这些金属在硫酸气溶胶中的化学形态；其参与表面氯活化、吸收太阳辐射、极地平流层云成核及沉降后影响海洋生态系统的作用属于研究背景中的假设。",
+      "en": "The target samples are stratospheric aerosol particles containing spacecraft-derived aluminium and iron, collected from the ground to 30 km. The team proposes attributing re-entry origin using Li, Cu, Pb, Nb and Hf tracers reported in aircraft measurements. The project investigates metal chemical forms in sulfuric-acid aerosols; chlorine activation on surfaces, sunlight absorption, polar stratospheric cloud nucleation and ecosystem effects after deposition are hypotheses motivating the work."
+    }
+  },
+  {
+    "id": "sampling",
+    "route": "route:monitoring",
+    "kind": "process",
+    "label": {
+      "zh": "RoDS 采样与分级浸取",
+      "en": "RoDS sampling & extraction"
+    },
+    "description": {
+      "zh": "RoDS 气球载采样器在 2 kg 载荷约束下，将空气抽过干式 PTFE 滤膜收集颗粒。样品分别接受温和的超纯水浸取与较强的还原性酸浸取，以比较不同条件下释放的金属。提取液进入化学分析和细胞传感两类测量；浸取条件也是结果可复现所需的操作定义。",
+      "en": "The balloon-borne RoDS sampler draws air through a dry PTFE filter under a 2 kg payload constraint. Collected particles undergo a mild ultrapure-water leach and a stronger reducing-acid leach to compare metal release under different extraction conditions. Extracts feed both chemical and cellular measurements; the extraction conditions form part of the operational definitions needed for reproducibility."
+    }
+  },
+  {
+    "id": "analysis",
+    "route": "route:monitoring",
+    "kind": "process",
+    "label": {
+      "zh": "元素分析与细胞传感",
+      "en": "Elemental analysis & biosensing"
+    },
+    "description": {
+      "zh": "每种提取液由 ICP-MS（电感耦合等离子体质谱）测量元素组成，并结合浸取强度表征金属结合情况；工程大肠杆菌传感器测量细胞可接近的金属。铁传感器通过 Fur 调控启动子读取胞内 Fe²⁺，配合 ΔfeoB 与 ΔtonB 敲除株，利用摄取途径推断铁氧化态。铝传感器将植物镁转运蛋白、计算设计的铝结合元件与 split-GFP 荧光读出结合。两类测量用于比较化学可浸取性与生物摄取。",
+      "en": "Each extract is analysed by ICP-MS (inductively coupled plasma mass spectrometry) for elemental composition, with extraction strength used to assess metal binding, and by engineered E. coli sensors for cellular accessibility. The iron sensor reads intracellular Fe²⁺ through a Fur-regulated promoter; ΔfeoB and ΔtonB knockout strains use uptake-route differences to infer iron oxidation state. The aluminium sensor combines a plant magnesium transporter, a computationally designed aluminium-binding element and a split-GFP readout. These measurements compare chemical leachability with biological uptake."
+    }
+  },
+  {
+    "id": "data",
+    "route": "route:monitoring",
+    "kind": "information",
+    "label": {
+      "zh": "金属形态与生物可利用性数据",
+      "en": "Metal speciation & bioavailability data"
+    },
+    "description": {
+      "zh": "预期输出为按浸取和测量操作定义的表面可接近金属与总金属比例、Fe(II)/Fe(III) 比值、生物可利用比例及配套提取流程。这些数据拟用于替换大气模型中的相关假设，为模拟再入颗粒的制备提供实验参照，并检验化学浸取能否代表再入铁的细胞摄取；其后续用途包括航天器寿命终止政策和环境影响评估。",
+      "en": "The intended outputs are operationally defined surface-accessible versus total metal fractions, Fe(II)/Fe(III) ratios, bioavailable fractions and reproducible extraction protocols. The data are intended to replace assumptions in atmospheric models, guide preparation of analogue re-entry particles and test chemical leaching as a proxy for cellular uptake of re-entry iron. Further applications include spacecraft end-of-life policy and environmental impact assessment."
+    }
+  }
+]

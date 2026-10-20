@@ -1,0 +1,209 @@
+{
+  "format": "space-atlas-team-bundle-1",
+  "team": {
+    "id": "2026-6223",
+    "year": 2026,
+    "name": "EPFL",
+    "url": "https://teams.igem.org/6223",
+    "role": {
+      "zh": "Orbit-AL · 再入金属环境监测",
+      "en": "Orbit-AL · Re-entry metal monitoring"
+    },
+    "description": "EPFL 2026 的 Orbit-AL 项目面向航天器再入产生的含铝、铁平流层气溶胶，提出气球采样、分级浸取与化学分析及生物传感相结合的监测路线。项目计划在地面至 30 km 高度采样，以 ICP-MS 和工程大肠杆菌传感器比较金属的浸取行为与细胞可利用性，获得由实验操作定义的金属可接近比例、Fe(II)/Fe(III) 比值及生物可利用比例。团队希望这些数据用于大气模型、模拟颗粒制备及再入环境影响评估，并检验化学浸取能否代表再入铁的生物摄取。",
+    "description_en": "Orbit-AL by EPFL 2026 proposes monitoring aluminium- and iron-bearing stratospheric aerosols from spacecraft re-entry through balloon sampling, differential extraction, chemical analysis and biosensing. The project targets sampling from the ground to 30 km, comparing metal leaching with cellular accessibility using ICP-MS and engineered E. coli sensors. Intended outputs include operationally defined accessible metal fractions, Fe(II)/Fe(III) ratios and bioavailable fractions. The team aims to inform atmospheric models, analogue-particle preparation and re-entry environmental assessment, and to test whether chemical leaching represents biological uptake of re-entry iron.",
+    "narrative": {
+      "zh": "EPFL 2026 的 Orbit-AL 项目面向航天器再入产生的含铝、铁平流层气溶胶，提出气球采样、分级浸取与化学分析及生物传感相结合的监测路线。项目计划在地面至 30 km 高度采样，以 ICP-MS 和工程大肠杆菌传感器比较金属的浸取行为与细胞可利用性，获得由实验操作定义的金属可接近比例、Fe(II)/Fe(III) 比值及生物可利用比例。团队希望这些数据用于大气模型、模拟颗粒制备及再入环境影响评估，并检验化学浸取能否代表再入铁的生物摄取。",
+      "en": "Orbit-AL by EPFL 2026 proposes monitoring aluminium- and iron-bearing stratospheric aerosols from spacecraft re-entry through balloon sampling, differential extraction, chemical analysis and biosensing. The project targets sampling from the ground to 30 km, comparing metal leaching with cellular accessibility using ICP-MS and engineered E. coli sensors. Intended outputs include operationally defined accessible metal fractions, Fe(II)/Fe(III) ratios and bioavailable fractions. The team aims to inform atmospheric models, analogue-particle preparation and re-entry environmental assessment, and to test whether chemical leaching represents biological uptake of re-entry iron."
+    },
+    "primary_theme": "logistics",
+    "themes": [
+      "logistics"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "team:2026-6223:orbit-al-description"
+    ],
+    "chains": [
+      {
+        "id": "2026-6223:route:monitoring",
+        "theme": "logistics",
+        "label": {
+          "zh": "Orbit-AL · 再入金属环境监测",
+          "en": "Orbit-AL · Re-entry metal monitoring"
+        },
+        "demonstration": false,
+        "step_ids": [
+          "2026-6223:aerosols",
+          "2026-6223:sampling",
+          "2026-6223:analysis",
+          "2026-6223:data"
+        ],
+        "edge_ids": [
+          "2026-6223:edge:sample",
+          "2026-6223:edge:extracts",
+          "2026-6223:edge:readout"
+        ],
+        "dependencies": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "2026-6223:aerosols",
+      "owner": "2026-6223",
+      "route": "2026-6223:route:monitoring",
+      "theme": "logistics",
+      "kind": "material",
+      "label": {
+        "zh": "再入来源含铝铁气溶胶",
+        "en": "Re-entry Al/Fe aerosols"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "description": "目标样品为平流层中含航天器来源铝与铁的气溶胶颗粒，采样范围从地面至 30 km。团队拟参考飞机观测报道的 Li、Cu、Pb、Nb、Hf 示踪元素判断再入来源。项目关注这些金属在硫酸气溶胶中的化学形态；其参与表面氯活化、吸收太阳辐射、极地平流层云成核及沉降后影响海洋生态系统的作用属于研究背景中的假设。",
+      "description_en": "The target samples are stratospheric aerosol particles containing spacecraft-derived aluminium and iron, collected from the ground to 30 km. The team proposes attributing re-entry origin using Li, Cu, Pb, Nb and Hf tracers reported in aircraft measurements. The project investigates metal chemical forms in sulfuric-acid aerosols; chlorine activation on surfaces, sunlight absorption, polar stratospheric cloud nucleation and ecosystem effects after deposition are hypotheses motivating the work.",
+      "narrative": {
+        "zh": "目标样品为平流层中含航天器来源铝与铁的气溶胶颗粒，采样范围从地面至 30 km。团队拟参考飞机观测报道的 Li、Cu、Pb、Nb、Hf 示踪元素判断再入来源。项目关注这些金属在硫酸气溶胶中的化学形态；其参与表面氯活化、吸收太阳辐射、极地平流层云成核及沉降后影响海洋生态系统的作用属于研究背景中的假设。",
+        "en": "The target samples are stratospheric aerosol particles containing spacecraft-derived aluminium and iron, collected from the ground to 30 km. The team proposes attributing re-entry origin using Li, Cu, Pb, Nb and Hf tracers reported in aircraft measurements. The project investigates metal chemical forms in sulfuric-acid aerosols; chlorine activation on surfaces, sunlight absorption, polar stratospheric cloud nucleation and ecosystem effects after deposition are hypotheses motivating the work."
+      }
+    },
+    {
+      "id": "2026-6223:sampling",
+      "owner": "2026-6223",
+      "route": "2026-6223:route:monitoring",
+      "theme": "logistics",
+      "kind": "process",
+      "label": {
+        "zh": "RoDS 采样与分级浸取",
+        "en": "RoDS sampling & extraction"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "description": "RoDS 气球载采样器在 2 kg 载荷约束下，将空气抽过干式 PTFE 滤膜收集颗粒。样品分别接受温和的超纯水浸取与较强的还原性酸浸取，以比较不同条件下释放的金属。提取液进入化学分析和细胞传感两类测量；浸取条件也是结果可复现所需的操作定义。",
+      "description_en": "The balloon-borne RoDS sampler draws air through a dry PTFE filter under a 2 kg payload constraint. Collected particles undergo a mild ultrapure-water leach and a stronger reducing-acid leach to compare metal release under different extraction conditions. Extracts feed both chemical and cellular measurements; the extraction conditions form part of the operational definitions needed for reproducibility.",
+      "narrative": {
+        "zh": "RoDS 气球载采样器在 2 kg 载荷约束下，将空气抽过干式 PTFE 滤膜收集颗粒。样品分别接受温和的超纯水浸取与较强的还原性酸浸取，以比较不同条件下释放的金属。提取液进入化学分析和细胞传感两类测量；浸取条件也是结果可复现所需的操作定义。",
+        "en": "The balloon-borne RoDS sampler draws air through a dry PTFE filter under a 2 kg payload constraint. Collected particles undergo a mild ultrapure-water leach and a stronger reducing-acid leach to compare metal release under different extraction conditions. Extracts feed both chemical and cellular measurements; the extraction conditions form part of the operational definitions needed for reproducibility."
+      }
+    },
+    {
+      "id": "2026-6223:analysis",
+      "owner": "2026-6223",
+      "route": "2026-6223:route:monitoring",
+      "theme": "logistics",
+      "kind": "process",
+      "label": {
+        "zh": "元素分析与细胞传感",
+        "en": "Elemental analysis & biosensing"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "description": "每种提取液由 ICP-MS（电感耦合等离子体质谱）测量元素组成，并结合浸取强度表征金属结合情况；工程大肠杆菌传感器测量细胞可接近的金属。铁传感器通过 Fur 调控启动子读取胞内 Fe²⁺，配合 ΔfeoB 与 ΔtonB 敲除株，利用摄取途径推断铁氧化态。铝传感器将植物镁转运蛋白、计算设计的铝结合元件与 split-GFP 荧光读出结合。两类测量用于比较化学可浸取性与生物摄取。",
+      "description_en": "Each extract is analysed by ICP-MS (inductively coupled plasma mass spectrometry) for elemental composition, with extraction strength used to assess metal binding, and by engineered E. coli sensors for cellular accessibility. The iron sensor reads intracellular Fe²⁺ through a Fur-regulated promoter; ΔfeoB and ΔtonB knockout strains use uptake-route differences to infer iron oxidation state. The aluminium sensor combines a plant magnesium transporter, a computationally designed aluminium-binding element and a split-GFP readout. These measurements compare chemical leachability with biological uptake.",
+      "narrative": {
+        "zh": "每种提取液由 ICP-MS（电感耦合等离子体质谱）测量元素组成，并结合浸取强度表征金属结合情况；工程大肠杆菌传感器测量细胞可接近的金属。铁传感器通过 Fur 调控启动子读取胞内 Fe²⁺，配合 ΔfeoB 与 ΔtonB 敲除株，利用摄取途径推断铁氧化态。铝传感器将植物镁转运蛋白、计算设计的铝结合元件与 split-GFP 荧光读出结合。两类测量用于比较化学可浸取性与生物摄取。",
+        "en": "Each extract is analysed by ICP-MS (inductively coupled plasma mass spectrometry) for elemental composition, with extraction strength used to assess metal binding, and by engineered E. coli sensors for cellular accessibility. The iron sensor reads intracellular Fe²⁺ through a Fur-regulated promoter; ΔfeoB and ΔtonB knockout strains use uptake-route differences to infer iron oxidation state. The aluminium sensor combines a plant magnesium transporter, a computationally designed aluminium-binding element and a split-GFP readout. These measurements compare chemical leachability with biological uptake."
+      }
+    },
+    {
+      "id": "2026-6223:data",
+      "owner": "2026-6223",
+      "route": "2026-6223:route:monitoring",
+      "theme": "logistics",
+      "kind": "information",
+      "label": {
+        "zh": "金属形态与生物可利用性数据",
+        "en": "Metal speciation & bioavailability data"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "description": "预期输出为按浸取和测量操作定义的表面可接近金属与总金属比例、Fe(II)/Fe(III) 比值、生物可利用比例及配套提取流程。这些数据拟用于替换大气模型中的相关假设，为模拟再入颗粒的制备提供实验参照，并检验化学浸取能否代表再入铁的细胞摄取；其后续用途包括航天器寿命终止政策和环境影响评估。",
+      "description_en": "The intended outputs are operationally defined surface-accessible versus total metal fractions, Fe(II)/Fe(III) ratios, bioavailable fractions and reproducible extraction protocols. The data are intended to replace assumptions in atmospheric models, guide preparation of analogue re-entry particles and test chemical leaching as a proxy for cellular uptake of re-entry iron. Further applications include spacecraft end-of-life policy and environmental impact assessment.",
+      "narrative": {
+        "zh": "预期输出为按浸取和测量操作定义的表面可接近金属与总金属比例、Fe(II)/Fe(III) 比值、生物可利用比例及配套提取流程。这些数据拟用于替换大气模型中的相关假设，为模拟再入颗粒的制备提供实验参照，并检验化学浸取能否代表再入铁的细胞摄取；其后续用途包括航天器寿命终止政策和环境影响评估。",
+        "en": "The intended outputs are operationally defined surface-accessible versus total metal fractions, Fe(II)/Fe(III) ratios, bioavailable fractions and reproducible extraction protocols. The data are intended to replace assumptions in atmospheric models, guide preparation of analogue re-entry particles and test chemical leaching as a proxy for cellular uptake of re-entry iron. Further applications include spacecraft end-of-life policy and environmental impact assessment."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2026-6223:edge:sample",
+      "owner": "2026-6223",
+      "source": "2026-6223:aerosols",
+      "target": "2026-6223:sampling",
+      "category": "material",
+      "label": {
+        "zh": "颗粒采集",
+        "en": "Particle collection"
+      },
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "route": "2026-6223:route:monitoring",
+      "layer": "project",
+      "theme": "logistics",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6223:edge:extracts",
+      "owner": "2026-6223",
+      "source": "2026-6223:sampling",
+      "target": "2026-6223:analysis",
+      "category": "material",
+      "label": {
+        "zh": "两种浸取液",
+        "en": "Two extraction fractions"
+      },
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "route": "2026-6223:route:monitoring",
+      "layer": "project",
+      "theme": "logistics",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6223:edge:readout",
+      "owner": "2026-6223",
+      "source": "2026-6223:analysis",
+      "target": "2026-6223:data",
+      "category": "information",
+      "label": {
+        "zh": "化学与生物测量结果",
+        "en": "Chemical & biological measurements"
+      },
+      "source_ids": [
+        "team:2026-6223:orbit-al-description"
+      ],
+      "route": "2026-6223:route:monitoring",
+      "layer": "project",
+      "theme": "logistics",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    }
+  ],
+  "dependencies": [],
+  "enhancements": [],
+  "sources": [
+    {
+      "id": "team:2026-6223:orbit-al-description",
+      "title": "EPFL 2026 · Orbit-AL — team-supplied project description",
+      "url": "",
+      "kind": "team_supplied"
+    }
+  ]
+}

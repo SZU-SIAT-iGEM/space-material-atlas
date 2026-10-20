@@ -366,5 +366,11 @@
       "zh": "UFlorida 团队提供的邮件项目说明，介绍 2026 年多标志物生物传感平台，并回顾上一年度的骨钙素结合蛋白与骨健康监测项目。",
       "en": "Project description supplied by UFlorida by email, covering its 2026 multi-biomarker biosensing platform and the previous year’s osteocalcin-binding protein and bone-health monitoring project."
     }
+  },
+  {
+    "id": "team:2026-6223:orbit-al-description",
+    "title": "EPFL 2026 · Orbit-AL — team-supplied project description",
+    "url": "",
+    "kind": "team_supplied"
   }
 ]

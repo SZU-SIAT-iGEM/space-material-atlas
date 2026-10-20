@@ -1,0 +1,29 @@
+{
+  "source": "source.txt",
+  "kind": "team_supplied",
+  "received": "2026-10-20",
+  "sha256": "0653794cd712f415c5e1ba0a4fb94037a3d5dc1376d9c787b64aae8e13b12495",
+  "team_confirmation": "维护者确认材料来自原团队，并明确授权挂审核标记。",
+  "mapping": {
+    "team": [
+      "What we target",
+      "The system",
+      "The output",
+      "Role in a future space system"
+    ],
+    "aerosols": [
+      "The problem",
+      "What we target"
+    ],
+    "sampling": [
+      "The system"
+    ],
+    "analysis": [
+      "The system"
+    ],
+    "data": [
+      "The output",
+      "Role in a future space system"
+    ]
+  }
+}

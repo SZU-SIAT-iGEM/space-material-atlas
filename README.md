@@ -27,7 +27,7 @@ An interactive atlas of space systems and iGEM project routes, backed by a local
 
 | Roster teams | Routes available | Awaiting additions | Nodes | Relations | Sources |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 38 | 25 | 13 | 183 | 270 | 87 |
+| 38 | 26 | 12 | 187 | 273 | 88 |
 
 Teams outside the roster are **Future outlook** and are not counted. A node's **Future** tag describes a space-application scenario, independently of team integration status.
 

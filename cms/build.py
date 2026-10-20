@@ -17,7 +17,6 @@ from .store import Store
 SOURCE_DIRS = ('cms', 'admin', 'web', 'scripts', 'assets', 'vendor', 'skills', 'tests', 'ci', 'docs', 'layout-reference')
 SOURCE_FILES = ('manage.py', 'requirements.txt', 'requirements-dev.txt', 'requirements-lock.txt',
                 '.gitlab-ci.yml', '.gitignore', 'README.md', 'LICENSE', 'CONTRIBUTING.md', 'start-admin.cmd', 'deployment.json',
-                '技术核对与待确认项.md', 'QA-multidevice.md', 'QA-reading-2026-09-25.md', 'QA-v7.md',
                 '文本校对与队伍导出说明.md', 'JSON与展示模式使用说明.md')
 
 def copy_sources(root, destination):

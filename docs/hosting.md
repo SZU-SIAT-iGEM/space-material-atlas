@@ -4,7 +4,7 @@ Checked against official guidance on **2026-10-03**.
 
 ## Public development repository
 
-[SZU-SIAT-iGEM/space-material-atlas](https://github.com/SZU-SIAT-iGEM/space-material-atlas) is the public development repository. The initial content is **i2026.P0.2**, a prerelease still awaiting editorial review. Source publication does not mark it as an R release or deploy the Wiki.
+[SZU-SIAT-iGEM/space-material-atlas](https://github.com/SZU-SIAT-iGEM/space-material-atlas) is the public development repository. Source publication and Wiki deployment are separate workflows.
 
 The repository includes the local studio, modular content, reader, layout engine, tests, source build pipeline, licenses and documentation. README screenshots use Friskoli / SZU-SIAT-China. Generated pages, local drafts, runtime history, caches and delivery archives are excluded from Git.
 
@@ -26,4 +26,4 @@ The [2026 official Wiki template](https://gitlab.igem.org/2026/kit) requires all
 4. If submitting this as competition software, also push the reviewed source to the team's assigned dedicated software repository, following the deliverables dashboard's instructions.
 5. Record the GitHub commit, iGEM repository/commit and published content version together. Keep future yearly revisions separate from frozen submissions.
 
-The iGEM destination has not been configured or uploaded in this publication. No live Wiki deployment or real iGEM runner execution is claimed. The repository contains GitLab CI; it does not currently include GitHub Actions or GitHub Pages deployment.
+The repository provides GitLab CI. Configure the assigned iGEM destination and verify its pipeline before submitting. GitHub Actions and GitHub Pages deployment are not included.

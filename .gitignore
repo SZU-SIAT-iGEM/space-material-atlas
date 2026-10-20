@@ -23,3 +23,5 @@ __pycache__/
 /source-manifest.json
 .env
 .env.*
+
+/docs/layout-benchmark.json

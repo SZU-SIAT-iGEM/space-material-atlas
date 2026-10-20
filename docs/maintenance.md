@@ -1,6 +1,6 @@
 # Content and engine maintenance
 
-Current collection: **i2026.P0.3**, awaiting human review. See [the documentation index](index.md) and [version rules](versioning.md).
+See [the documentation index](index.md) and [version rules](versioning.md).
 
 ## Content ownership
 
@@ -54,7 +54,7 @@ The local text proofreader is available from Import & review. Its annotations ar
 
 The geometry signature includes projected identities, node dimensions, group membership, categories and endpoints. Descriptions and sources do not invalidate geometry. Previous successful layouts are reused per view when both geometry and the implementation hash match. Labels that change dimensions and structural edits trigger recalculation. Input order is stabilized by the content manifest; manual changes to ordering are deliberate layout changes.
 
-The first migration includes 24 reference layouts. Tests compare both languages, all original coordinates, and Node/browser outputs. New topics derive views from the theme catalog; special legacy topic projection rules remain versioned code.
+The fixed layout fixtures cover both languages, reference coordinates, and Node/browser outputs. New topics derive views from the theme catalog; special legacy topic projection rules remain versioned code.
 
 Do not remove the publication gates: missing paths, node overlap, node crossings and title collisions fail the build. Crossings, total route length and canvas growth are reported for comparison. Readability still needs a visual review; these checks cannot establish scientific or editorial correctness.
 
@@ -62,7 +62,7 @@ Do not remove the publication gates: missing paths, node overlap, node crossings
 
 Update the engine version when changing geometric behavior. Keep the bundled Viz version and license notices pinned. Run `node tests/test_layout.cjs` and the capacity probes, then inspect both full scenes and focused routes. If intentionally changing the baseline appearance, record and review replacement references; do not silently accept regression output.
 
-`docs/layout-benchmark.json` records measured cases on the development machine. There is no guaranteed node-count limit: connectivity changes Graphviz's resource requirements. Some dense additions and large synthetic graphs hit the bundled Graphviz WASM limit; those builds stop, leaving the previous public build available. Split the affected topic or deliberately upgrade and validate the engine before publishing such a graph.
+Run `node scripts/benchmark_layout.cjs` to generate a local capacity report at `docs/layout-benchmark.json`. Keep generated reports out of source control. There is no guaranteed node-count limit: connectivity changes Graphviz's resource requirements. Some dense additions and large synthetic graphs hit the bundled Graphviz WASM limit; those builds stop, leaving the previous public build available. Split the affected topic or deliberately upgrade and validate the engine before publishing such a graph.
 
 ## Restore and rebuild
 
@@ -80,4 +80,4 @@ Never overwrite a published version name. Corrections use a new submission, such
 
 `tests/browser_studio.js` and `tests/browser_reader.js` export function expressions accepting a Playwright `page`; they are not standalone `node` programs. Start the studio at port 8765 and a static server for the built `public/` at port 8790 before running them through a Playwright page runner. Run from the project directory and create `.state/` for screenshots. The studio script edits a form temporarily and discards it: use a clean browser session without an unsaved human edit. The reader script checks public behavior even when the URL requests edit mode. Inspect results and screenshots, and record the tested source version.
 
-README screenshots and documentation refresh checks do not imply rerunning this full regression. See [acceptance](acceptance.md) for completed and unverified checks.
+Run relevant browser regressions after changing reader or studio behavior. Review actual-device interaction separately from browser size simulation.

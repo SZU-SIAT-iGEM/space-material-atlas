@@ -13,7 +13,7 @@ class TeamImportTests(unittest.TestCase):
         self.modules = split(load_legacy(ROOT/'tests/fixtures/v7'))
         save_modules(self.root/'content', self.modules)
         self.store = Store(self.root)
-        self.bundle = read(ROOT/'docs/imports/hizju-2026/team-bundle.json')
+        self.bundle = read(ROOT/'tests/fixtures/team-import.json')
 
     def tearDown(self): self.temp.cleanup()
 

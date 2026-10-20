@@ -20,7 +20,7 @@ def invoke(request):
         model = request.get('model', {})
         raise RuntimeError(f'Graphviz layout failed for {model.get("view", "unknown")} '
                            f'({len(model.get("nodes", {}))} projected nodes, {len(model.get("edges", []))} relations). '
-                           'The last valid release is retained. Inspect this view and the capacity report in docs/layout-benchmark.json.\n' + result.stderr)
+                           'The last valid release is retained. Inspect this view; run node scripts/benchmark_layout.cjs for a local capacity report.\n' + result.stderr)
     return json.loads(result.stdout)
 
 @functools.lru_cache(maxsize=256)

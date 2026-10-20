@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/versioning.md">i2026.P0.3 · Preview</a> ·
+  <a href="docs/versioning.md">i2026.R0.0 · Release</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="docs/maintenance.md">Maintain</a> ·
   <a href="docs/ci.md">Deploy</a> ·
@@ -21,7 +21,9 @@
 
 An interactive atlas of space systems and iGEM project routes, backed by a local content studio. Maintain teams, shared materials and sources in modular JSON; build a standalone reader from the same source in CI. The reader and studio open in English and support Chinese.
 
-**Current review: i2026.P0.3.** Friskoli, HiZJU-China, BUCT and UFlorida 2026 are integrated in the same collection. The [public source repository](https://github.com/SZU-SIAT-iGEM/space-material-atlas) is maintained by SZU-SIAT-iGEM. This prerelease awaits human review; the Wiki has not been deployed.
+**Version: i2026.R0.0 · Release.** Maintained by [SZU-SIAT-iGEM](https://github.com/SZU-SIAT-iGEM/space-material-atlas).
+
+**AI-assisted and human-checked.** The atlas was built with AI assistance. Earlier information comes from other teams' published wikis, public articles and academic work, and was interpreted and proofread by people. If you find a misreading or typo, please [contact the maintainers](mailto:szusiatchina@163.com) or open an issue to have it corrected.
 
 | Roster teams | Routes available | Awaiting additions | Nodes | Relations | Sources |
 | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -98,7 +100,7 @@ Use the included [team-import skill](skills/atlas-team-import/SKILL.md) to turn 
 3. In **Import & review**, inspect changes and affected references, enter a reason and apply.
 4. Build a preview, check both languages and team focus, then save a new named release after review.
 
-Each node needs its own description. Project details and evidence remain available without turning every paragraph into a separate node. See [the contribution guide](docs/contributing.md) and [Chinese content rules](docs/悬浮说明规范.md).
+Each node needs its own description. Project details and evidence remain available without turning every paragraph into a separate node. See [the contribution guide](CONTRIBUTING.md) and [Chinese content rules](docs/悬浮说明规范.md).
 
 ## Build and deploy
 
@@ -123,7 +125,7 @@ The standalone CI configuration targets **GitLab Pages**. To integrate with an e
 For the Wiki profile, upload the existing icon and configure `ATLAS_BRAND_URL` or `deployment.json` as described in [the CI guide](docs/ci.md). The default offline profile embeds the icon. README screenshots are repository documentation and are not copied to `public/`.
 
 ```html
-<iframe src="./space-atlas/atlas.html?embed=1&lang=en&team=2026-6273&focusTeam=1&view=energy"
+<iframe src="./space-atlas/atlas.html?embed=1&lang=en&team=2026-6100&focusTeam=1&view=bioreactor"
         title="Space Material Atlas" width="100%" height="720" style="border:0"
         loading="lazy"></iframe>
 ```
@@ -131,13 +133,6 @@ For the Wiki profile, upload the existing icon and configure `ATLAS_BRAND_URL` o
 Adjust the relative path to the host page. Public builds retain browsing and exports; `?mode=edit` cannot enable editing. See [JSON and embedding](JSON与展示模式使用说明.md).
 
 ## Versions and reproducibility
-
-| Edition | Contents |
-| --- | --- |
-| `i2026.P0.0` | All pre-2026 teams |
-| `i2026.P0.1` | Adds Friskoli and the 2026 roster |
-| `i2026.P0.2` | Adds HiZJU-China and BUCT |
-| `i2026.P0.3` | Adds UFlorida 2026 and revises UFlorida 2025; current review |
 
 Names follow `iYEAR.[P|R]BASELINE.SUBMISSION`: `P` is prerelease and `R` is release. An example **next** submission is:
 
@@ -147,7 +142,7 @@ python manage.py release i2026.P0.4 --notes "Next reviewed submission"
 
 Release names cannot be reused. Extract a snapshot's `source.zip` in an empty directory to rebuild its original implementation. Restoring content in today's studio uses today's engine. Local drafts and editorial history in `.state/` require a separate backup.
 
-The previous documentation refresh retains the `i2026.P0.2` content version. The current submission is `i2026.P0.3`. See [version rules](docs/versioning.md) and [review instructions](docs/人工审查.md).
+See [version rules](docs/versioning.md) for naming, restoration and yearly updates.
 
 ## Project map
 
@@ -159,13 +154,13 @@ scripts/           Compilation, rendering and layout checks
 skills/            Team import and JSON authoring tools
 tests/             Content, API, build and layout regression checks
 ci/                Integration with an existing Wiki
-docs/              Maintenance, acceptance, screenshots and import evidence
+docs/              Maintenance, deployment, licenses and screenshots
 vendor/            Pinned Viz/Graphviz runtime and license notices
 ```
 
 ## Checks and documentation
 
-The saved review records **29 Python tests** and **24 bilingual layout contracts** passing, plus a clean source rebuild matching all four static files. These counts describe that run; see [acceptance](docs/acceptance.md) for the evidence and its scope. Physical-device testing and a real iGEM runner remain unverified.
+Run the tests before submitting changes:
 
 ```sh
 # After installing requirements-lock.txt into the studio environment:
@@ -175,7 +170,7 @@ node tests/test_layout.cjs
 python manage.py build
 ```
 
-Start with the [documentation index](docs/index.md), [maintenance guide](docs/maintenance.md), [CI guide](docs/ci.md) or [human review checklist](docs/人工审查.md). Measured layout limits are recorded in [the capacity report](docs/layout-benchmark.json); large or dense graphs can exceed the bundled engine's capacity.
+Start with the [documentation index](docs/index.md), [maintenance guide](docs/maintenance.md) or [CI guide](docs/ci.md). For layout capacity changes, run `node scripts/benchmark_layout.cjs`; large or dense graphs can exceed the bundled engine's capacity.
 
 ## License
 

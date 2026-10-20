@@ -19,7 +19,7 @@
     "url": "https://2025.igem.wiki/uflorida",
     "location": "United States (Gainesville)",
     "organizer_type": "Collegiate",
-    "description": "UFlorida 围绕骨钙素识别设计结合蛋白与生物传感器，将分子信号转化为宇航员骨健康相关信息。",
+    "description": "UFlorida 2025 以骨转换标志物骨钙素为靶标，探索长期航天任务中的宇航员骨健康监测。团队利用 BindCraft 和基于 AlphaFold2 的计算设计生成从头设计的骨钙素结合蛋白，推进其重组表达与实验验证。长期目标是将经验证的结合蛋白集成到紧凑、非侵入式生物传感平台，实现太空中的实时骨健康监测，并进一步拓展至可穿戴或即时检测系统，以及地面的骨质疏松和其他骨健康监测场景。",
     "role": {
       "zh": "骨健康分子传感",
       "en": "Molecular sensing of bone health"
@@ -38,8 +38,8 @@
         ],
         "dependencies": [],
         "label": {
-          "zh": "Osteocalcin-binding / protein / biosensor",
-          "en": "Osteocalcin recognition / sensing"
+          "zh": "UFlorida · 骨钙素生物传感",
+          "en": "UFlorida · Osteocalcin sensing"
         }
       }
     ],
@@ -49,20 +49,21 @@
     ],
     "scenario": "assumed_success",
     "source_ids": [
-      "team:2025-5969"
+      "team:2025-5969",
+      "uflorida:atlas-correspondence:2026-10-06"
     ],
-    "description_en": "UFlorida designs binding proteins and biosensors around osteocalcin recognition, connecting a molecular signal with information about astronaut bone health.",
+    "description_en": "UFlorida 2025 targeted osteocalcin, a marker of bone turnover, for astronaut bone-health monitoring during long-duration spaceflight. The team used BindCraft and AlphaFold2-based computational design to generate de novo osteocalcin-binding proteins for recombinant expression and experimental validation. Its long-term goal was to integrate a validated binder into a compact, non-invasive biosensing platform for real-time bone-health monitoring in space, with eventual translation into wearable or point-of-care systems and osteoporosis and other bone-health monitoring applications on Earth.",
     "narrative": {
-      "zh": "UFlorida 围绕骨钙素识别设计结合蛋白与生物传感器，将分子信号转化为宇航员骨健康相关信息。",
-      "en": "UFlorida designs binding proteins and biosensors around osteocalcin recognition, connecting a molecular signal with information about astronaut bone health."
+      "zh": "UFlorida 2025 以骨转换标志物骨钙素为靶标，探索长期航天任务中的宇航员骨健康监测。团队利用 BindCraft 和基于 AlphaFold2 的计算设计生成从头设计的骨钙素结合蛋白，推进其重组表达与实验验证。长期目标是将经验证的结合蛋白集成到紧凑、非侵入式生物传感平台，实现太空中的实时骨健康监测，并进一步拓展至可穿戴或即时检测系统，以及地面的骨质疏松和其他骨健康监测场景。",
+      "en": "UFlorida 2025 targeted osteocalcin, a marker of bone turnover, for astronaut bone-health monitoring during long-duration spaceflight. The team used BindCraft and AlphaFold2-based computational design to generate de novo osteocalcin-binding proteins for recombinant expression and experimental validation. Its long-term goal was to integrate a validated binder into a compact, non-invasive biosensing platform for real-time bone-health monitoring in space, with eventual translation into wearable or point-of-care systems and osteoporosis and other bone-health monitoring applications on Earth."
     }
   },
   "nodes": [
     {
       "id": "2025-5969:route:0:step:0",
       "label": {
-        "zh": "骨钙素识别与生物传感",
-        "en": "Osteocalcin recognition / sensing"
+        "zh": "UFlorida · 骨钙素生物传感",
+        "en": "UFlorida · Osteocalcin sensing"
       },
       "kind": "process",
       "theme": "human",
@@ -71,14 +72,15 @@
       "owner": "2025-5969",
       "route": "2025-5969:route:0",
       "source_ids": [
-        "team:2025-5969"
+        "team:2025-5969",
+        "uflorida:atlas-correspondence:2026-10-06"
       ],
       "demonstration": false,
-      "description": "UFlorida 围绕骨钙素识别设计结合蛋白与生物传感器，将分子信号转化为宇航员骨健康相关信息。",
-      "description_en": "UFlorida designs binding proteins and biosensors around osteocalcin recognition, connecting a molecular signal with information about astronaut bone health.",
+      "description": "该模块围绕骨钙素识别设计结合蛋白：利用 BindCraft 与基于 AlphaFold2 的计算设计生成候选结合蛋白，供重组表达和实验验证。后续生物传感器集成旨在把骨钙素识别转化为骨健康相关信息，形成紧凑、非侵入式实时监测平台。",
+      "description_en": "This module centers on binding-protein design for osteocalcin recognition. BindCraft and AlphaFold2-based computational design generate candidate binders for recombinant expression and experimental validation. Subsequent biosensor integration is intended to translate osteocalcin recognition into bone-health information within a compact, non-invasive real-time monitoring platform.",
       "narrative": {
-        "zh": "UFlorida 围绕骨钙素识别设计结合蛋白与生物传感器，将分子信号转化为宇航员骨健康相关信息。",
-        "en": "UFlorida designs binding proteins and biosensors around osteocalcin recognition, connecting a molecular signal with information about astronaut bone health."
+        "zh": "该模块围绕骨钙素识别设计结合蛋白：利用 BindCraft 与基于 AlphaFold2 的计算设计生成候选结合蛋白，供重组表达和实验验证。后续生物传感器集成旨在把骨钙素识别转化为骨健康相关信息，形成紧凑、非侵入式实时监测平台。",
+        "en": "This module centers on binding-protein design for osteocalcin recognition. BindCraft and AlphaFold2-based computational design generate candidate binders for recombinant expression and experimental validation. Subsequent biosensor integration is intended to translate osteocalcin recognition into bone-health information within a compact, non-invasive real-time monitoring platform."
       }
     }
   ],
@@ -88,8 +90,8 @@
       "source": "ig_biomarker",
       "target": "2025-5969:route:0:step:0",
       "label": {
-        "zh": "标志物识别",
-        "en": "Osteocalcin marker → Osteocalcin recognition / sensing"
+        "zh": "骨钙素识别",
+        "en": "Osteocalcin recognition"
       },
       "category": "information",
       "layer": "project",
@@ -98,7 +100,8 @@
       "theme": "human",
       "scenario": "assumed_success",
       "source_ids": [
-        "team:2025-5969"
+        "team:2025-5969",
+        "uflorida:atlas-correspondence:2026-10-06"
       ],
       "demonstration": false
     },
@@ -107,8 +110,8 @@
       "source": "2025-5969:route:0:step:0",
       "target": "ig_healthinfo",
       "label": {
-        "zh": "health information",
-        "en": "Osteocalcin recognition / sensing → Bone-health information"
+        "zh": "骨健康监测信息",
+        "en": "Bone-health monitoring information"
       },
       "category": "information",
       "layer": "project",
@@ -117,7 +120,8 @@
       "theme": "human",
       "scenario": "assumed_success",
       "source_ids": [
-        "team:2025-5969"
+        "team:2025-5969",
+        "uflorida:atlas-correspondence:2026-10-06"
       ],
       "demonstration": false
     },
@@ -136,7 +140,8 @@
       "route": null,
       "scenario": "assumed_success",
       "source_ids": [
-        "team:2025-5969"
+        "team:2025-5969",
+        "uflorida:atlas-correspondence:2026-10-06"
       ],
       "demonstration": false
     }

@@ -10,11 +10,198 @@
     "organizer_type": "higher-education",
     "url": "https://teams.igem.org/6403",
     "wiki": null,
-    "integrated": false
+    "integrated": true
   },
-  "team": null,
-  "nodes": [],
-  "edges": [],
+  "team": {
+    "id": "2026-6403",
+    "year": 2026,
+    "name": "UFlorida",
+    "url": "https://teams.igem.org/6403",
+    "role": {
+      "zh": "宇航员多标志物健康监测",
+      "en": "Multi-biomarker astronaut health monitoring"
+    },
+    "description": "UFlorida 2026 正在开发面向长期航天任务的生物传感平台，利用计算设计的结合蛋白，从小体积生物样本中检测骨钙素、PD-L1 和皮质醇等标志物，分别关注骨健康、免疫功能与应激。团队正在开发和验证结合蛋白设计流程及台式传感平台，目标是以较少耗材获得可重复的检测结果。未来任务中，平台拟向乘员提供可在舱内获取的标志物数据，支持自主健康监测与临床决策，减少对样本返回地面和地面实验室的依赖。",
+    "description_en": "UFlorida 2026 is developing a biosensing platform for long-duration spaceflight, using computationally designed binding proteins to detect biomarkers including osteocalcin, PD-L1 and cortisol from small-volume biological samples, addressing bone health, immune function and stress. The team is developing and validating the binder-design pipeline alongside a benchtop sensing platform, aiming for repeatable measurements with minimal consumables. For future missions, the platform is intended to give crews accessible onboard biomarker data to support autonomous health monitoring and clinical decision-making with less reliance on sample return and Earth-based laboratories.",
+    "narrative": {
+      "zh": "UFlorida 2026 正在开发面向长期航天任务的生物传感平台，利用计算设计的结合蛋白，从小体积生物样本中检测骨钙素、PD-L1 和皮质醇等标志物，分别关注骨健康、免疫功能与应激。团队正在开发和验证结合蛋白设计流程及台式传感平台，目标是以较少耗材获得可重复的检测结果。未来任务中，平台拟向乘员提供可在舱内获取的标志物数据，支持自主健康监测与临床决策，减少对样本返回地面和地面实验室的依赖。",
+      "en": "UFlorida 2026 is developing a biosensing platform for long-duration spaceflight, using computationally designed binding proteins to detect biomarkers including osteocalcin, PD-L1 and cortisol from small-volume biological samples, addressing bone health, immune function and stress. The team is developing and validating the binder-design pipeline alongside a benchtop sensing platform, aiming for repeatable measurements with minimal consumables. For future missions, the platform is intended to give crews accessible onboard biomarker data to support autonomous health monitoring and clinical decision-making with less reliance on sample return and Earth-based laboratories."
+    },
+    "primary_theme": "human",
+    "themes": [
+      "human"
+    ],
+    "scenario": "assumed_success",
+    "source_ids": [
+      "uflorida:atlas-correspondence:2026-10-06"
+    ],
+    "chains": [
+      {
+        "id": "2026-6403:route:main",
+        "theme": "human",
+        "label": {
+          "zh": "UFlorida · 多标志物生物传感",
+          "en": "UFlorida · Biomarker sensing"
+        },
+        "demonstration": false,
+        "step_ids": [
+          "2026-6403:biosensing"
+        ],
+        "edge_ids": [
+          "2026-6403:edge:osteocalcin",
+          "2026-6403:edge:additional-targets",
+          "2026-6403:edge:readout"
+        ],
+        "dependencies": []
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "2026-6403:biosensing",
+      "owner": "2026-6403",
+      "route": "2026-6403:route:main",
+      "theme": "human",
+      "kind": "process",
+      "label": {
+        "zh": "UFlorida · 多标志物生物传感",
+        "en": "UFlorida · Biomarker sensing"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "description": "平台将计算设计的结合蛋白用于小体积生物样本中的靶标检测。结合蛋白设计流程与台式传感平台正在开发和验证，测量目标包括骨钙素、PD-L1 和皮质醇；平台设计旨在兼顾检测重复性与较低的耗材需求。",
+      "description_en": "The platform uses computationally designed binding proteins to detect targets in small-volume biological samples. The binder-design pipeline and benchtop sensing platform are under development and validation, with measurement targets including osteocalcin, PD-L1 and cortisol. The design aims to combine repeatable measurements with low consumable requirements.",
+      "narrative": {
+        "zh": "平台将计算设计的结合蛋白用于小体积生物样本中的靶标检测。结合蛋白设计流程与台式传感平台正在开发和验证，测量目标包括骨钙素、PD-L1 和皮质醇；平台设计旨在兼顾检测重复性与较低的耗材需求。",
+        "en": "The platform uses computationally designed binding proteins to detect targets in small-volume biological samples. The binder-design pipeline and benchtop sensing platform are under development and validation, with measurement targets including osteocalcin, PD-L1 and cortisol. The design aims to combine repeatable measurements with low consumable requirements."
+      }
+    },
+    {
+      "id": "2026-6403:additional-targets",
+      "owner": "2026-6403",
+      "route": null,
+      "theme": "human",
+      "kind": "material",
+      "label": {
+        "zh": "PD-L1 / 皮质醇",
+        "en": "PD-L1 / cortisol"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "description": "PD-L1 与皮质醇是该项目在骨钙素之外关注的检测靶标，分别用于表征免疫功能与应激相关的健康维度。项目围绕这些靶标设计结合蛋白，以扩展长期航天任务中的生物标志物检测范围。",
+      "description_en": "PD-L1 and cortisol are detection targets alongside osteocalcin, representing immune-function and stress-related aspects of health. The project develops binding proteins for these targets to extend biomarker sensing during long-duration spaceflight.",
+      "narrative": {
+        "zh": "PD-L1 与皮质醇是该项目在骨钙素之外关注的检测靶标，分别用于表征免疫功能与应激相关的健康维度。项目围绕这些靶标设计结合蛋白，以扩展长期航天任务中的生物标志物检测范围。",
+        "en": "PD-L1 and cortisol are detection targets alongside osteocalcin, representing immune-function and stress-related aspects of health. The project develops binding proteins for these targets to extend biomarker sensing during long-duration spaceflight."
+      }
+    },
+    {
+      "id": "2026-6403:health-data",
+      "owner": "2026-6403",
+      "route": null,
+      "theme": "human",
+      "kind": "information",
+      "label": {
+        "zh": "多标志物健康数据",
+        "en": "Multi-biomarker health data"
+      },
+      "layer": "project",
+      "future": true,
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "description": "平台拟提供覆盖骨健康、免疫功能和应激的标志物测量数据，供未来长期任务中的乘员获取和使用。这些数据旨在支持舱内健康监测与临床决策，使监测工作减少对样本返回地面及地面实验室的依赖。",
+      "description_en": "The intended output is biomarker measurement data spanning bone health, immune function and stress, accessible to crews on future long-duration missions. These data are intended to support onboard health monitoring and clinical decision-making while reducing reliance on sample return and Earth-based laboratories.",
+      "narrative": {
+        "zh": "平台拟提供覆盖骨健康、免疫功能和应激的标志物测量数据，供未来长期任务中的乘员获取和使用。这些数据旨在支持舱内健康监测与临床决策，使监测工作减少对样本返回地面及地面实验室的依赖。",
+        "en": "The intended output is biomarker measurement data spanning bone health, immune function and stress, accessible to crews on future long-duration missions. These data are intended to support onboard health monitoring and clinical decision-making while reducing reliance on sample return and Earth-based laboratories."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "2026-6403:edge:osteocalcin",
+      "owner": "2026-6403",
+      "source": "ig_biomarker",
+      "target": "2026-6403:biosensing",
+      "category": "information",
+      "label": {
+        "zh": "骨钙素靶标识别",
+        "en": "Osteocalcin target recognition"
+      },
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "route": "2026-6403:route:main",
+      "layer": "project",
+      "theme": "human",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6403:edge:additional-targets",
+      "owner": "2026-6403",
+      "source": "2026-6403:additional-targets",
+      "target": "2026-6403:biosensing",
+      "category": "information",
+      "label": {
+        "zh": "PD-L1 与皮质醇靶标识别",
+        "en": "PD-L1 and cortisol target recognition"
+      },
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "route": "2026-6403:route:main",
+      "layer": "project",
+      "theme": "human",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6403:edge:readout",
+      "owner": "2026-6403",
+      "source": "2026-6403:biosensing",
+      "target": "2026-6403:health-data",
+      "category": "information",
+      "label": {
+        "zh": "标志物测量数据",
+        "en": "Biomarker measurement data"
+      },
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "route": "2026-6403:route:main",
+      "layer": "project",
+      "theme": "human",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    },
+    {
+      "id": "2026-6403:edge:crew",
+      "owner": "2026-6403",
+      "source": "2026-6403:health-data",
+      "target": "crew",
+      "category": "information",
+      "label": {
+        "zh": "舱内健康监测信息",
+        "en": "Onboard health-monitoring information"
+      },
+      "source_ids": [
+        "uflorida:atlas-correspondence:2026-10-06"
+      ],
+      "route": null,
+      "layer": "project",
+      "theme": "human",
+      "demonstration": false,
+      "scenario": "assumed_success"
+    }
+  ],
   "dependencies": [],
   "enhancements": []
 }

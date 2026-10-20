@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="docs/versioning.md">i2026.P0.2 · Preview</a> ·
+  <a href="docs/versioning.md">i2026.P0.3 · Preview</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="docs/maintenance.md">Maintain</a> ·
   <a href="docs/ci.md">Deploy</a> ·
@@ -21,11 +21,11 @@
 
 An interactive atlas of space systems and iGEM project routes, backed by a local content studio. Maintain teams, shared materials and sources in modular JSON; build a standalone reader from the same source in CI. The reader and studio open in English and support Chinese.
 
-**Current review: i2026.P0.2.** Friskoli, HiZJU-China and BUCT are integrated in the same collection. The [public source repository](https://github.com/SZU-SIAT-iGEM/space-material-atlas) is maintained by SZU-SIAT-iGEM. This prerelease awaits human review; the Wiki has not been deployed.
+**Current review: i2026.P0.3.** Friskoli, HiZJU-China, BUCT and UFlorida 2026 are integrated in the same collection. The [public source repository](https://github.com/SZU-SIAT-iGEM/space-material-atlas) is maintained by SZU-SIAT-iGEM. This prerelease awaits human review; the Wiki has not been deployed.
 
 | Roster teams | Routes available | Awaiting additions | Nodes | Relations | Sources |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 38 | 24 | 14 | 180 | 266 | 86 |
+| 38 | 25 | 13 | 183 | 270 | 87 |
 
 Teams outside the roster are **Future outlook** and are not counted. A node's **Future** tag describes a space-application scenario, independently of team integration status.
 
@@ -136,17 +136,18 @@ Adjust the relative path to the host page. Public builds retain browsing and exp
 | --- | --- |
 | `i2026.P0.0` | All pre-2026 teams |
 | `i2026.P0.1` | Adds Friskoli and the 2026 roster |
-| `i2026.P0.2` | Adds HiZJU-China and BUCT; current review |
+| `i2026.P0.2` | Adds HiZJU-China and BUCT |
+| `i2026.P0.3` | Adds UFlorida 2026 and revises UFlorida 2025; current review |
 
 Names follow `iYEAR.[P|R]BASELINE.SUBMISSION`: `P` is prerelease and `R` is release. An example **next** submission is:
 
 ```sh
-python manage.py release i2026.P0.3 --notes "Next reviewed submission"
+python manage.py release i2026.P0.4 --notes "Next reviewed submission"
 ```
 
 Release names cannot be reused. Extract a snapshot's `source.zip` in an empty directory to rebuild its original implementation. Restoring content in today's studio uses today's engine. Local drafts and editorial history in `.state/` require a separate backup.
 
-The current documentation refresh retains the `i2026.P0.2` content version and ships separately from its frozen snapshot. See [version rules](docs/versioning.md) and [review instructions](docs/人工审查.md).
+The previous documentation refresh retains the `i2026.P0.2` content version. The current submission is `i2026.P0.3`. See [version rules](docs/versioning.md) and [review instructions](docs/人工审查.md).
 
 ## Project map
 

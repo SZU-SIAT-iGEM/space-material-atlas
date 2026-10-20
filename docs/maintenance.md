@@ -1,6 +1,6 @@
 # Content and engine maintenance
 
-Current collection: **i2026.P0.2**, awaiting human review. See [the documentation index](index.md) and [version rules](versioning.md).
+Current collection: **i2026.P0.3**, awaiting human review. See [the documentation index](index.md) and [version rules](versioning.md).
 
 ## Content ownership
 
@@ -68,7 +68,7 @@ Update the engine version when changing geometric behavior. Keep the bundled Viz
 
 The version workspace compares a release's content with today's content before restoring it as a new revision. That operation uses the current engine. To rebuild the exact historical implementation, extract that release's `source.zip` into a new directory and run `python manage.py build`. The archive contains content, code, dependency versions, reference layouts and deployment settings.
 
-Never overwrite a published version name. Corrections use a new submission, such as `i2026.P0.3`. A release contains source/static archives, content, layouts and checksums. The original release remains recoverable. See [versioning.md](versioning.md) for the P/R, baseline-round and submission-round convention.
+Never overwrite a published version name. Corrections use a new submission, such as `i2026.P0.4`. A release contains source/static archives, content, layouts and checksums. The original release remains recoverable. See [versioning.md](versioning.md) for the P/R, baseline-round and submission-round convention.
 
 ## 本机维护速查
 
